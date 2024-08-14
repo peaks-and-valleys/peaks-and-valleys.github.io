@@ -7,20 +7,21 @@
 @font-face {
     font-family: "IBM Plex Sans";
     font-weight: bold;
-    src: url(../fonts/IBMPlexSans-Bold.ttf);
+    src: url(/fonts/IBMPlexSans-Bold.ttf);
 }
 @font-face {
     font-family: "IBM Plex Sans";
     font-weight: normal;
-    src: url(../fonts/IBMPlexSans-Regular.ttf);
+    src: url(/fonts/IBMPlexSans-Regular.ttf);
 }
 :root {
     --text-color: #eee;
     --background-color: #111;
+    --accent-color: #ec407a;
 }
 @media screen and (max-width: 768px){
     html {
-        font-size: 3.4vw;
+        font-size: 3.6vw;
     }
     .main {
         margin: 0 2rem;
@@ -37,7 +38,7 @@
   }
 @media screen and (min-width: 1081px){
     html {
-        font-size: 1vw;
+        font-size: 1.25vw;
     }
     .main {
         margin: 0 8rem;
@@ -50,28 +51,41 @@ body {
     color: var(--text-color);
 }
 h1 {
+    color: var(--background-color);
+    background-color: var(--text-color);
     font-size: 2.56rem;
+    padding: 0.15rem 0 0.2rem 0;
     font-weight: bold;
     text-align: center;
+    border-radius: 0.625rem 1rem 0.625rem 1rem;
 }
 h2 {
     font-size: 1.6rem;
+    padding: 0.1rem 0;
+    font-weight: bold;
+    text-align: left;
+}
+h3 {
+    font-size: 1.25rem;
+    padding: 0.1rem 0;
     font-weight: bold;
     text-align: left;
 }
 p {
     font-size: 1rem;
+    padding: 0.06rem 0;
     font-weight: normal;
 }
 a {
-    color: var(--text-color);
+    color: var(--accent-color);
+    text-decoration: none;
 }
 .navigation {
     padding: 1%;
 }
 .navigation a {
     display: inline-block;
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 1rem 0.6rem 1rem;
     margin: 0.1rem;
     justify-content: space-between;
     align-items: center;
@@ -84,6 +98,7 @@ a {
 }
 .navigation a:hover {
     font-weight: bold;
+    background-color: var(--accent-color);
 }
 .footer {
     padding: 1%;
@@ -96,20 +111,18 @@ a {
     
 }
 .main {
+    overflow-wrap: break-word;
 }
-.content-list{
-}
-.content-list ul li {
-    list-style-type: none;
+.content-box{
     margin: 0.625rem 0.4rem;
     padding: 0.25rem;
-    font-size: 1.6rem;
     font-weight: bold;
     text-align: left;
+    color: var(--text-color);
     border: 0.15rem solid var(--text-color);
     border-radius: 0.625rem 1rem 0.625rem 1rem;
 }
-.content-list ul li:hover{
-    color: var(--background-color);
-    background-color: var(--text-color);
+.content-box:hover {
+    color: var(--accent-color);
+    border: 0.15rem dotted var(--accent-color);
 }

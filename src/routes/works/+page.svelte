@@ -6,14 +6,29 @@
 
 <div class="main">
     <h1>works</h1>
-    <div class="content-list">
-        <ul>
-            <a>
-                <li>
-                    <h2>aaaaaaaaaaaaaaa</h2>
-                    <p>ああああああああああああああ</p>
-                </li>
-            </a>
-        </ul>
-    </div>
+    <h2>graphic design</h2>
+    <a href="">
+        <div class="content-box">
+            <h3>aaaaaaaaaaaaaaa</h3>
+            <p>ああああああああああああああ</p>
+        </div>
+    </a>
+    <a href="">
+        <div class="content-box">
+            <h3>aaaaaaaaaaaaaaa</h3>
+            <p>ppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppp</p>
+        </div>
+    </a>
+    <a href="">
+        <div class="content-box">
+            <h3>aaaaaaaaaaaaaaa</h3>
+            <p>ああああああああああああああ</p>
+        </div>
+    </a>
+    <a href="">
+        <div class="content-box">
+            <h3>aaaaaaaaaaaaaaa</h3>
+            <p>ppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppp</p>
+        </div>
+    </a>
 </div>

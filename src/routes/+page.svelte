@@ -1,19 +1,15 @@
 <script lang="ts">
-    import logo_h from '$lib/images/peaksandvalleys_h.svg';
-    import logo_v from '$lib/images/peaksandvalleys_v.svg';
-    import background_h from '$lib/images/background_h.mp4';
-    import background_v from '$lib/images/background_v.mp4';
 </script>
 
 <div class="cover-image">
     <video class="cover-components" loop autoplay muted playsinline>
-        <source src={background_v} type="video/mp4" media="(max-width: 1080px)">
-        <source src={background_h} type="video/mp4">
+        <source src="/images/background_v.mp4" type="video/mp4" media="(max-width: 1080px)">
+        <source src="/images/background_h.mp4" type="video/mp4">
         <track kind="captions">
     </video>
     <picture class="cover-components">
-        <source srcset={logo_v} media="(max-width: 768px)">
-        <img src={logo_h} alt="Peaks and Valleys logo">
+        <source srcset="/images/peaksandvalleys_v.svg" media="(max-width: 768px)">
+        <img src="/images/peaksandvalleys_h.svg" alt="Peaks and Valleys logo">
     </picture>
 </div>
 
