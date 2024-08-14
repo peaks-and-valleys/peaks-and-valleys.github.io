@@ -3,13 +3,13 @@
 
 <div class="cover-image">
     <video class="cover-components" loop autoplay muted playsinline>
-        <source src="/images/background_v.mp4" type="video/mp4" media="(max-width: 1080px)">
-        <source src="/images/background_h.mp4" type="video/mp4">
+        <source src="/index/background_v.mp4" type="video/mp4" media="(max-width: 1080px)">
+        <source src="/index/background_h.mp4" type="video/mp4">
         <track kind="captions">
     </video>
     <picture class="cover-components">
-        <source srcset="/images/peaksandvalleys_v.svg" media="(max-width: 768px)">
-        <img src="/images/peaksandvalleys_h.svg" alt="Peaks and Valleys logo">
+        <source srcset="/index/peaksandvalleys_v.svg" media="(max-width: 768px)">
+        <img src="/index/peaksandvalleys_h.svg" alt="Peaks and Valleys logo">
     </picture>
 </div>
 
