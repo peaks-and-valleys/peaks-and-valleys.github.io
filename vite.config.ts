@@ -5,5 +5,10 @@ export default defineConfig({
 	server: {
 		host: true
 	},
-	plugins: [sveltekit()]
+	plugins: [sveltekit()],
+	build: {
+		rollupOptions: {
+		  external: ['fs']
+		}
+	  }
 });
