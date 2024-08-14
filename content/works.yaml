@@ -1,0 +1,15 @@
+items:
+  - title: "Item 1"
+    link: "https://example.com"
+    description: "This is the first item."
+    date: "2024-08-12"
+  
+  - title: "Item 2"
+    link: "https://example.com"
+    description: "This is the second item."
+    date: "2024-08-14"
+  
+  - title: "Item 3"
+    link: "https://example.com"
+    description: "This is the third item."
+    date: "2024-08-10"

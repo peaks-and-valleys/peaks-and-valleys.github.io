@@ -6,29 +6,12 @@
 
 <div class="main">
     <h1>works</h1>
-    <h2>graphic design</h2>
-    <a href="">
-        <div class="content-box">
-            <h3>aaaaaaaaaaaaaaa</h3>
-            <p>ああああああああああああああ</p>
-        </div>
-    </a>
-    <a href="">
-        <div class="content-box">
-            <h3>aaaaaaaaaaaaaaa</h3>
-            <p>ppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppp</p>
-        </div>
-    </a>
-    <a href="">
-        <div class="content-box">
-            <h3>aaaaaaaaaaaaaaa</h3>
-            <p>ああああああああああああああ</p>
-        </div>
-    </a>
-    <a href="">
-        <div class="content-box">
-            <h3>aaaaaaaaaaaaaaa</h3>
-            <p>ppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppp</p>
-        </div>
-    </a>
+    {#each data.items as item}
+        <a href={item.link} target="_blank">
+            <div class="link-box">
+                <h2>{item.title}</h2>
+                <p>{item.description}</p>
+            </div>
+        </a>
+    {/each}
 </div>
