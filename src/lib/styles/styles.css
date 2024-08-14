@@ -86,6 +86,12 @@ p {
     padding: 0.06rem 0;
     font-weight: normal;
 }
+ul li {
+    font-size: 1rem;
+    margin: 0 0 0 1rem;
+    padding: 0.06rem 0;
+    font-weight: normal;
+}
 a {
     color: var(--accent-color);
     text-decoration: none;
