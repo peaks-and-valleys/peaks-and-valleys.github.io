@@ -103,8 +103,8 @@ a {
     margin: auto;
 }
 .content-box, .link-box{
-    margin: 0.625rem 0.4rem;
-    padding: 0.25rem;
+    margin: 0.625rem 0;
+    padding: 0.3rem;
     font-weight: bold;
     text-align: left;
     color: var(--text-color);
