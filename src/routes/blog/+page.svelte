@@ -4,6 +4,12 @@
     export let data: PageData;
 </script>
 
+<svelte:head>
+    <title>Peaks and Valleys - blog</title>
+    <meta name="description" content="list of blog posts" />
+</svelte:head>
+
+
 <div class="main">
     <h1>blog</h1>
     {#each data.items as item}

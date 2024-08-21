@@ -1,6 +1,11 @@
 <script lang="ts">
 </script>
 
+<svelte:head>
+    <title>Peaks and Valleys</title>
+    <meta name="description" content="WIP" />
+</svelte:head>
+
 <div class="cover-image">
     <video class="cover-components" loop autoplay muted playsinline>
         <source src="/index/background_sq.mp4" type="video/mp4" media="(max-width: 1080px)">
