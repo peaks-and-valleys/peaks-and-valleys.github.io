@@ -9,7 +9,7 @@ export async function load({ params }) {
         const filePath = path.resolve('content/blog', `${params.slug}.md`);
         const fileContent = fs.readFileSync(filePath, 'utf-8');
         const { data, content } = matter(fileContent);
-        
+
         return {
             items: {
                 title: data.title,
@@ -20,7 +20,7 @@ export async function load({ params }) {
         };
     } catch (error) {
         console.error('Error reading Markdown file:', error);
-        
+
         return {
             items: null
         };

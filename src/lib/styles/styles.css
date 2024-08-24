@@ -4,64 +4,78 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 @font-face {
     font-family: "IBM Plex Sans";
     font-weight: bold;
     src: url(/fonts/IBMPlexSans-Bold.ttf);
     font-display: swap;
 }
+
 @font-face {
     font-family: "IBM Plex Sans";
     font-weight: normal;
     src: url(/fonts/IBMPlexSans-Regular.ttf);
     font-display: swap;
 }
+
 :root {
     --text-color: #222;
     --background-color: #DDD;
     --accent-color: #2222EE;
 }
-@media screen and (max-width: 768px){
+
+@media screen and (max-width: 768px) {
     html {
         font-size: 3.6vw;
     }
+
     .main {
         margin: 0 2rem;
     }
+
     .main img {
         width: 80%;
     }
-    
+
 }
-@media screen and (min-width: 769px) and (max-width: 1080px){
+
+@media screen and (min-width: 769px) and (max-width: 1080px) {
     html {
-      font-size: 2vw;
+        font-size: 2vw;
     }
+
     .main {
         margin: 0 4rem;
     }
+
     .main img {
         width: 60%;
     }
 
-  }
-@media screen and (min-width: 1081px){
+}
+
+@media screen and (min-width: 1081px) {
     html {
         font-size: 1vw;
     }
+
     .main {
         margin: 0 8rem;
     }
+
     .main img {
         width: 50%;
     }
 
 }
+
 body {
     font-family: 'IBM Plex Sans', sans-serif;
     background-color: var(--background-color);
     color: var(--text-color);
 }
+
 h1 {
     color: var(--background-color);
     background-color: var(--text-color);
@@ -71,40 +85,49 @@ h1 {
     text-align: center;
     border-radius: 0.625rem 1rem 0.625rem 1rem;
 }
+
 h2 {
     font-size: 1.6rem;
     padding: 0.1rem 0;
     font-weight: bold;
     text-align: left;
 }
+
 h3 {
     font-size: 1.25rem;
     padding: 0.1rem 0;
     font-weight: bold;
     text-align: left;
 }
+
 p {
     font-size: 1rem;
     padding: 0.06rem 0;
     font-weight: normal;
 }
+
 ul li {
     font-size: 1rem;
     margin: 0 0 0 1.6rem;
     padding: 0.06rem 0;
     font-weight: normal;
 }
+
 a {
     color: var(--accent-color);
     text-decoration: none;
 }
+
 .main {
     overflow-wrap: break-word;
 }
+
 .main img {
     margin: auto;
 }
-.content-box, .link-box{
+
+.content-box,
+.link-box {
     margin: 0.625rem 0;
     padding: 0.3rem;
     font-weight: bold;
@@ -113,6 +136,7 @@ a {
     border: 0.15rem solid var(--text-color);
     border-radius: 0.625rem 1rem 0.625rem 1rem;
 }
+
 .link-box:hover {
     color: var(--accent-color);
     border: 0.15rem dotted var(--accent-color);
