@@ -8,14 +8,28 @@
 @font-face {
     font-family: "IBM Plex Sans";
     font-weight: bold;
-    src: url(/fonts/IBMPlexSans-Bold.ttf);
+    src: url(/fonts/IBMPlexSans-Bold.woff2);
     font-display: swap;
 }
 
 @font-face {
     font-family: "IBM Plex Sans";
     font-weight: normal;
-    src: url(/fonts/IBMPlexSans-Regular.ttf);
+    src: url(/fonts/IBMPlexSans-Regular.woff2);
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "IBM Plex Sans JP";
+    font-weight: bold;
+    src: url(/fonts/Subset-IBMPlexSansJP-Bold.woff2);
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "IBM Plex Sans JP";
+    font-weight: normal;
+    src: url(/fonts/Subset-IBMPlexSansJP-Regular.woff2);
     font-display: swap;
 }
 
@@ -71,7 +85,7 @@
 }
 
 body {
-    font-family: 'IBM Plex Sans', sans-serif;
+    font-family: 'IBM Plex Sans', 'IBM Plex Sans JP', sans-serif;
     background-color: var(--background-color);
     color: var(--text-color);
 }
