@@ -37,7 +37,8 @@
 	}
 	.cover-components:nth-child(2) {
 		z-index: 2;
-		transform: scale(0.625);
 		mix-blend-mode: difference;
+		width: 62.5%;
+		margin: auto;
 	}
 </style>
