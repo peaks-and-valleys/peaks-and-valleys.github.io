@@ -16,7 +16,7 @@
 <slot />
 
 <footer class="footer">
-    <p> All contents on this website by Peaks and Valleys are licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">CC BY-SA 4.0</a> (unless explicitly mentioned) </p>
+    <p> All contents on this website by Peaks and Valleys are licensed under <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">CC BY 4.0</a> (unless explicitly mentioned) </p>
 </footer>
 
 <style>
@@ -46,7 +46,7 @@
     .footer p{
         width: 40%;
         margin: 0 0 0 auto;
-        font-size: 0.625rem;
+        font-size: 0.75rem;
         text-align: right;  
     }
 </style>
