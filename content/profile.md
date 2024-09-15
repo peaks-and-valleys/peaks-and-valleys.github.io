@@ -13,7 +13,7 @@ Osaka, Japan
 - [GitHub](https://github.com/peaksvndvalleys)
 
 ### articles
-- [Cosense (f.k.a. Scrapbox)](https://scrapbox.io/peaksandvalleys/)
+- [Cosense (f.k.a. Scrapbox)](https://scrapbox.io/peaks-and-valleys/)
 - [Zenn](https://zenn.dev/peaksandvalleys)
 
 ### mail
