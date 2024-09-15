@@ -15,8 +15,7 @@
 		<a href="blog/{item.slug}">
 			<div class="link-box">
 				<h2>{item.title}</h2>
-				<p>{item.date}</p>
-				<p>{item.description}</p>
+				<p>{item.date} | {item.description}</p>
 			</div>
 		</a>
 	{/each}
