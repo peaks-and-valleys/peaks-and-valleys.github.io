@@ -17,7 +17,7 @@
 
 <footer class="footer">
     <p> This site does not use third-party or tracking cookies.</p>
-    <p> Articles on this website by Peaks and Valleys are licensed under <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">CC BY 4.0</a> (unless explicitly mentioned) </p>
+    <p> Articles on this website by Peaks and Valleys are licensed under <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">CC BY 4.0</a> (unless explicitly mentioned). </p>
 </footer>
 
 <style>
