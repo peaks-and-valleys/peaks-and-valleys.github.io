@@ -50,4 +50,7 @@
         font-size: 0.75rem;
         text-align: right;  
     }
+    .footer a{
+        text-decoration: underline;
+    }
 </style>
