@@ -21,36 +21,4 @@
 </footer>
 
 <style>
-    .navigation {
-        padding: 1%;
-    }
-    .navigation a {
-        display: inline-block;
-        padding: 0.5rem 1rem 0.6rem 1rem;
-        margin: 0.1rem;
-        justify-content: space-between;
-        align-items: center;
-        font-size: 1.6rem;
-        font-weight: normal;
-        color: var(--background-color);
-        background-color: var(--text-color);
-        text-decoration: none;
-        border-radius: 0.625rem 1rem 0.625rem 1rem;
-    }
-    .navigation a:hover {
-        font-weight: bold;
-        background-color: var(--accent-color);
-    }
-    .footer {
-        padding: 0.5% 2% 0.625% 2%;
-    }
-    .footer p{
-        width: 40%;
-        margin: 0 0 0 auto;
-        font-size: 0.75rem;
-        text-align: right;  
-    }
-    .footer a{
-        text-decoration: underline;
-    }
 </style>
