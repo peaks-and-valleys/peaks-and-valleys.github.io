@@ -3,16 +3,18 @@
 
 <svelte:head>
 	<title>Peaks and Valleys</title>
-	<meta name="description" content="WIP" />
+	<meta
+		name="description"
+		content="content creator / graphic designer / programmer / sound engineer / writer"
+	/>
 </svelte:head>
 
 <div class="cover-image">
-	<video class="cover-components" loop autoplay muted playsinline>
-		<source src="/index/background_sq.mp4" type="video/mp4" media="(max-width: 1080px)" />
-		<source src="/index/background_h.mp4" type="video/mp4" />
+	<video class="cover-component" loop autoplay muted playsinline>
+		<source src="/index/background.mp4" type="video/mp4" />
 		<track kind="captions" />
 	</video>
-	<picture class="cover-components">
+	<picture class="cover-component">
 		<img src="/index/peaksandvalleys.svg" alt="Peaks and Valleys logo" />
 	</picture>
 </div>
@@ -24,7 +26,7 @@
 		grid-template-rows: 1fr;
 		width: 100%;
 	}
-	.cover-components {
+	.cover-component {
 		grid-column: 1;
 		grid-row: 1;
 		display: flex;
@@ -32,13 +34,14 @@
 		width: 100%;
 		flex-wrap: wrap;
 	}
-	.cover-components:nth-child(1) {
+	.cover-component:nth-child(1) {
 		z-index: 1;
+		width: 100%;
 	}
-	.cover-components:nth-child(2) {
+	.cover-component:nth-child(2) {
 		z-index: 2;
 		mix-blend-mode: difference;
-		width: 62.5%;
+		width: 100%;
 		margin: auto;
 	}
 </style>
