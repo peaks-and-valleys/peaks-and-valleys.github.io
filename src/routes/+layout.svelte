@@ -17,6 +17,9 @@
 
 <footer class="footer">
 	<p>
+		<a href="/disclaimer">disclaimer</a>
+	</p>
+	<p>
 		SNS: <a href="https://x.com/peaksvndvalleys" target="_blank">X (f.k.a. Twitter)</a>
 	</p>
 	<p>
