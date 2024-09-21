@@ -159,14 +159,13 @@ a {
 }
 
 .footer {
-    padding: 0.5% 2% 0.625% 2%;
+    margin: 0.5rem 1rem 0.625rem 1rem;
 }
 
 .footer p {
-    width: 40%;
     margin: 0 0 0 auto;
-    font-size: 0.75rem;
-    text-align: right;
+    font-size: 1rem;
+    text-align: center;
 }
 
 .footer a {
