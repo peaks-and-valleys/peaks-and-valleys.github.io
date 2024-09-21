@@ -3,7 +3,10 @@
 
 <svelte:head>
 	<title>Peaks and Valleys</title>
-	<meta name="description" content="WIP" />
+	<meta
+		name="description"
+		content="content creator / graphic designer / programmer / sound engineer / writer"
+	/>
 </svelte:head>
 
 <div class="cover-image">
