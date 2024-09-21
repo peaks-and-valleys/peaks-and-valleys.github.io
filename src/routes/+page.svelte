@@ -14,9 +14,7 @@
 		<source src="/index/background.mp4" type="video/mp4" />
 		<track kind="captions" />
 	</video>
-	<picture class="cover-component">
-		<img src="/index/peaksandvalleys.svg" alt="Peaks and Valleys logo" />
-	</picture>
+	<img class="cover-component" src="/index/peaksandvalleys.svg" alt="Peaks and Valleys logo" />
 </div>
 
 <style>
