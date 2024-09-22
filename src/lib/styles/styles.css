@@ -21,25 +21,11 @@
     size-adjust: 108%;
 }
 
-@font-face {
-    font-family: "Noto Sans JP";
-    font-weight: bold;
-    src: url(/fonts/Subset-NotoSansJP-Bold.woff2);
-    font-display: swap;
-}
-
-@font-face {
-    font-family: "Noto Sans JP";
-    font-weight: normal;
-    src: url(/fonts/Subset-NotoSansJP-Regular.woff2);
-    font-display: swap;
-}
-
 
 :root {
-    --text-color: #222;
-    --background-color: #DDD;
-    --accent-color: #2222EE;
+    --primary-dark: #222;
+    --primary-light: #DDD;
+    --accent-blue: #2222EE;
 }
 
 @media screen and (max-width: 768px) {
@@ -88,14 +74,14 @@
 }
 
 body {
-    font-family: 'IBM Plex Sans', 'Noto Sans JP', sans-serif;
-    background-color: var(--background-color);
-    color: var(--text-color);
+    font-family: 'IBM Plex Sans', sans-serif;
+    background-color: var(--primary-light);
+    color: var(--primary-dark);
 }
 
 h1 {
-    color: var(--background-color);
-    background-color: var(--text-color);
+    color: var(--primary-light);
+    background-color: var(--primary-dark);
     font-size: 2.56rem;
     padding: 0.15rem 0 0.2rem 0;
     font-weight: bold;
@@ -131,7 +117,7 @@ ul li {
 }
 
 a {
-    color: var(--accent-color);
+    color: var(--accent-blue);
     text-decoration: none;
 }
 
@@ -147,15 +133,15 @@ a {
     align-items: center;
     font-size: 1.6rem;
     font-weight: normal;
-    color: var(--background-color);
-    background-color: var(--text-color);
+    color: var(--primary-light);
+    background-color: var(--primary-dark);
     text-decoration: none;
     border-radius: 0.625rem 1rem 0.625rem 1rem;
 }
 
 .navigation a:hover {
     font-weight: bold;
-    background-color: var(--accent-color);
+    background-color: var(--accent-blue);
 }
 
 .footer p {
@@ -183,14 +169,14 @@ a {
     padding: 0.5rem 0.625rem 0.625rem 0.625rem;
     font-weight: bold;
     text-align: left;
-    color: var(--text-color);
-    border: 0.15rem solid var(--text-color);
+    color: var(--primary-dark);
+    border: 0.15rem solid var(--primary-dark);
     border-radius: 0.625rem 1rem 0.625rem 1rem;
 }
 
 .link-box:hover {
-    color: var(--accent-color);
-    border: 0.15rem dotted var(--accent-color);
+    color: var(--accent-blue);
+    border: 0.15rem dotted var(--accent-blue);
 }
 
 .content-box a {
