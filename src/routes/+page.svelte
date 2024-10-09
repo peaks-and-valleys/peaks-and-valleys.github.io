@@ -5,7 +5,7 @@
 	<title>Peaks and Valleys</title>
 	<meta
 		name="description"
-		content="content creator / graphic designer / programmer / sound engineer / writer"
+		content="底が見えるほど深く、手が届くほど広い"
 	/>
 </svelte:head>
 
