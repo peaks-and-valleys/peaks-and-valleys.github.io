@@ -134,6 +134,8 @@ code {
     font-family: "IBM Plex Mono", monospace;
     font-weight: normal;
     background-color: var(--accent-grey);
+    padding: 0 0.15rem 0 0.15rem;
+    border-radius: 0.25rem;
 }
 
 blockquote,
@@ -141,6 +143,12 @@ pre {
     background-color: var(--accent-grey);
     padding: 0.25rem;
     margin: 0.4rem 0.625rem 0.4rem 0.625rem;
+    border-radius: 0.4rem;
+}
+
+hr {
+    color: var(--primary-dark);
+    margin: 0.625rem 0 0.625rem 0;
 }
 
 .navigation {
