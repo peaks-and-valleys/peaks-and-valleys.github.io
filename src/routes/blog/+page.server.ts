@@ -7,17 +7,18 @@ interface Item {
     title: string;
     description: string;
     date: string;
+    draft: boolean;
 }
 
 export async function load() {
     try {
         const directoryPath = path.resolve('content/blog');
         const filenames = fs.readdirSync(directoryPath);
-        
+
         const items: Item[] = filenames.map(filename => {
             const filePath = path.join(directoryPath, filename);
             const fileContent = fs.readFileSync(filePath, 'utf-8');
-            
+
             const { data, content } = matter(fileContent);
 
             return {
@@ -25,19 +26,19 @@ export async function load() {
                 title: data.title,
                 description: data.description,
                 date: data.date,
+                draft: data.draft === 'true',
             };
-        });
-        
-        const sortedItems = items.sort((a, b) => {
-            return new Date(b.date).getTime() - new Date(a.date).getTime();
-        });
-        
+        })
+            .filter(item => !item.draft);
+
+        const sortedItems = items.sort((a, b) => b.date.localeCompare(a.date));
+
         return {
             items: sortedItems
         };
     } catch (error) {
         console.error('Error reading Markdown files:', error);
-        
+
         return {
             items: []
         };
