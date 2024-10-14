@@ -8,7 +8,6 @@
 	<nav class="navigation">
 		<a href="/">home</a>
 		<a href="/about">about</a>
-		<a href="/works">works</a>
 		<a href="/blog">blog</a>
 	</nav>
 </header>
