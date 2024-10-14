@@ -10,6 +10,12 @@ export async function load({ params }) {
         const fileContent = fs.readFileSync(filePath, 'utf-8');
         const { data, content } = matter(fileContent);
 
+        if (data.draft === "true") {
+            return {
+                items: null
+            };
+        }
+
         return {
             items: {
                 title: data.title,
