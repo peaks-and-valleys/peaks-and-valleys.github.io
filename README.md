@@ -1,38 +1,35 @@
-# create-svelte
+# [Peaks and Valleys](https://peaks-and-valleys.net)
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/main/packages/create-svelte).
+A portfolio site.
 
-## Creating a project
+## How to deploy
 
-If you're seeing this, you've probably already done this step. Congrats!
+This site is hosted by Cloudflare Pages. Just follow these instructions:
 
-```bash
-# create a new project in the current directory
-npm create svelte@latest
+* [SvelteKit | Cloudflare Pages docs](https://developers.cloudflare.com/pages/framework-guides/deploy-a-svelte-site/)
+* [Cloudflare Pages • Docs • SvelteKit](https://kit.svelte.jp/docs/adapter-cloudflare)
 
-# create a new project in my-app
-npm create svelte@latest my-app
+The default version of Node.js on Cloudflare Pages might be older than the compatible version of SvelteKit.
+If this problem happens, set the environment varialbe `NODE_VERSION` on Cloudflare Pages deployment setting.
+
+## Blog function
+
+This site has a simple blog function.
+Articles are written in Markdown and placed in `content/blog`.
+Each article has a YAML header:
+
+```
+---
+title: "example"
+description: "this is an example of a YAML blog header."
+date: "2000-01-01"
+draft: "true"
+---
 ```
 
-## Developing
+Here are the descriptions of each key:
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
-```bash
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
-
-## Building
-
-To create a production version of your app:
-
-```bash
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+* `title`: Page title of the article. This will also be in `<title>` tag.
+* `description`: Short description of the article. This will also be in `<meta description>` tag.
+* `date`: This value is also used for sorting of articles.
+* `draft`: If the value is `"true"`, the article will not be built.
