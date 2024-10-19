@@ -1,6 +1,6 @@
 <script lang="ts">
 	import type { LayoutData } from './$types';
-	import '$lib/styles/styles.css';
+	import './styles/global.css';
 	import Page from './+page.svelte';
 </script>
 
