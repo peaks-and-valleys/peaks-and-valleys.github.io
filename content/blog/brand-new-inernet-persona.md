@@ -2,7 +2,7 @@
 title: "新しいインターネットペルソナの誕生"
 description: "形から入るタイプです"
 date: "2024-09-15"
-draft: "false"
+draft: "true"
 ---
 
 要するにポートフォリオサイトを作った。
