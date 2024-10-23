@@ -12,7 +12,7 @@
 <div class="main">
 	<h1>blog</h1>
 	{#each data.items as item}
-		<a href="blog/{item.slug}">
+		<a href="blog/post/{item.slug}">
 			<div class="link-box">
 				<h2>{item.title}</h2>
 				<p>{item.date} | {item.description}</p>
