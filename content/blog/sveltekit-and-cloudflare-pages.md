@@ -1,5 +1,5 @@
 ---
-title: "SvelteKit + Cloudflare Pages でポートフォリオサイトの構築"
+title: "SvelteKit + Cloudflare Pages でポートフォリオサイトの構築した際の備忘録"
 description: "first commit"
 date: "2024-10-20"
 draft: "false"
