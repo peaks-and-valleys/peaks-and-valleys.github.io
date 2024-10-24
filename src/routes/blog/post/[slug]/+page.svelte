@@ -9,7 +9,7 @@
 	<meta name="description" content={data.items?.description} />
 </svelte:head>
 
-<div class="main">
+<div class="main" role="main">
 	<h1>{data.items?.title}</h1>
 	<p>{data.items?.date}</p>
 	<div class="content-box">

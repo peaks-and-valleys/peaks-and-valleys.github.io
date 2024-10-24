@@ -3,18 +3,19 @@
 
 <svelte:head>
 	<title>Peaks and Valleys</title>
-	<meta
-		name="description"
-		content="底が見えるほど深く、手が届くほど広い"
-	/>
+	<meta name="description" content="底が見えるほど深く、手が届くほど広い" />
 </svelte:head>
 
-<div class="cover-image">
+<div class="cover-image" role="main">
 	<video class="cover-component" loop autoplay muted playsinline>
 		<source src="/index/background.mp4" type="video/mp4" />
 		<track kind="captions" />
 	</video>
-	<img class="cover-component" src="/index/peaksandvalleys.svg" alt="Peaks and Valleys logo" />
+	<img
+		class="cover-component"
+		src="/index/peaksandvalleys.svg"
+		alt="Peaks and Valleys と手書き風文字で書かれたロゴです"
+	/>
 </div>
 
 <style>

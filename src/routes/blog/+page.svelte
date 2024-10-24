@@ -9,7 +9,7 @@
 	<meta name="description" content="list of blog posts" />
 </svelte:head>
 
-<div class="main">
+<div class="main" role="main">
 	<h1>blog</h1>
 	{#each data.items as item}
 		<a href="blog/post/{item.slug}">
