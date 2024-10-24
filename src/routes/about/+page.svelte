@@ -9,9 +9,9 @@
 	<meta name="description" content="let me introduce myself" />
 </svelte:head>
 
-<div class="main" role="main">
+<main>
 	<h1>about</h1>
 	<div class="content-box">
 		{@html data.content}
 	</div>
-</div>
+</main>

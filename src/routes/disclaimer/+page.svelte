@@ -9,9 +9,9 @@
     <meta name="description" content="disclaimer">
 </svelte:head>
 
-<div class="main" role="main">
+<main>
     <h1>disclaimer</h1>
     <div class="content-box">
 		{@html data.content}
 	</div>
-</div>
+</main>

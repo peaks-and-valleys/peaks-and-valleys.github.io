@@ -41,7 +41,7 @@
         font-size: 3.6vw;
     }
 
-    .main {
+    main {
         margin: 0 1rem;
     }
 
@@ -52,7 +52,7 @@
         font-size: 2vw;
     }
 
-    .main {
+    main {
         margin: 0 2rem;
     }
 
@@ -63,7 +63,7 @@
         font-size: 1vw;
     }
 
-    .main {
+    main {
         margin: 0 8rem;
     }
 
@@ -176,11 +176,11 @@ hr {
 }
 
 
-.main {
+main {
     overflow-wrap: break-word;
 }
 
-.main img {
+main img {
     margin: 0.625rem 0 0.625rem 0;
     width: 87.5%;
 }
