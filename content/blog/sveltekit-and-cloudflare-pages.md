@@ -1,18 +1,18 @@
 ---
-title: "SvelteKit + Cloudflare Pages でポートフォリオサイトの構築した際の備忘録"
-description: "first commit"
-date: "2024-10-20"
-draft: "false"
+title: 'SvelteKit + Cloudflare Pages でポートフォリオサイトの構築した際の備忘録'
+description: 'first commit'
+date: '2024-10-30'
+draft: 'false'
 ---
 
-*以下の情報は2024年10月現在のものです*
+_以下の情報は2024年10月現在のものです_
 
 ---
 
 要するにこのサイトの構築について。
 リポジトリは[こちら](https://github.com/peaksvndvalleys/pav_works)。
 
-きちんとした技術記事というよりかは、制作時に考えていたことのメモと要素技術の簡単な紹介のみに留めた記事になる。
+きちんとした技術記事というよりかは、制作時に考えていたことのメモと要素技術の簡単な紹介のみに留めた記事。
 
 ## [Svelte](https://svelte.jp) と [SvelteKit](https://kit.svelte.jp) について
 
@@ -29,8 +29,8 @@ draft: "false"
 Svelte と Cloudflare は相思相愛なので、それぞれのドキュメントにデプロイ手順の解説ページがある。
 GitHub リポジトリにコードをプッシュしたら、勝手に処理が走ってビルドしてくれる CI/CD 環境を（GitHub Actions すら書くことなく）かなり簡単にセットアップできる。
 
-* [SvelteKit | Cloudflare Pages docs](https://developers.cloudflare.com/pages/framework-guides/deploy-a-svelte-site/)
-* [Cloudflare Pages • Docs • SvelteKit](https://kit.svelte.jp/docs/adapter-cloudflare)
+- [SvelteKit | Cloudflare Pages docs](https://developers.cloudflare.com/pages/framework-guides/deploy-a-svelte-site/)
+- [Cloudflare Pages • Docs • SvelteKit](https://kit.svelte.jp/docs/adapter-cloudflare)
 
 上記のドキュメントに書いていないこととしては、Cloudflare Pages のデフォルト設定の Node.js のバージョンが古いせいで、ビルドが失敗することがある。
 環境変数 `NODE_VERSION` によって、お使いの SvelteKit に対応したバージョンが走るよう指定できる。
@@ -75,7 +75,7 @@ Lighthouse と axe DevTools の診断を思い出したタイミングで実施�
 
 SvelteKit を使うにあたり、公式ドキュメントとMDN以外で特にお世話になったのは以下：
 
-* [【SvelteKit 入門】はじめに](https://zenn.dev/wnr/articles/50cnoe5xvzmw)
-* [未経験からでもSvelteKitを使って3日で技術ブログを作成する](https://zenn.dev/ring_belle/books/blog-sveltekit)
-* [SvelteKit + microCMS のブログ作成チュートリアル](https://blog.microcms.io/sveltekit-tutorial/)
-    * このサイトでは microCMS 等のヘッドレスCMSは用いていないが、一度試してはみた
+- [【SvelteKit 入門】はじめに](https://zenn.dev/wnr/articles/50cnoe5xvzmw)
+- [未経験からでもSvelteKitを使って3日で技術ブログを作成する](https://zenn.dev/ring_belle/books/blog-sveltekit)
+- [SvelteKit + microCMS のブログ作成チュートリアル](https://blog.microcms.io/sveltekit-tutorial/)
+  - このサイトでは microCMS 等のヘッドレスCMSは用いていないが、一度試してはみた
