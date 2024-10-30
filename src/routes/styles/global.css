@@ -1,206 +1,205 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
 @font-face {
-    font-family: "Archivo";
-    font-weight: bold;
-    src: url(/fonts/Archivo-Bold.woff2);
-    font-display: swap;
-    size-adjust: 108%;
+	font-family: 'Archivo';
+	font-weight: bold;
+	src: url(/fonts/Archivo-Bold.woff2);
+	font-display: swap;
+	size-adjust: 108%;
 }
 
 @font-face {
-    font-family: "Archivo";
-    font-weight: normal;
-    src: url(/fonts/Archivo-Regular.woff2);
-    font-display: swap;
-    size-adjust: 108%;
+	font-family: 'Archivo';
+	font-weight: normal;
+	src: url(/fonts/Archivo-Regular.woff2);
+	font-display: swap;
+	size-adjust: 108%;
 }
 
 @font-face {
-    font-family: "IBM Plex Mono";
-    font-weight: normal;
-    src: url(/fonts/IBMPlexMono-Regular.woff2);
-    font-display: swap;
-    size-adjust: 105%;
+	font-family: 'IBM Plex Mono';
+	font-weight: normal;
+	src: url(/fonts/IBMPlexMono-Regular.woff2);
+	font-display: swap;
+	size-adjust: 105%;
 }
-
 
 :root {
-    --primary-dark: #222222;
-    --primary-light: #DDDDDD;
-    --accent-blue: #0011DD;
-    --secondary-grey: #CCCCD1;
+	--primary-dark: #222222;
+	--primary-light: #dddddd;
+	--accent-blue: #0011dd;
+	--secondary-grey: #ccccd1;
 }
 
 @media screen and (max-width: 768px) {
-    html {
-        font-size: 3.6vw;
-    }
+	html {
+		font-size: 3.6vw;
+	}
 
-    main {
-        margin: 0 1rem;
-    }
-
+	main {
+		margin: 0 1rem;
+	}
 }
 
 @media screen and (min-width: 769px) and (max-width: 1080px) {
-    html {
-        font-size: 2vw;
-    }
+	html {
+		font-size: 2vw;
+	}
 
-    main {
-        margin: 0 2rem;
-    }
-
+	main {
+		margin: 0 2rem;
+	}
 }
 
 @media screen and (min-width: 1081px) {
-    html {
-        font-size: 1vw;
-    }
+	html {
+		font-size: 1vw;
+	}
 
-    main {
-        margin: 0 8rem;
-    }
-
+	main {
+		margin: 0 8rem;
+	}
 }
 
 body {
-    font-family: "Archivo", sans-serif;
-    background-color: var(--primary-light);
-    color: var(--primary-dark);
+	font-family: 'Archivo', sans-serif;
+	background-color: var(--primary-light);
+	color: var(--primary-dark);
 }
 
 h1 {
-    color: var(--primary-light);
-    background-color: var(--primary-dark);
-    font-size: 2.56rem;
-    padding: 0.25rem 0.25rem 0.4rem 0.25rem;
-    font-weight: bold;
-    text-align: center;
-    border-radius: 0.625rem 1rem 0.625rem 1rem;
+	color: var(--primary-light);
+	background-color: var(--primary-dark);
+	font-size: 2.56rem;
+	padding: 0.25rem 0.25rem 0.4rem 0.25rem;
+	font-weight: bold;
+	text-align: center;
+	border-radius: 0.625rem 1rem 0.625rem 1rem;
 }
 
 h2 {
-    font-size: 1.6rem;
-    padding: 0.4rem 0 0.4rem 0;
-    font-weight: bold;
-    text-align: left;
+	font-size: 1.6rem;
+	padding: 0.4rem 0 0.4rem 0;
+	font-weight: bold;
+	text-align: left;
 }
 
 h3 {
-    font-size: 1.25rem;
-    padding: 0.4rem 0 0.4rem 0;
-    font-weight: bold;
-    text-align: left;
+	font-size: 1.25rem;
+	padding: 0.4rem 0 0.4rem 0;
+	font-weight: bold;
+	text-align: left;
 }
 
 p {
-    font-size: 1rem;
-    padding: 0.25rem 0 0.25rem 0;
-    font-weight: normal;
+	font-size: 1rem;
+	padding: 0.25rem 0 0.25rem 0;
+	font-weight: normal;
 }
 
 ul li {
-    font-size: 1rem;
-    margin: 0 0 0 1.6rem;
-    padding: 0.25rem 0 0.25rem 0;
-    font-weight: normal;
+	font-size: 1rem;
+	margin: 0 0 0 1.6rem;
+	padding: 0.25rem 0 0.25rem 0;
+	font-weight: normal;
 }
 
 a {
-    color: var(--accent-blue);
-    text-decoration: none;
+	color: var(--accent-blue);
+	text-decoration: none;
+}
+
+q {
+	font-style: italic;
 }
 
 code {
-    font-family: "IBM Plex Mono", monospace;
-    font-weight: normal;
-    background-color: var(--secondary-grey);
-    padding: 0 0.25rem 0 0.25rem;
-    border-radius: 0.25rem;
+	font-family: 'IBM Plex Mono', monospace;
+	font-weight: normal;
+	background-color: var(--secondary-grey);
+	padding: 0 0.25rem 0 0.25rem;
+	border-radius: 0.25rem;
 }
 
 blockquote,
 pre {
-    background-color: var(--secondary-grey);
-    padding: 0.25rem;
-    margin: 0.4rem 0.625rem 0.4rem 0.625rem;
-    border-radius: 0.4rem;
-    /* wordwrap settings */
-    overflow: auto;
-    white-space: pre-wrap;
-    word-wrap: break-word;
+	background-color: var(--secondary-grey);
+	padding: 0.25rem;
+	margin: 0.4rem 0.625rem 0.4rem 0.625rem;
+	border-radius: 0.4rem;
+	/* wordwrap settings */
+	overflow: auto;
+	white-space: pre-wrap;
+	word-wrap: break-word;
 }
 
 hr {
-    color: var(--primary-dark);
-    margin: 0.625rem 0 0.625rem 0;
+	color: var(--primary-dark);
+	margin: 0.625rem 0 0.625rem 0;
 }
 
 .navigation {
-    padding: 1%;
+	padding: 1%;
 }
 
 .navigation a {
-    display: inline-block;
-    padding: 0.5rem 1rem 0.6rem 1rem;
-    margin: 0.1rem;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 1.6rem;
-    font-weight: normal;
-    color: var(--primary-light);
-    background-color: var(--primary-dark);
-    text-decoration: none;
-    border-radius: 0.625rem 1rem 0.625rem 1rem;
+	display: inline-block;
+	padding: 0.5rem 1rem 0.6rem 1rem;
+	margin: 0.1rem;
+	justify-content: space-between;
+	align-items: center;
+	font-size: 1.6rem;
+	font-weight: normal;
+	color: var(--primary-light);
+	background-color: var(--primary-dark);
+	text-decoration: none;
+	border-radius: 0.625rem 1rem 0.625rem 1rem;
 }
 
 .navigation a:hover {
-    font-weight: bold;
-    background-color: var(--accent-blue);
+	font-weight: bold;
+	background-color: var(--accent-blue);
 }
 
 .footer p {
-    margin: 0 0 0 auto;
-    font-size: 1rem;
-    text-align: center;
+	margin: 0 0 0 auto;
+	font-size: 1rem;
+	text-align: center;
 }
 
 .footer a {
-    text-decoration: underline;
+	text-decoration: underline;
 }
 
-
 main {
-    overflow-wrap: break-word;
+	overflow-wrap: break-word;
 }
 
 main img {
-    margin: 0.625rem 0 0.625rem 0;
-    width: 87.5%;
+	margin: 0.625rem 0 0.625rem 0;
+	width: 87.5%;
 }
 
 .content-box,
 .link-box {
-    margin: 0.625rem 0;
-    padding: 0.5rem 0.625rem 0.625rem 0.625rem;
-    font-weight: bold;
-    text-align: left;
-    color: var(--primary-dark);
-    border: 0.15rem solid var(--primary-dark);
-    border-radius: 0.625rem 1rem 0.625rem 1rem;
+	margin: 0.625rem 0;
+	padding: 0.5rem 0.625rem 0.625rem 0.625rem;
+	font-weight: bold;
+	text-align: left;
+	color: var(--primary-dark);
+	border: 0.15rem solid var(--primary-dark);
+	border-radius: 0.625rem 1rem 0.625rem 1rem;
 }
 
 .link-box:hover {
-    color: var(--accent-blue);
-    border: 0.15rem dotted var(--accent-blue);
+	color: var(--accent-blue);
+	border: 0.15rem dotted var(--accent-blue);
 }
 
 .content-box a {
-    text-decoration: underline;
+	text-decoration: underline;
 }

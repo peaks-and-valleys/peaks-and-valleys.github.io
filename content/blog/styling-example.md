@@ -1,13 +1,15 @@
 ---
-title: "styling example"
-description: "aaaaaaaa"
-date: "2024-10-15"
-draft: "true"
+title: 'styling example'
+description: 'aaaaaaaa'
+date: '2024-10-15'
+draft: 'true'
 ---
 
 ## 引用
 
 これは `code example` です
+
+これは <q>quote 引用</q> です
 
 > これは blockquote の例です
 
@@ -43,5 +45,5 @@ draft: "true"
 
 ### リストも
 
-* いい感じに
-* 書けていますね
+- いい感じに
+- 書けていますね
