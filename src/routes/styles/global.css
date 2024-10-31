@@ -66,7 +66,9 @@
 }
 
 body {
-	font-family: 'Archivo', sans-serif;
+	font-family: 'Archivo', 'Helvetica Neue', 'Arial', 'Hiragino Kaku Gothic ProN', 'Hiragino Sans',
+		'Noto Sans JP', sans-serif;
+	font-feature-settings: "palt";
 	background-color: var(--primary-light);
 	color: var(--primary-dark);
 }
