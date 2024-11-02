@@ -29,6 +29,7 @@
 }
 
 :root {
+	/* color palette */
 	--primary-dark: #222222;
 	--primary-light: #dddddd;
 	--accent-blue: #0011dd;
@@ -45,7 +46,7 @@
 	}
 }
 
-@media screen and (min-width: 769px) and (max-width: 1080px) {
+@media screen and (min-width: 769px) and (max-width: 1280px) {
 	html {
 		font-size: 2vw;
 	}
@@ -55,7 +56,7 @@
 	}
 }
 
-@media screen and (min-width: 1081px) {
+@media screen and (min-width: 1281px) {
 	html {
 		font-size: 1vw;
 	}
