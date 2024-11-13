@@ -1,7 +1,11 @@
 <script lang="ts">
 	import type { PageData } from '../blog/$types';
 
-	export let data: PageData;
+	interface Props {
+		data: PageData;
+	}
+
+	let { data }: Props = $props();
 </script>
 
 <svelte:head>

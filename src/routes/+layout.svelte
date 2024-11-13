@@ -2,6 +2,11 @@
 	import type { LayoutData } from './$types';
 	import './styles/global.css';
 	import Page from './+page.svelte';
+	interface Props {
+		children?: import('svelte').Snippet;
+	}
+
+	let { children }: Props = $props();
 </script>
 
 <header>
@@ -12,7 +17,7 @@
 	</nav>
 </header>
 
-<slot />
+{@render children?.()}
 
 <footer class="footer">
 	<p>
