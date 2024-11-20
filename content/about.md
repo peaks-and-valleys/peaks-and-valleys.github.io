@@ -1,9 +1,5 @@
 ## info
 
-### name
-
-SHIMOJI Tohga
-
 ### what I am
 
 content creator / graphic designer / programmer / writer
