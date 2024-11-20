@@ -9,14 +9,16 @@
 </script>
 
 <svelte:head>
-	<title>Peaks and Valleys - {data.items?.title}</title>
+	<title>{data.items?.title} - Peaks and Valleys</title>
 	<meta name="description" content={data.items?.description} />
 </svelte:head>
 
 <main>
-	<h1>{data.items?.title}</h1>
-	<p>{data.items?.date}</p>
-	<div class="content-box">
-		{@html data.items?.content}
-	</div>
+	<article>
+		<h1>{data.items?.title}</h1>
+		<time>{data.items?.date}</time>
+		<div class="content-box">
+			{@html data.items?.content}
+		</div>
+	</article>
 </main>

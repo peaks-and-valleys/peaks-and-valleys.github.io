@@ -9,7 +9,7 @@
 </script>
 
 <svelte:head>
-	<title>Peaks and Valleys - blog</title>
+	<title>blog - Peaks and Valleys</title>
 	<meta name="description" content="list of blog posts" />
 </svelte:head>
 
@@ -19,7 +19,7 @@
 		<a href="blog/post/{item.slug}">
 			<div class="link-box">
 				<h2>{item.title}</h2>
-				<p>{item.date} | {item.description}</p>
+				<p><time>{item.date}</time> | {item.description}</p>
 			</div>
 		</a>
 	{/each}

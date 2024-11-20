@@ -9,13 +9,15 @@
 </script>
 
 <svelte:head>
-	<title>Peaks and Valleys - about</title>
+	<title>about - Peaks and Valleys</title>
 	<meta name="description" content="let me introduce myself" />
 </svelte:head>
 
 <main>
-	<h1>about</h1>
-	<div class="content-box">
-		{@html data.content}
-	</div>
+	<article>
+		<h1>about</h1>
+		<div class="content-box">
+			{@html data.content}
+		</div>
+	</article>
 </main>

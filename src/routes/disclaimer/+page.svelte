@@ -9,13 +9,15 @@
 </script>
 
 <svelte:head>
-	<title>Peaks and Valleys - disclaimer</title>
-    <meta name="description" content="disclaimer">
+	<title>disclaimer - Peaks and Valleys</title>
+	<meta name="description" content="disclaimer" />
 </svelte:head>
 
 <main>
-    <h1>disclaimer</h1>
-    <div class="content-box">
-		{@html data.content}
-	</div>
+	<article>
+		<h1>disclaimer</h1>
+		<div class="content-box">
+			{@html data.content}
+		</div>
+	</article>
 </main>
