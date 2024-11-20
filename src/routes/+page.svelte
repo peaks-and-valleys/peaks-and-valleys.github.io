@@ -8,12 +8,12 @@
 
 <div class="cover-image" role="main">
 	<video class="cover-component" loop autoplay muted playsinline>
-		<source src="/index/background.mp4" type="video/mp4" />
+		<source src="images/index/background.mp4" type="video/mp4" />
 		<track kind="captions" />
 	</video>
 	<img
 		class="cover-component"
-		src="/index/peaksandvalleys.svg"
+		src="images/index/peaksandvalleys.svg"
 		alt="Peaks and Valleys と手書き風文字で書かれたロゴです"
 	/>
 </div>
