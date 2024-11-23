@@ -69,7 +69,7 @@
 body {
 	font-family: 'Archivo', 'Helvetica Neue', 'Arial', 'Hiragino Kaku Gothic ProN', 'Hiragino Sans',
 		'Noto Sans JP', sans-serif;
-	font-feature-settings: "palt";
+	font-feature-settings: 'palt';
 	background-color: var(--primary-light);
 	color: var(--primary-dark);
 }
@@ -84,40 +84,41 @@ h1 {
 	border-radius: 0.625rem 1rem 0.625rem 1rem;
 }
 
-h2 {
-	font-size: 1.6rem;
-	padding: 0.4rem 0 0.4rem 0;
+h2,
+h3,
+h4 {
+	margin: 0.8rem 0;
 	font-weight: bold;
 	text-align: left;
+}
+
+h2 {
+	font-size: 1.6rem;
 }
 
 h3 {
 	font-size: 1.25rem;
-	padding: 0.4rem 0 0.4rem 0;
-	font-weight: bold;
-	text-align: left;
+}
+
+h4 {
+	font-size: 1.125rem;
 }
 
 p {
 	font-size: 1rem;
-	padding: 0.25rem 0 0.25rem 0;
+	margin: 0.8rem 0;
 	font-weight: normal;
 }
 
 ul li {
 	font-size: 1rem;
-	margin: 0 0 0 1.6rem;
+	margin: 0.4rem 0 0.4rem 1.6rem;
 	padding: 0.25rem 0 0.25rem 0;
 	font-weight: normal;
 }
 
 a {
 	color: var(--accent-blue);
-	text-decoration: none;
-}
-
-q {
-	font-style: italic;
 }
 
 code {
@@ -168,14 +169,10 @@ hr {
 	background-color: var(--accent-blue);
 }
 
-.footer p {
-	margin: 0 0 0 auto;
+.footer p, .footer address {
+	margin: 0.4rem 0;
 	font-size: 1rem;
 	text-align: center;
-}
-
-.footer a {
-	text-decoration: underline;
 }
 
 main {
@@ -190,7 +187,7 @@ main img {
 .content-box,
 .link-box {
 	margin: 0.625rem 0;
-	padding: 0.5rem 0.625rem 0.625rem 0.625rem;
+	padding: 0 0.625rem;
 	font-weight: bold;
 	text-align: left;
 	color: var(--primary-dark);
@@ -198,11 +195,11 @@ main img {
 	border-radius: 0.625rem 1rem 0.625rem 1rem;
 }
 
+a:has(> .link-box) {
+	text-decoration: none;
+}
+
 .link-box:hover {
 	color: var(--accent-blue);
 	border: 0.15rem dotted var(--accent-blue);
-}
-
-.content-box a {
-	text-decoration: underline;
 }
