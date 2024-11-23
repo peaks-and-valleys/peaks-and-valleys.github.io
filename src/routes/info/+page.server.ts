@@ -4,7 +4,7 @@ import { marked } from 'marked';
 
 export async function load() {
     try {
-        const filePath = path.resolve('content/about.md');      
+        const filePath = path.resolve('content/info.md');      
         const fileContent = fs.readFileSync(filePath, 'utf-8');
         const htmlContent = marked(fileContent);
 

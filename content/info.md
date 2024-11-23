@@ -1,12 +1,8 @@
-## info
+## about
 
-### what I am
-
-content creator / graphic designer / programmer / writer
-
-### where I live
-
-Osaka, Japan
+peaks という一個人のポートフォリオ兼個人サイトです。
+制作物や関わったプロジェクトをまとめたり、ブログを書いたりします。
+プログラミング（主にフロントエンド）やグラフィックデザイン、ライティング、その他全く関係ないことが並ぶ予定です。
 
 ## works
 

@@ -12,7 +12,7 @@
 <header>
 	<nav class="navigation">
 		<a href="/">home</a>
-		<a href="/about">about</a>
+		<a href="/info">info</a>
 		<a href="/blog">blog</a>
 	</nav>
 </header>
@@ -24,18 +24,13 @@
 		<a href="/disclaimer">disclaimer</a>
 	</p>
 	<p>
-		SNS: <a href="https://x.com/peaksvndvalleys" target="_blank">X</a> /
-		<a href="https://fedibird.com/@peaks" target="_blank">Fedibird</a>
-	</p>
-	<p>
 		works: <a href="https://www.behance.net/peaks-and-valleys" target="_blank">Behance</a> /
 		<a href="https://github.com/peaksvndvalleys" target="_blank">GitHub</a>
 	</p>
 	<p>
-		articles: <a href="https://scrapbox.io/peaks-and-valleys/" target="_blank">Cosense</a> /
-		<a href="https://zenn.dev/peaksandvalleys" target="_blank">Zenn</a>
+		articles: <a href="https://scrapbox.io/peaks-and-valleys/" target="_blank">Cosense</a>
 	</p>
-	<p>mail: peaksvndvalleys(at)protonmail(dot)com</p>
+	<address>Contact: <a href="https://x.com/peaksvndvalleys" target="_blank">X</a> or peaksvndvalleys(at)protonmail(dot)com</address>
 </footer>
 
 <style>
