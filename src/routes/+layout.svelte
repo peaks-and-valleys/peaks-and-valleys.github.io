@@ -23,14 +23,9 @@
 	<p>
 		<a href="/disclaimer">disclaimer</a>
 	</p>
-	<p>
-		works: <a href="https://www.behance.net/peaks-and-valleys" target="_blank">Behance</a> /
-		<a href="https://github.com/peaksvndvalleys" target="_blank">GitHub</a>
-	</p>
-	<p>
-		articles: <a href="https://scrapbox.io/peaks-and-valleys/" target="_blank">Cosense</a>
-	</p>
-	<address>Contact: <a href="https://x.com/peaksvndvalleys" target="_blank">X</a> or peaksvndvalleys(at)protonmail(dot)com</address>
+	<address>
+		Contact: <a href="https://x.com/peaksvndvalleys" target="_blank" rel="me">X</a> or peaksvndvalleys(at)protonmail(dot)com
+	</address>
 </footer>
 
 <style>
