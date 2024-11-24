@@ -12,16 +12,16 @@ peaks という一個人のポートフォリオ兼個人サイトです。
 
 ### SNS
 
-- <a href="https://x.com/peaksvndvalleys" target="_blank" rel="me">X</a> - 記事更新などの告知のみで用いています。DMの確認はしていますので、ご連絡はこちらからでも構いません。
+- <a href="https://x.com/peaksvndvalleys" target="_blank" rel="me">X</a> - 記事更新などの告知のみで用いています。DMの確認はしていますので、ご連絡はこちらからでも構いません
 
 ### works
 
-- <a href="https://www.behance.net/peaks-and-valleys" target="_blank" rel="me">Behance</a> - デザイン関連の仕事はこちらにまとめています。
-- <a href="https://github.com/peaksvndvalleys" target="_blank" rel="me">GitHub</a> - 言わずと知れたソースコード置き場です。
+- <a href="https://www.behance.net/peaks-and-valleys" target="_blank" rel="me">Behance</a> - デザイン関連の仕事はこちらにまとめています
+- <a href="https://github.com/peaksvndvalleys" target="_blank" rel="me">GitHub</a> - 言わずと知れたソースコード置き場です
 
 ### articles
 
-- <a href="https://scrapbox.io/peaks-and-valleys/" target="_blank" rel="me">Cosense</a> - ブログ未満のネタや、適当な思いつきなどを書き溜めています。
+- <a href="https://scrapbox.io/peaks-and-valleys/" target="_blank" rel="me">Cosense</a> - ブログ未満のネタや、適当な思いつきなどを書き溜めています
 
 ## list of works
 
