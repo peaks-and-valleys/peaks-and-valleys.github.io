@@ -1,7 +1,7 @@
 ---
 title: 'styling example'
 description: 'aaaaaaaa'
-date: '2024-10-15'
+date: '2000-01-01'
 draft: 'true'
 ---
 
