@@ -8,7 +8,7 @@ export default defineConfig({
 	plugins: [sveltekit()],
 	build: {
 		rollupOptions: {
-		  external: ['fs']
+		    external: ['fs']
 		}
-	  }
+	}
 });
