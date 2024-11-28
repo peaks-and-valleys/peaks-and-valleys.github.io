@@ -6,7 +6,7 @@
 
 @font-face {
 	font-family: 'Archivo';
-	font-weight: bold;
+	font-weight: 700;
 	src: url(/fonts/Archivo-Bold.woff2);
 	font-display: swap;
 	size-adjust: 108%;
@@ -14,7 +14,7 @@
 
 @font-face {
 	font-family: 'Archivo';
-	font-weight: normal;
+	font-weight: 400;
 	src: url(/fonts/Archivo-Regular.woff2);
 	font-display: swap;
 	size-adjust: 108%;
@@ -22,7 +22,7 @@
 
 @font-face {
 	font-family: 'IBM Plex Mono';
-	font-weight: normal;
+	font-weight: 400;
 	src: url(/fonts/IBMPlexMono-Regular.woff2);
 	font-display: swap;
 	size-adjust: 105%;
@@ -69,7 +69,11 @@
 body {
 	font-family: 'Archivo', 'Helvetica Neue', 'Arial', 'Hiragino Kaku Gothic ProN', 'Hiragino Sans',
 		'Noto Sans JP', sans-serif;
+	line-height: 1.5;
 	font-feature-settings: 'palt';
+	overflow-wrap: anywhere;
+	word-break: normal;
+	line-break: strict;
 	background-color: var(--primary-light);
 	color: var(--primary-dark);
 }
@@ -78,8 +82,8 @@ h1 {
 	color: var(--primary-light);
 	background-color: var(--primary-dark);
 	font-size: 2rem;
-	padding: 0.4rem 0.4rem 0.625rem 0.4rem;
-	font-weight: bold;
+	padding: 0.4rem;
+	font-weight: 700;
 	text-align: center;
 	border-radius: 0.625rem 1rem 0.625rem 1rem;
 }
@@ -88,7 +92,7 @@ h2,
 h3,
 h4 {
 	margin: 0.8rem 0;
-	font-weight: bold;
+	font-weight: 700;
 	text-align: left;
 }
 
@@ -107,13 +111,13 @@ h4 {
 p {
 	font-size: 1rem;
 	margin: 0.8rem 0;
-	font-weight: normal;
+	font-weight: 400;
 }
 
-ul li {
+li {
 	font-size: 1rem;
 	margin: 0.4rem 0 0.4rem 1.6rem;
-	font-weight: normal;
+	font-weight: 400;
 }
 
 a {
@@ -122,7 +126,7 @@ a {
 
 code {
 	font-family: 'IBM Plex Mono', monospace;
-	font-weight: normal;
+	font-weight: 400;
 	background-color: var(--secondary-grey);
 	padding: 0 0.25rem 0 0.25rem;
 	border-radius: 0.25rem;
@@ -131,13 +135,10 @@ code {
 blockquote,
 pre {
 	background-color: var(--secondary-grey);
-	padding: 0.25rem;
-	margin: 0.4rem 0.625rem 0.4rem 0.625rem;
+	padding: 0 0.4rem;
+	margin: 0.625rem 0.625rem;
 	border-radius: 0.4rem;
-	/* wordwrap settings */
 	overflow: auto;
-	white-space: pre-wrap;
-	word-wrap: break-word;
 }
 
 hr {
@@ -149,48 +150,42 @@ address {
 	font-style: normal;
 }
 
-.navigation {
-	padding: 1%;
+nav {
+	margin: 0.4rem;
 }
 
-.navigation a {
+nav a {
 	display: inline-block;
-	padding: 0.5rem 1rem 0.6rem 1rem;
-	margin: 0.1rem;
+	padding: 0.4em 1rem;
 	justify-content: space-between;
 	align-items: center;
 	font-size: 1.6rem;
-	font-weight: normal;
+	font-weight: 400;
 	color: var(--primary-light);
 	background-color: var(--primary-dark);
 	text-decoration: none;
 	border-radius: 0.625rem 1rem 0.625rem 1rem;
 }
 
-.navigation a:hover {
-	font-weight: bold;
+nav a:hover {
+	font-weight: 700;
 	background-color: var(--accent-blue);
 }
 
-.footer {
+footer {
 	margin: 0.4rem 0;
+}
+
+footer * {
 	text-align: center;
-}
-
-main {
-	overflow-wrap: break-word;
-}
-
-main img {
-	margin: 0.625rem 0 0.625rem 0;
-	width: 87.5%;
+	margin: 0.4rem 0;
 }
 
 .content-box,
 .link-box {
 	margin: 0.625rem 0;
 	padding: 0 0.625rem;
-	font-weight: bold;
+	font-weight: 700;
 	text-align: left;
 	color: var(--primary-dark);
 	border: 0.15rem solid var(--primary-dark);

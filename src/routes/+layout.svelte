@@ -10,7 +10,7 @@
 </script>
 
 <header>
-	<nav class="navigation">
+	<nav>
 		<a href="/">home</a>
 		<a href="/info">info</a>
 		<a href="/blog">blog</a>
@@ -19,13 +19,11 @@
 
 {@render children?.()}
 
-<footer class="footer">
+<footer>
 	<p>
 		<a href="/disclaimer">disclaimer</a>
 	</p>
-	<address>
-		Contact: <a href="https://x.com/peaksvndvalleys" target="_blank" rel="me">X</a> or peaksvndvalleys(at)protonmail(dot)com
-	</address>
+	<address>Contact: peaksvndvalleys(at)protonmail(dot)com</address>
 </footer>
 
 <style>
