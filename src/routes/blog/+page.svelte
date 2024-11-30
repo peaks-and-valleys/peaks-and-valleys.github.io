@@ -17,7 +17,7 @@
 	<h1>blog</h1>
 	{#each data.items as item}
 		<a href="blog/post/{item.slug}">
-			<div class="link-box">
+			<div class="content-box is-link">
 				<h2>{item.title}</h2>
 				<p><time>{item.date}</time> | {item.description}</p>
 			</div>

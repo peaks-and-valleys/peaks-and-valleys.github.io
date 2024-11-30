@@ -67,8 +67,8 @@
 }
 
 body {
-	font-family: 'Archivo', 'Helvetica Neue', 'Arial', 'Hiragino Kaku Gothic ProN', 'Hiragino Sans',
-		'Noto Sans JP', sans-serif;
+	font-family: 'Archivo', 'Helvetica Neue', 'Segoe UI', 'Arial', 'Hiragino Kaku Gothic ProN',
+		'Hiragino Sans', 'Noto Sans JP', sans-serif;
 	line-height: 1.5;
 	font-feature-settings: 'palt';
 	overflow-wrap: anywhere;
@@ -82,7 +82,7 @@ h1 {
 	color: var(--primary-light);
 	background-color: var(--primary-dark);
 	font-size: 2rem;
-	padding: 0.4rem;
+	padding: 0.25rem 0.4rem;
 	font-weight: 700;
 	text-align: center;
 	border-radius: 0.625rem 1rem 0.625rem 1rem;
@@ -156,7 +156,7 @@ nav {
 
 nav a {
 	display: inline-block;
-	padding: 0.4em 1rem;
+	padding: 0.25em 1rem;
 	justify-content: space-between;
 	align-items: center;
 	font-size: 1.6rem;
@@ -174,15 +174,13 @@ nav a:hover {
 
 footer {
 	margin: 0.4rem 0;
+	* {
+		text-align: center;
+		margin: 0.4rem 0;
+	}
 }
 
-footer * {
-	text-align: center;
-	margin: 0.4rem 0;
-}
-
-.content-box,
-.link-box {
+.content-box {
 	margin: 0.625rem 0;
 	padding: 0 0.625rem;
 	font-weight: 700;
@@ -192,11 +190,13 @@ footer * {
 	border-radius: 0.625rem 1rem 0.625rem 1rem;
 }
 
-a:has(> .link-box) {
-	text-decoration: none;
+.is-link {
+	&:hover {
+		color: var(--accent-blue);
+		border: 0.15rem dotted var(--accent-blue);
+	}
 }
 
-.link-box:hover {
-	color: var(--accent-blue);
-	border: 0.15rem dotted var(--accent-blue);
+a:has(> .is-link) {
+	text-decoration: none;
 }
