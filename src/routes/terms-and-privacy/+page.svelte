@@ -1,5 +1,5 @@
 <script lang="ts">
-	import type { PageData } from './$types';
+	import type { PageData } from '../disclaimer/$types';
 
 	interface Props {
 		data: PageData;
@@ -9,13 +9,13 @@
 </script>
 
 <svelte:head>
-	<title>disclaimer - Peaks and Valleys</title>
-	<meta name="description" content="disclaimer" />
+	<title>terms and privacy - Peaks and Valleys</title>
+	<meta name="description" content="terms and privacy" />
 </svelte:head>
 
 <main>
 	<article>
-		<h1>disclaimer</h1>
+		<h1>terms &amp; privacy</h1>
 		<div class="content-box">
 			{@html data.content}
 		</div>
