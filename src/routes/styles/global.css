@@ -34,6 +34,10 @@
 	--primary-light: #dddddd;
 	--accent-blue: #0011dd;
 	--secondary-grey: #ccccd1;
+	/* font weight */
+	--font-weight-bold: 700;
+	--font-weight-semibold: 600;
+	--font-weight-normal: 400;
 }
 
 @media screen and (max-width: 768px) {
@@ -67,8 +71,8 @@
 }
 
 body {
-	font-family: 'Switzer', 'Helvetica Neue', 'Segoe UI', 'Arial', 'Hiragino Kaku Gothic ProN',
-		'Hiragino Sans', 'Noto Sans JP', sans-serif;
+	font-family: 'Switzer', 'Helvetica Neue', 'Arial', 'Hiragino Kaku Gothic ProN', 'Hiragino Sans',
+		'Noto Sans JP', 'BIZ UDPGothic', sans-serif;
 	line-height: 1.5;
 	font-feature-settings: 'palt';
 	overflow-wrap: anywhere;
@@ -83,7 +87,7 @@ h1 {
 	background-color: var(--primary-dark);
 	font-size: 2rem;
 	padding: 0.25rem 0.4rem;
-	font-weight: 700;
+	font-weight: var(--font-weight-bold);
 	text-align: center;
 	border-radius: 0.625rem 1rem 0.625rem 1rem;
 }
@@ -92,7 +96,7 @@ h2,
 h3,
 h4 {
 	margin: 0.8rem 0;
-	font-weight: 700;
+	font-weight: var(--font-weight-semibold);
 	text-align: left;
 }
 
@@ -106,6 +110,10 @@ h3 {
 
 h4 {
 	font-size: 1.125rem;
+}
+
+strong {
+	font-weight: var(--font-weight-semibold);
 }
 
 p {
