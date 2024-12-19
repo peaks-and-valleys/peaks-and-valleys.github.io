@@ -16,7 +16,7 @@
 <main>
 	<article>
 		<h1>{data.items?.title}</h1>
-		<time>{data.items?.date}</time>
+		<p><time>{data.items?.date}</time></p>
 		<div class="content-box">
 			{@html data.items?.content}
 		</div>

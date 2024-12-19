@@ -23,7 +23,7 @@
 	<p>
 		<a href="/terms-and-privacy">terms &amp; privacy</a>
 	</p>
-	<address>Contact: peaksvndvalleys(at)protonmail(dot)com</address>
+	<address><p>Contact: peaksvndvalleys(at)protonmail(dot)com</p></address>
 </footer>
 
 <style>
