@@ -17,4 +17,4 @@
 
 ### ウェブサイト
 
-- [Peaks and Valleys](https://peaks-and-valleys.net/) - このサイトです。GitHub リポジトリは[こちら](https://github.com/peaksvndvalleys/pav_works)。
+- [Peaks and Valleys](https://peaks-and-valleys.net/) - このサイトです。[GitHub リポジトリを公開しています](https://github.com/peaksvndvalleys/pav_works)。
