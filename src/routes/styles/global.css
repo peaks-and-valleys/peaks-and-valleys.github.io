@@ -5,19 +5,19 @@
 }
 
 @font-face {
-	font-family: 'Archivo';
-	font-weight: 700;
-	src: url(/fonts/Archivo-Bold.woff2);
+	font-family: 'Switzer';
+	src: url(/fonts/Switzer-Variable.ttf);
+	font-style: normal;
 	font-display: swap;
-	size-adjust: 108%;
+	size-adjust: 111%;
 }
 
 @font-face {
-	font-family: 'Archivo';
-	font-weight: 400;
-	src: url(/fonts/Archivo-Regular.woff2);
+	font-family: 'Switzer';
+	src: url(/fonts/Switzer-VariableItalic.ttf);
+	font-style: italic;
 	font-display: swap;
-	size-adjust: 108%;
+	size-adjust: 111%;
 }
 
 @font-face {
@@ -67,7 +67,7 @@
 }
 
 body {
-	font-family: 'Archivo', 'Helvetica Neue', 'Segoe UI', 'Arial', 'Hiragino Kaku Gothic ProN',
+	font-family: 'Switzer', 'Helvetica Neue', 'Segoe UI', 'Arial', 'Hiragino Kaku Gothic ProN',
 		'Hiragino Sans', 'Noto Sans JP', sans-serif;
 	line-height: 1.5;
 	font-feature-settings: 'palt';
