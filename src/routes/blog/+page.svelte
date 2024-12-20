@@ -19,7 +19,7 @@
 		<a href="blog/post/{item.slug}">
 			<div class="content-box is-link">
 				<h2>{item.title}</h2>
-				<p><time>{item.date}</time> | {item.description}</p>
+				<p><time>{item.date}</time> - {item.description}</p>
 			</div>
 		</a>
 	{/each}

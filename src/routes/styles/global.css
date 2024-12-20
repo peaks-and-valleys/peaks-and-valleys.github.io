@@ -33,7 +33,8 @@
 	--primary-dark: #222222;
 	--primary-light: #dddddd;
 	--accent-blue: #0011dd;
-	--secondary-grey: #ccccd1;
+	--secondary-dark: #484848;
+	--secondary-light: #ccccd1;
 	/* font weight */
 	--font-weight-bold: 700;
 	--font-weight-semibold: 600;
@@ -135,15 +136,14 @@ a {
 code {
 	font-family: 'IBM Plex Mono', monospace;
 	font-weight: 400;
-	background-color: var(--secondary-grey);
+	background-color: var(--secondary-light);
 	padding: 0 0.25rem 0 0.25rem;
 	border-radius: 0.25rem;
 }
 
 blockquote,
 pre {
-	background-color: var(--secondary-grey);
-	padding: 0 0.4rem;
+	background-color: var(--secondary-light);
 	margin: 0.625rem 0.625rem;
 	border-radius: 0.4rem;
 	overflow: auto;
@@ -183,6 +183,7 @@ nav a:hover {
 footer {
 	background-color: var(--primary-dark);
 	padding: 0.25rem 0;
+
 	* {
 		text-align: center;
 		color: var(--primary-light);
@@ -208,4 +209,9 @@ footer {
 
 a:has(> .is-link) {
 	text-decoration: none;
+}
+
+.description {
+	color: var(--secondary-dark);
+	padding: 0 0.625rem;
 }
