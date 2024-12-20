@@ -1,6 +1,6 @@
 ---
 title: '俺なりのフリー欧文フォント awesome list: Google Fonts では飽き足らない貴方へ'
-description: 'ぶっちゃけ探しているときが一番楽しい'
+description: 'ぶっちゃけ探しているときが一番楽しいよね'
 date: '2024-12-19'
 draft: 'false'
 ---
@@ -10,31 +10,46 @@ draft: 'false'
 
 ## キュレーションサイト
 
-- [UNCUT.wtf](https://uncut.wtf/)
-  - ライセンスはだいたいOFL
-    - たまにクローズドソースのものがあるが、商用利用不可のものはなさそう
-  - サイトにアクセスしたときに <q>No Cookie</q> の通知が出るのが好き
-    - <q lang="en">Even though there’s no legal obligation to tell you this, transparency is important.</q> とのことで、それはそう
-  - サイトのデザインが良く、見ていてたのしい
-    - フォントごとのライセンス表示の出し方が特に良い
-- [Fontshare](https://www.fontshare.com)
-  - 運営元の [Indian Type Foundry](https://www.indiantypefoundry.com) が開発したフォントばかりが並ぶが、一応キュレーションサイト
-    - 残念ながらクローズドソースのフォントが多いが、使用するぶんには問題なさそう
-  - Google Fonts のように、埋め込み用の API も発行してくれる
-  - [ペアリングの提案ページ](https://www.fontshare.com/pairs)がある
-    - 気が利くね～
+### [UNCUT.wtf](https://uncut.wtf/)
+
+とにかくセンスの良いキュレーションサイト。正直これを紹介したくて記事を書いた。
+
+ライセンスは OFL がち。たまにクローズドソースのものも混じっている。
+
+初回アクセス時の No Cookie 表示（法的義務はないが、透明性は大事だから、ということらしい）と、各フォントごとのライセンスの説明表示は必見。
+
+### [Fontshare](https://www.fontshare.com)
+
+バリアブルフォントが多くてうれしい！
+
+一見すると運営元の [Indian Type Foundry](https://www.indiantypefoundry.com) が開発したフォントばかりが並ぶが、ちゃんとキュレーションサイト。残念ながらクローズドソースのフォントが多いが、商用利用にも制限がなく利用するぶんには便利そう。
+
+Google Fonts みたいに埋め込み用の API も発行してくれるし、[ペアリングの提案ページ](https://www.fontshare.com/pairs)がある。気が利くね。
 
 ## フォントメーカー
 
-- [Collletttivo](https://www.collletttivo.it/)
-  - ライセンスは基本OFL
-  - クセのあるサンセリフ・セリフ体中心
-    - どちらかというと本文よりディスプレイ向き？
-- [Omnibus Type](https://www.omnibus-type.com/)
-  - ライセンスは基本OFL
-    - 一部は Google Fonts に提供されている
-  - バリアブルフォントが多くてうれしい！
-- [Velvetyne](https://velvetyne.fr)
-  - 飛び道具系ディスプレイフォントだらけ
-    - 用法・容量を守って正しく使いましょう
+### [Collletttivo](https://www.collletttivo.it/)
 
+一癖あるサンセリフ・セリフ体が並んでいる。どちらかというと本文よりディスプレイ向き？
+
+### [Omnibus Type](https://www.omnibus-type.com/)
+
+バリアブルフォントが多くてうれしい！いい感じのタイプテスターがサイト内にあるのも助かる！
+
+一部は Google Fonts に提供されているが、細かいことは気にしない。
+
+### [Velvetyne](https://velvetyne.fr)
+
+飛び道具系ディスプレイフォントがこれでもかというくらい並んでいる。キュレーションサイトにもほとんど出ていなさそう。
+
+用法・容量を守って正しく使いましょう。
+
+## あとがき
+
+Google Fonts があればそれで十分という人も多いだろうし、更に良い選択肢を求めて Adobe Fonts やモリサワパスポートを契約することもあるだろう。基本的にはそれが最適解だと思う。
+
+ただ Google Fonts に並んでいるフォントを使うと人と被るし（独占契約をしているわけではないから当然だが）、なんとなく「標準」のようなものから逸脱したい気持ちも出てくる。私だけか？
+
+「アングラ（と言っては失礼だが）にこそ本質がある！」と叫んで走りだしたはいいが、時間が溶けただけで大した成果物も残らないというのはよくある話だ。私の無駄行為がせめて何かの役に立てば、と思ってこれを書いた。
+
+ちなみに（この記事執筆時点では）このサイトの欧文フォントに [Switzer](https://www.fontshare.com/fonts/switzer) のバリアブルフォントを使用している。なぜか iPhone で見たときだけ間違ったウェイトが指定されているが、それ以外は気に入っている。CSS の `font-weight` はちゃんと数値指定しているんだけどな…。

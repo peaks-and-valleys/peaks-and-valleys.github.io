@@ -7,8 +7,6 @@ draft: 'false'
 
 _以下の情報は2024年10月現在のものです_
 
----
-
 要するにこのサイトの構築について。
 リポジトリは[こちら](https://github.com/peaksvndvalleys/pav_works)。
 
