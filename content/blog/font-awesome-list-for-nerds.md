@@ -40,7 +40,7 @@ Google Fonts みたいに埋め込み用の API も発行してくれるし、[�
 
 ### [Velvetyne](https://velvetyne.fr)
 
-飛び道具系ディスプレイフォントがこれでもかというくらい並んでいる。キュレーションサイトにもほとんど出ていなさそう。
+飛び道具系ディスプレイフォントがこれでもかというくらい並んでいる。キュレーションサイトにもほとんど出ていなさそう。[使用例](https://velvetyne.fr/in-use/)を見るのがたのしい。
 
 用法・容量を守って正しく使いましょう。
 
@@ -52,4 +52,9 @@ Google Fonts があればそれで十分という人も多いだろうし、更�
 
 「アングラ（と言っては失礼だが）にこそ本質がある！」と叫んで走りだしたはいいが、時間が溶けただけで大した成果物も残らないというのはよくある話だ。私の無駄行為がせめて何かの役に立てば、と思ってこれを書いた。
 
-ちなみに（この記事執筆時点では）このサイトの欧文フォントに [Switzer](https://www.fontshare.com/fonts/switzer) のバリアブルフォントを使用している。なぜか iPhone で見たときだけ間違ったウェイトが指定されているが、それ以外は気に入っている。CSS の `font-weight` はちゃんと数値指定しているんだけどな…。
+## <time>2024-12-26</time> 追記
+
+この記事の上位互換をいくつか見つけてしまった。参考文献的に追記しておく。
+
+- [Where to Get Free Fonts](https://www.explorersdesign.com/free-fonts-list/)
+- [Velvetyne Libre Friends](https://velvetyne.fr/velvetyne-libre-friends/)
