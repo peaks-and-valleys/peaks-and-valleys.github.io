@@ -8,6 +8,8 @@
 	font-family: 'Switzer';
 	src: url(/fonts/Switzer-Variable.ttf);
 	font-style: normal;
+	font-weight: 100 900;
+	font-variation-settings: "wght" 100 900;
 	font-display: swap;
 	size-adjust: 111%;
 }
@@ -16,6 +18,8 @@
 	font-family: 'Switzer';
 	src: url(/fonts/Switzer-VariableItalic.ttf);
 	font-style: italic;
+	font-weight: 100 900;
+	font-variation-settings: "wght" 100 900;
 	font-display: swap;
 	size-adjust: 111%;
 }
@@ -73,17 +77,21 @@ body {
 	line-break: strict;
 	background-color: var(--primary-light);
 	color: var(--primary-dark);
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+
 }
 
 h1 {
 	font-size: 2rem;
+	font-weight: var(--font-weight-bold);
+	font-variation-settings: "wght" var(--font-weight-bold);
 }
 
 .heading {
 	color: var(--primary-light);
 	background-color: var(--primary-dark);
 	padding: 0.25rem 0.4rem;
-	font-weight: var(--font-weight-bold);
 	text-align: center;
 	border-radius: 0.625rem 1rem 0.625rem 1rem;
 }
@@ -93,6 +101,7 @@ h3,
 h4 {
 	margin: 0.8rem 0;
 	font-weight: var(--font-weight-semibold);
+	font-variation-settings: "wght" var(--font-weight-semibold);
 	text-align: left;
 }
 
@@ -110,18 +119,19 @@ h4 {
 
 strong {
 	font-weight: var(--font-weight-semibold);
+	font-variation-settings: "wght" var(--font-weight-semibold);
 }
 
 p {
 	font-size: 1rem;
 	margin: 0.625rem 0;
-	font-weight: 400;
+	font-weight: var(--font-weight-normal);
 }
 
 li {
 	font-size: 1rem;
 	margin: 0.4rem 0 0.4rem 1.6rem;
-	font-weight: 400;
+	font-weight: var(--font-weight-normal);
 }
 
 a {
@@ -133,7 +143,6 @@ kbd,
 pre,
 samp {
 	font-family: 'Source Code Pro', 'Menlo', 'Consolas', 'Roboto Mono', monospace;
-	font-weight: 400;
 	background-color: var(--secondary-light);
 	padding: 0 0.25rem 0 0.25rem;
 	border-radius: 0.25rem;
@@ -164,14 +173,16 @@ nav {
 		justify-content: space-between;
 		align-items: center;
 		font-size: 1.6rem;
-		font-weight: 400;
+		font-weight: var(--font-weight-normal);
+		font-variation-settings: "wght" var(--font-weight-normal);
 		color: var(--primary-light);
 		background-color: var(--primary-dark);
 		text-decoration: none;
 		border-radius: 0.625rem 1rem 0.625rem 1rem;
 
 		&:hover {
-			font-weight: 700;
+			font-weight: var(--font-weight-bold);
+			font-variation-settings: "wght" var(--font-weight-bold);
 			background-color: var(--accent-blue);
 		}
 	}
@@ -190,7 +201,6 @@ footer {
 .content-box {
 	margin: 0.625rem 0;
 	padding: 0 0.625rem;
-	font-weight: 700;
 	text-align: left;
 	color: var(--primary-dark);
 	border: 0.15rem solid var(--primary-dark);
