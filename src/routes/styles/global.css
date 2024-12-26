@@ -157,24 +157,24 @@ address {
 
 nav {
 	margin: 0.4rem;
-}
 
-nav a {
-	display: inline-block;
-	padding: 0.25em 1rem;
-	justify-content: space-between;
-	align-items: center;
-	font-size: 1.6rem;
-	font-weight: 400;
-	color: var(--primary-light);
-	background-color: var(--primary-dark);
-	text-decoration: none;
-	border-radius: 0.625rem 1rem 0.625rem 1rem;
-}
+	a {
+		display: inline-block;
+		padding: 0.25em 1rem;
+		justify-content: space-between;
+		align-items: center;
+		font-size: 1.6rem;
+		font-weight: 400;
+		color: var(--primary-light);
+		background-color: var(--primary-dark);
+		text-decoration: none;
+		border-radius: 0.625rem 1rem 0.625rem 1rem;
 
-nav a:hover {
-	font-weight: 700;
-	background-color: var(--accent-blue);
+		&:hover {
+			font-weight: 700;
+			background-color: var(--accent-blue);
+		}
+	}
 }
 
 footer {
