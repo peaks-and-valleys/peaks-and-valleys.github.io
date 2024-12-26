@@ -76,9 +76,12 @@ body {
 }
 
 h1 {
+	font-size: 2rem;
+}
+
+.heading {
 	color: var(--primary-light);
 	background-color: var(--primary-dark);
-	font-size: 2rem;
 	padding: 0.25rem 0.4rem;
 	font-weight: var(--font-weight-bold);
 	text-align: center;

@@ -15,7 +15,7 @@
 
 <main>
 	<article>
-		<h1>terms &amp; privacy</h1>
+		<h1 class="heading">terms &amp; privacy</h1>
 		<div class="content-box">
 			{@html data.content}
 		</div>

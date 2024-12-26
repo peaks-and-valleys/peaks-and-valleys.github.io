@@ -15,7 +15,7 @@
 
 <main>
 	<article>
-		<h1>info</h1>
+		<h1 class="heading">info</h1>
 		<div class="content-box">
 			{@html data.content}
 		</div>

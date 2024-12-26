@@ -15,7 +15,7 @@
 
 <main>
 	<article>
-		<h1>{data.items?.title}</h1>
+		<h1 class="heading">{data.items?.title}</h1>
 		<p class="description"><time>{data.items?.date}</time> - {data.items?.description}</p>
 		<div class="content-box">
 			{@html data.items?.content}

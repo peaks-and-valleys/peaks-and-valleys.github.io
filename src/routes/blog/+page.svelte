@@ -14,7 +14,7 @@
 </svelte:head>
 
 <main>
-	<h1>blog</h1>
+	<h1 class="heading">blog</h1>
 	{#each data.items as item}
 		<a href="blog/post/{item.slug}">
 			<div class="content-box is-link">
