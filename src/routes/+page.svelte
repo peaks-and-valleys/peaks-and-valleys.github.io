@@ -1,4 +1,12 @@
 <script lang="ts">
+	import type { PageData } from '$types';
+
+	interface Props {
+		data: PageData;
+	}
+
+let { data }: Props = $props();
+
 </script>
 
 <svelte:head>
@@ -6,7 +14,7 @@
 	<meta name="description" content="底が見えるほど深く、手が届くほど広い" />
 </svelte:head>
 
-<div class="cover-image" role="main">
+<div class="cover-image">
 	<video class="cover-component" loop autoplay muted playsinline>
 		<source src="images/index/background.mp4" type="video/mp4" />
 		<track kind="captions" />
@@ -17,6 +25,14 @@
 		alt="Peaks and Valleys と手書き風文字で書かれたロゴです"
 	/>
 </div>
+
+<main>
+	<article class="center-alignment">
+		<div>
+			{@html data.content}
+		</div>
+	</article>
+</main>
 
 <style>
 	.cover-image {
@@ -42,5 +58,10 @@
 		mix-blend-mode: difference;
 		width: 100%;
 		margin: auto;
+	}
+	.center-alignment {
+		display: flex;
+		align-items: center;
+		justify-content: center;
 	}
 </style>

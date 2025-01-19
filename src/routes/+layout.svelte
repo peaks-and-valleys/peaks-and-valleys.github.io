@@ -11,8 +11,7 @@
 
 <header>
 	<nav>
-		<a href="/">home</a>
-		<a href="/info">info</a>
+		<a href="/">index</a>
 		<a href="/blog">blog</a>
 	</nav>
 </header>
