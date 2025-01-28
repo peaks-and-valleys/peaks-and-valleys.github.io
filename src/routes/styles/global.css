@@ -88,7 +88,7 @@ h1 {
 	font-variation-settings: "wght" var(--font-weight-bold);
 }
 
-.heading {
+h1.heading {
 	color: var(--primary-light);
 	background-color: var(--primary-dark);
 	padding: 0.25rem 0.4rem;
@@ -162,6 +162,10 @@ hr {
 
 address {
 	font-style: normal;
+}
+
+img {
+	display: block;
 }
 
 nav {

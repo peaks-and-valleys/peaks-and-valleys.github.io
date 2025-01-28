@@ -15,8 +15,10 @@
 
 <main>
 	<article>
-		<h1 class="heading">{data.items?.title}</h1>
-		<p class="description"><time>{data.items?.date}</time> - {data.items?.description}</p>
+		<hgroup>
+			<h1 class="heading">{data.items?.title}</h1>
+			<p class="description"><time>{data.items?.date}</time> - {data.items?.description}</p>
+		</hgroup>
 		<div class="content-box">
 			{@html data.items?.content}
 		</div>
