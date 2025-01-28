@@ -6,8 +6,8 @@ export default defineConfig({
 		host: true,
 		watch: {
 			usePolling: true,
-			interval: 1000,
-			binaryInterval: 1500
+			interval: 500,
+			binaryInterval: 1000
 		}
 	},
 	plugins: [sveltekit()],
