@@ -136,6 +136,15 @@ li {
 
 a {
 	color: var(--accent-blue);
+
+	&[href*="://"]:not([href^="https://peaks-and-valleys.net"])::after {
+		content: "↗";
+		display: inline-block;
+		vertical-align: super;
+		font-size: 0.5rem;
+		margin: 0 0.1rem;
+		text-decoration: none;
+	}
 }
 
 code,
