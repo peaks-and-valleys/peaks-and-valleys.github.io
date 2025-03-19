@@ -1,19 +1,9 @@
 ---
-title: 'TIL: img 要素をグローバルで block 要素にしてしまうデメリット / hgroup 要素'
+title: 'TIL: hgroup 要素'
 description: 'このサイトでも hgroup を採用してみる'
 date: '2025-01-28'
 draft: 'false'
 ---
-
-## TIL: Today I Learned
-
-をちゃんと書いていこうと思う。
-
-## `<img>` 要素をグローバルでブロック要素にしてしまうデメリット
-
-10年以上前に Stack Overflow で議論されていて、基本的にデメリットはないという結論に落ち着いていた: [css - Downside of "display: block" for images? - Stack Overflow](https://stackoverflow.com/questions/13145580/downside-of-display-block-for-images)
-
-未だに `<img>` がインライン要素なのは、後方互換性のため？
 
 ## `<hgroup>` 要素
 
