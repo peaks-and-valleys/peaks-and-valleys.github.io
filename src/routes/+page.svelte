@@ -5,8 +5,7 @@
 		data: PageData;
 	}
 
-let { data }: Props = $props();
-
+	let { data }: Props = $props();
 </script>
 
 <svelte:head>
@@ -27,10 +26,12 @@ let { data }: Props = $props();
 </div>
 
 <main>
-	<article class="center-alignment">
-		<div>
-			{@html data.content}
-		</div>
+	<article>
+		<p style="text-align: center;">
+			<a href="https://www.behance.net/peaks-and-valleys" rel="me">Behance</a> /
+			<a href="https://scrapbox.io/peaks-and-valleys/" rel="me">Cosense</a> /
+			<a href="https://github.com/peaksvndvalleys" rel="me">GitHub</a>
+		</p>
 	</article>
 </main>
 
@@ -58,10 +59,5 @@ let { data }: Props = $props();
 		mix-blend-mode: difference;
 		width: 100%;
 		margin: auto;
-	}
-	.center-alignment {
-		display: flex;
-		align-items: center;
-		justify-content: center;
 	}
 </style>
