@@ -1,5 +1,5 @@
 <script lang="ts">
-	import type { PageData } from '../disclaimer/$types';
+	import type { PageData } from '../terms-and-privacy/$types';
 
 	interface Props {
 		data: PageData;
