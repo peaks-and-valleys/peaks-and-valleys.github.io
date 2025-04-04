@@ -1,7 +1,7 @@
 <script lang="ts">
 	import type { LayoutData } from './$types';
-	import './styles/global.css';
 	import Page from './+page.svelte';
+	import './styles/app.scss'
 	interface Props {
 		children?: import('svelte').Snippet;
 	}

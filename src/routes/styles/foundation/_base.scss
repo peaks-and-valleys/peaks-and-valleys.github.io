@@ -1,15 +1,9 @@
-* {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-}
-
 @font-face {
 	font-family: 'Switzer';
 	src: url(/fonts/Switzer-Variable.ttf);
 	font-style: normal;
 	font-weight: 100 900;
-	font-variation-settings: "wght" 100 900;
+	font-variation-settings: 'wght' 100 900;
 	font-display: swap;
 	size-adjust: 111%;
 }
@@ -19,7 +13,7 @@
 	src: url(/fonts/Switzer-VariableItalic.ttf);
 	font-style: italic;
 	font-weight: 100 900;
-	font-variation-settings: "wght" 100 900;
+	font-variation-settings: 'wght' 100 900;
 	font-display: swap;
 	size-adjust: 111%;
 }
@@ -68,7 +62,8 @@
 }
 
 body {
-	font-family: 'Switzer', 'Helvetica Neue', 'Arial', 'Hiragino Kaku Gothic ProN', 'Hiragino Sans',
+	font-family:
+		'Switzer', 'Helvetica Neue', 'Arial', 'Hiragino Kaku Gothic ProN', 'Hiragino Sans',
 		'Noto Sans JP', 'BIZ UDPGothic', sans-serif;
 	line-height: 1.5;
 	font-feature-settings: 'palt';
@@ -79,13 +74,12 @@ body {
 	color: var(--primary-dark);
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-
 }
 
 h1 {
 	font-size: 2rem;
 	font-weight: var(--font-weight-bold);
-	font-variation-settings: "wght" var(--font-weight-bold);
+	font-variation-settings: 'wght' var(--font-weight-bold);
 }
 
 h1.heading {
@@ -101,7 +95,7 @@ h3,
 h4 {
 	margin: 0.8rem 0;
 	font-weight: var(--font-weight-semibold);
-	font-variation-settings: "wght" var(--font-weight-semibold);
+	font-variation-settings: 'wght' var(--font-weight-semibold);
 	text-align: left;
 }
 
@@ -119,7 +113,7 @@ h4 {
 
 strong {
 	font-weight: var(--font-weight-semibold);
-	font-variation-settings: "wght" var(--font-weight-semibold);
+	font-variation-settings: 'wght' var(--font-weight-semibold);
 }
 
 p {
@@ -137,8 +131,9 @@ li {
 a {
 	color: var(--accent-blue);
 
-	&[href*="://"]:not([href^="https://peaks-and-valleys.net"])::after {
-		content: "↗";
+	&[href*="://"]:not([href^="https://peaks-and-valleys.net"])::after
+	{
+		content: '↗';
 		display: inline-block;
 		vertical-align: super;
 		font-size: 0.5rem;
@@ -187,7 +182,7 @@ nav {
 		align-items: center;
 		font-size: 1.6rem;
 		font-weight: var(--font-weight-normal);
-		font-variation-settings: "wght" var(--font-weight-normal);
+		font-variation-settings: 'wght' var(--font-weight-normal);
 		color: var(--primary-light);
 		background-color: var(--primary-dark);
 		text-decoration: none;
@@ -195,7 +190,7 @@ nav {
 
 		&:hover {
 			font-weight: var(--font-weight-bold);
-			font-variation-settings: "wght" var(--font-weight-bold);
+			font-variation-settings: 'wght' var(--font-weight-bold);
 			background-color: var(--accent-blue);
 		}
 	}
@@ -209,29 +204,4 @@ footer {
 		text-align: center;
 		color: var(--primary-light);
 	}
-}
-
-.content-box {
-	margin: 0.625rem 0;
-	padding: 0 0.625rem;
-	text-align: left;
-	color: var(--primary-dark);
-	border: 0.15rem solid var(--primary-dark);
-	border-radius: 0.625rem 1rem 0.625rem 1rem;
-}
-
-.is-link {
-	&:hover {
-		color: var(--accent-blue);
-		border: 0.15rem dotted var(--accent-blue);
-	}
-}
-
-a:has(> .is-link) {
-	text-decoration: none;
-}
-
-.description {
-	color: var(--secondary-dark);
-	padding: 0 0.625rem;
 }

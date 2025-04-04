@@ -1,0 +1,19 @@
+.c-content {
+	margin: 0.625rem 0;
+	padding: 0 0.625rem;
+	text-align: left;
+	color: var(--primary-dark);
+	border: 0.15rem solid var(--primary-dark);
+	border-radius: 0.625rem 1rem 0.625rem 1rem;
+}
+
+.c-content.is-link {
+	&:hover {
+		color: var(--accent-blue);
+		border: 0.15rem dotted var(--accent-blue);
+	}
+}
+
+a:has(> .is-link) {
+	text-decoration: none;
+}

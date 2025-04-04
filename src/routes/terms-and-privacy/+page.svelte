@@ -16,7 +16,7 @@
 <main>
 	<article>
 		<h1 class="heading">terms &amp; privacy</h1>
-		<div class="content-box">
+		<div class="c-content">
 			<h2>Cookieの使用</h2>
 			<p>
 				当サイトでは、サイトの基本的な機能を提供するために必要最小限の Cookie
