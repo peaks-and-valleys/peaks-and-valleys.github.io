@@ -1,10 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg id="a" data-name="レイヤー 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700.7715 105.9932">
   <defs>
+    <filter id="displacement-01">
+      <feTurbulence
+        type="fractalNoise"
+        baseFrequency="0.05"
+        numOctaves="3"
+        result="noise" 
+      />
+      <feDisplacementMap
+        in2="noise"
+        in="SourceGraphic"
+        scale="4"
+      />
+    </filter>
+        <filter id="displacement-02">
+      <feTurbulence
+        type="fractalNoise"
+        baseFrequency="0.08"
+        numOctaves="3"
+        result="noise" 
+      />
+      <feDisplacementMap
+        in2="noise"
+        in="SourceGraphic"
+        scale="6"
+      />
+    </filter>
+
     <style>
       .b {
         fill: #dddddd;
         stroke-width: 0px;
+        animation: 
+          displacement 0.3s linear infinite;
+      }
+      @keyframes displacement {
+        0% {
+          filter: url(#displacement-01);
+        }
+        100% {
+          filter: url(#displacement-02);
+        }
       }
     </style>
   </defs>
