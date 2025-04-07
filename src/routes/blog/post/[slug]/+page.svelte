@@ -17,7 +17,7 @@
 	<article>
 		<hgroup>
 			<h1 class="heading">{data.items?.title}</h1>
-			<p class="u-horizontal-padding"><time>{data.items?.date}</time> - {data.items?.description}</p>
+			<p class="u-horizontal-padding"><time>{data.items?.date}</time> / {data.items?.description}</p>
 		</hgroup>
 		<div class="c-content">
 			{@html data.items?.content}

@@ -10,7 +10,7 @@
 
 <svelte:head>
 	<title>blog - Peaks and Valleys</title>
-	<meta name="description" content="list of blog posts" />
+	<meta name="description" content="ブログ記事一覧" />
 </svelte:head>
 
 <main>
@@ -19,7 +19,7 @@
 		<a href="blog/post/{item.slug}">
 			<div class="c-content is-link">
 				<h2>{item.title}</h2>
-				<p><time>{item.date}</time> - {item.description}</p>
+				<p><time>{item.date}</time> / {item.description}</p>
 			</div>
 		</a>
 	{/each}

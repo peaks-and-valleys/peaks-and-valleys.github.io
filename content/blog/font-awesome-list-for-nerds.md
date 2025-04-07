@@ -2,7 +2,7 @@
 title: '俺なりのフリー欧文フォント awesome list: Google Fonts では飽き足らない貴方へ'
 description: 'ぶっちゃけ探しているときが一番楽しいよね'
 date: '2024-12-19'
-draft: 'false'
+draft: 'true'
 ---
 
 **キュレーションサイト**と**フォントメーカー**を紹介する。
