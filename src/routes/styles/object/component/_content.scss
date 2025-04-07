@@ -1,4 +1,4 @@
-.c-content {
+.c-card {
 	margin: 0.625rem 0;
 	padding: 0 0.625rem;
 	text-align: left;
@@ -7,13 +7,12 @@
 	border-radius: 0.625rem 1rem 0.625rem 1rem;
 }
 
-.c-content.is-link {
-	&:hover {
-		color: var(--accent-blue);
-		border: 0.15rem dotted var(--accent-blue);
-	}
-}
-
-a:has(> .is-link) {
+a:has(> .c-card) {
 	text-decoration: none;
+	@media (hover) {
+		.c-card:hover {
+			color: var(--accent-blue);
+			border: 0.15rem solid var(--accent-blue);
+		}
+	}
 }

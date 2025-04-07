@@ -17,7 +17,7 @@
 	<h1 class="heading">blog</h1>
 	{#each data.items as item}
 		<a href="blog/post/{item.slug}">
-			<div class="c-content is-link">
+			<div class="c-card">
 				<h2>{item.title}</h2>
 				<p><time>{item.date}</time> / {item.description}</p>
 			</div>
