@@ -2,8 +2,8 @@
 	margin: 0.625rem 0;
 	padding: 0 0.625rem;
 	text-align: left;
-	color: var(--primary-dark);
-	border: 0.15rem solid var(--primary-dark);
+	color: var(--c-primary);
+	border: 0.15rem solid var(--c-primary);
 	border-radius: 0.625rem 1rem 0.625rem 1rem;
 }
 
@@ -11,8 +11,8 @@ a:has(> .c-card) {
 	text-decoration: none;
 	@media (hover) {
 		.c-card:hover {
-			color: var(--accent-blue);
-			border: 0.15rem solid var(--accent-blue);
+			color: var(--c-accent-blue);
+			border: 0.15rem solid var(--c-accent-blue);
 		}
 	}
 }
