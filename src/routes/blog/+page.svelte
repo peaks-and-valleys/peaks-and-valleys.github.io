@@ -15,7 +15,7 @@
 
 <main>
 	<article class="p-articles">
-		<h1 class="heading">blog</h1>
+		<h1 class="p-articles__heading">blog</h1>
 		{#each data.items as item}
 			<article>
 				<a href="blog/post/{item.slug}">

@@ -16,7 +16,7 @@
 <main>
 	<article class="p-articles">
 		<hgroup>
-			<h1 class="heading">{data.items?.title}</h1>
+			<h1 class="p-articles__heading">{data.items?.title}</h1>
 			<p style="text-align: center;"><time>{data.items?.date}</time> / {data.items?.description}</p>
 		</hgroup>
 		<div class="c-card">
