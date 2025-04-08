@@ -1,5 +1,9 @@
 @use './foundation/reset';
+@use './foundation/variables';
 @use './foundation/base';
 
-@use './object/component/content';
-@use './object/utility/text';
+@use './layout/header';
+@use './layout/footer';
+
+@use './object/project/articles';
+@use './object/project/index';

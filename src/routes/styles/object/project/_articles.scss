@@ -1,0 +1,38 @@
+.p-articles {
+	@media screen and (max-width: 767.8px) {
+		margin: 0 1rem;
+	}
+	@media screen and (min-width: 768px) and (max-width: 1279.8px) {
+		margin: 0 2rem;
+	}
+	@media screen and (min-width: 1280px) {
+		margin: 0 8rem;
+	}
+
+	&__heading {
+		color: var(--bg-primary);
+		background-color: var(--c-primary);
+		padding: 0.25rem 0.625rem;
+		text-align: center;
+		border-radius: 0.625rem 1rem 0.625rem 1rem;
+	}
+}
+
+.p-article {
+	margin: 0.625rem 0;
+	padding: 0 0.625rem;
+	text-align: left;
+	color: var(--c-primary);
+	border: 0.15rem solid var(--c-primary);
+	border-radius: 0.625rem 1rem 0.625rem 1rem;
+}
+
+a:has(> .p-article) {
+	text-decoration: none;
+	@media (hover) {
+		.p-article:hover {
+			color: var(--c-accent-blue);
+			border: 0.15rem dotted var(--c-accent-blue);
+		}
+	}
+}
