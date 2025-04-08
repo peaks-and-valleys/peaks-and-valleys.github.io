@@ -15,7 +15,7 @@
 
 <article class="p-articles">
 	<h1 class="p-articles__heading">プライバシーとライセンス</h1>
-	<article class="c-card">
+	<article class="p-article">
 		<h2>Cookieの使用</h2>
 		<p>
 			当サイトでは、サイトの基本的な機能を提供するために必要最小限の Cookie

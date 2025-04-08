@@ -18,7 +18,7 @@
 	{#each data.items as item}
 		<article>
 			<a href="blog/post/{item.slug}">
-				<div class="c-card">
+				<div class="p-article">
 					<h2>{item.title}</h2>
 					<p><time>{item.date}</time> / {item.description}</p>
 				</div>
