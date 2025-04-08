@@ -18,19 +18,6 @@
 	size-adjust: 111%;
 }
 
-:root {
-	/* color palette */
-	--c-primary: #222222;
-	--bg-primary: #dddddd;
-	--c-accent-blue: #0011dd;
-	--c-secondary: #484848;
-	--bg-secondary: #ccccd1;
-	/* font weight */
-	--font-weight-bold: 700;
-	--font-weight-semibold: 600;
-	--font-weight-normal: 400;
-}
-
 @media screen and (max-width: 767.8px) {
 	html {
 		font-size: 3.8vw;
