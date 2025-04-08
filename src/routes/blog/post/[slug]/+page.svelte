@@ -13,14 +13,12 @@
 	<meta name="description" content={data.items?.description} />
 </svelte:head>
 
-<main>
-	<article class="p-articles">
-		<hgroup>
-			<h1 class="p-articles__heading">{data.items?.title}</h1>
-			<p style="text-align: center;"><time>{data.items?.date}</time> / {data.items?.description}</p>
-		</hgroup>
-		<div class="c-card">
-			{@html data.items?.content}
-		</div>
+<article class="p-articles">
+	<hgroup>
+		<h1 class="p-articles__heading">{data.items?.title}</h1>
+		<p style="text-align: center;"><time>{data.items?.date}</time> / {data.items?.description}</p>
+	</hgroup>
+	<article class="c-card">
+		{@html data.items?.content}
 	</article>
-</main>
+</article>

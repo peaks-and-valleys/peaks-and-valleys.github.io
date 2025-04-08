@@ -1,7 +1,7 @@
 <script lang="ts">
 	import type { LayoutData } from './$types';
 	import Page from './+page.svelte';
-	import './styles/app.scss'
+	import './styles/app.scss';
 	interface Props {
 		children?: import('svelte').Snippet;
 	}
@@ -16,7 +16,9 @@
 	</nav>
 </header>
 
-{@render children?.()}
+<main>
+	{@render children?.()}
+</main>
 
 <footer>
 	<p>

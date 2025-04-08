@@ -24,8 +24,7 @@
 		alt="Peaks and Valleys と手書き風文字で書かれたロゴです"
 	/>
 </div>
-
-<main>
+<article class="p-articles">
 	<article>
 		<p style="text-align: center;">
 			<a href="https://www.behance.net/peaks-and-valleys" rel="me">Behance</a> /
@@ -33,7 +32,7 @@
 			<a href="https://github.com/peaksvndvalleys" rel="me">GitHub</a>
 		</p>
 	</article>
-</main>
+</article>
 
 <style>
 	.cover-image {
