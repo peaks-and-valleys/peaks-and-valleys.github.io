@@ -14,13 +14,17 @@
 </svelte:head>
 
 <main>
-	<h1 class="heading">blog</h1>
-	{#each data.items as item}
-		<a href="blog/post/{item.slug}">
-			<div class="c-card">
-				<h2>{item.title}</h2>
-				<p><time>{item.date}</time> / {item.description}</p>
-			</div>
-		</a>
-	{/each}
+	<article class="p-articles">
+		<h1 class="heading">blog</h1>
+		{#each data.items as item}
+			<article>
+				<a href="blog/post/{item.slug}">
+					<div class="c-card">
+						<h2>{item.title}</h2>
+						<p><time>{item.date}</time> / {item.description}</p>
+					</div>
+				</a>
+			</article>
+		{/each}
+	</article>
 </main>

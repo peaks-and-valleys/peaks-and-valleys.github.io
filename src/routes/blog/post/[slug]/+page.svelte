@@ -14,7 +14,7 @@
 </svelte:head>
 
 <main>
-	<article>
+	<article class="p-articles">
 		<hgroup>
 			<h1 class="heading">{data.items?.title}</h1>
 			<p style="text-align: center;"><time>{data.items?.date}</time> / {data.items?.description}</p>
