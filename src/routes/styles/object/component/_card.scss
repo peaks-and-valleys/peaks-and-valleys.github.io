@@ -12,7 +12,7 @@ a:has(> .c-card) {
 	@media (hover) {
 		.c-card:hover {
 			color: var(--c-accent-blue);
-			border: 0.15rem solid var(--c-accent-blue);
+			border: 0.15rem dotted var(--c-accent-blue);
 		}
 	}
 }
