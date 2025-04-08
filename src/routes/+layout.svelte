@@ -20,7 +20,7 @@
 
 <footer>
 	<p>
-		<a href="/terms-and-privacy">terms &amp; privacy</a>
+		<a href="/privacy-and-license">プライバシーとライセンス</a>
 	</p>
 	<address><p>Contact: peaksvndvalleys(at)protonmail(dot)com</p></address>
 </footer>

@@ -1,5 +1,5 @@
 <script lang="ts">
-	import type { PageData } from '../terms-and-privacy/$types';
+	import type { PageData } from './$types';
 
 	interface Props {
 		data: PageData;
@@ -9,19 +9,19 @@
 </script>
 
 <svelte:head>
-	<title>terms and privacy - Peaks and Valleys</title>
-	<meta name="description" content="terms and privacy" />
+	<title>プライバシーとライセンス - Peaks and Valleys</title>
+	<meta name="description" content="プライバシーとライセンスについて" />
 </svelte:head>
 
 <main>
-	<article>
-		<h1 class="heading">terms &amp; privacy</h1>
+	<article class="p-articles">
+		<h1 class="p-articles__heading">プライバシーとライセンス</h1>
 		<div class="c-card">
 			<h2>Cookieの使用</h2>
 			<p>
 				当サイトでは、サイトの基本的な機能を提供するために必要最小限の Cookie
-				のみを使用する場合があります。アクセス解析やターゲティング広告など、追跡を目的とした Cookie
-				は使用していません。
+				のみを使用する場合があります。アクセス解析やターゲティング広告など、追跡を目的とした Cookie、
+				またサードパーティ Cookie は使用していません。
 			</p>
 
 			<h2>広告とトラッキング</h2>
