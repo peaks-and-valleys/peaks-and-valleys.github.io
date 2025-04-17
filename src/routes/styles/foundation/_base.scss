@@ -98,6 +98,12 @@ li {
 a {
 	color: var(--c-accent-blue);
 
+	@media (hover) {
+		&:hover {
+			text-decoration: none;
+		}
+	}
+
 	&[href*="://"]:not([href^="https://peaks-and-valleys.net"])::after
 	{
 		content: '↗';
