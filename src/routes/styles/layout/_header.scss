@@ -1,11 +1,12 @@
 header {
 	nav {
-		margin: 0.4rem;
+		margin: 0.625rem;
+		margin-bottom: 0.8rem;
 
 		a {
 			display: inline-block;
 			padding: 0.25em 1rem;
-			justify-content: space-between;
+			margin-right: 0.25rem;
 			align-items: center;
 			font-size: 1.6rem;
 			font-weight: var(--font-weight-normal);
