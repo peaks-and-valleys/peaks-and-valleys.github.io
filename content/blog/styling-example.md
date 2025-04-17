@@ -20,20 +20,19 @@ draft: 'true'
 これはコードスニペットの例です
 
 ```
-@font-face {
-    font-family: "IBM Plex Sans";
-    font-weight: bold;
-    src: url(/fonts/IBMPlexSans-Bold.woff2);
-    font-display: swap;
-    size-adjust: 108%;
+*,
+::before,
+::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
-@font-face {
-    font-family: "IBM Plex Sans";
-    font-weight: normal;
-    src: url(/fonts/IBMPlexSans-Regular.woff2);
-    font-display: swap;
-    size-adjust: 108%;
+:where(:root) {
+	line-height: 1.5;
+	-webkit-tap-highlight-color: transparent;
+	-webkit-text-size-adjust: 100%;
+	text-size-adjust: 100%; 
 }
 ```
 
@@ -41,9 +40,12 @@ draft: 'true'
 
 ---
 
-本当によかった
+*本当によかった*
 
 ### リストも
 
 - いい感じに
 - 書けていますね
+
+1. 本当に？
+1. 本当だ！

@@ -5,7 +5,7 @@ date: '2024-10-30'
 draft: 'false'
 ---
 
-_以下の情報は2024年10月現在のものです_
+_以下の情報は<time datetime='2024-10'>2024年10月</time>現在のものです_
 
 要するにこのサイトの構築について。
 リポジトリは[こちら](https://github.com/peaksvndvalleys/pav_works)。
