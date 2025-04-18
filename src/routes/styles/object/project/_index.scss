@@ -19,8 +19,8 @@
 
         &:nth-child(2) {
             z-index: 2;
-            mix-blend-mode: difference;
-            width: 100%;
+            mix-blend-mode: color-dodge;
+            width: 90%;
             margin: auto;    
         }
     }

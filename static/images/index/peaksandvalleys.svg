@@ -32,10 +32,10 @@
       .b {
         fill: #dddddd;
         stroke-width: 0px;
-        will-change: filter;
+        will-change: animation, filter;
         @media (prefers-reduced-motion: no-preference) {
           animation: 
-            displacement 0.3s linear infinite;
+            displacement 0.3s linear 0.2s infinite;
         }
       }
       @keyframes displacement {
