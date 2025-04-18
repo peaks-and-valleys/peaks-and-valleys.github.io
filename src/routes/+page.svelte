@@ -14,7 +14,7 @@
 </svelte:head>
 
 <div class="p-cover">
-	<video class="p-cover__image" loop autoplay muted playsinline>
+	<video class="p-cover__image u-rounded-border" loop autoplay muted playsinline>
 		<source src="images/index/background.mp4" type="video/mp4" />
 		<track kind="captions" />
 	</video>

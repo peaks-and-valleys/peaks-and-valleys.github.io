@@ -33,7 +33,7 @@
 	{@render children?.()}
 </main>
 
-<footer>
+<footer class="u-rounded-border">
 	<p>
 		<a href="/privacy-and-license">プライバシーとライセンス</a>
 	</p>
