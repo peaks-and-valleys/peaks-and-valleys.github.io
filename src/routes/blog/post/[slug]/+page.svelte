@@ -15,10 +15,10 @@
 
 <article class="p-articles">
 	<hgroup>
-		<h1 class="p-articles__heading">{data.items?.title}</h1>
+		<h1 class="p-articles__heading u-rounded-border">{data.items?.title}</h1>
 		<p style="text-align: center;"><time>{data.items?.date}</time> / {data.items?.description}</p>
 	</hgroup>
-	<article class="p-article">
+	<article class="p-article u-rounded-border">
 		{@html data.items?.content}
 	</article>
 </article>

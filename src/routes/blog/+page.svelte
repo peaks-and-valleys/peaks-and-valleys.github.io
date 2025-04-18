@@ -14,11 +14,11 @@
 </svelte:head>
 
 <article class="p-articles">
-	<h1 class="p-articles__heading">blog</h1>
+	<h1 class="p-articles__heading u-rounded-border">blog</h1>
 	{#each data.items as item}
 		<article>
 			<a href="blog/post/{item.slug}">
-				<div class="p-article">
+				<div class="p-article u-rounded-border">
 					<h2>{item.title}</h2>
 					<p><time>{item.date}</time> / {item.description}</p>
 				</div>
