@@ -1,5 +1,7 @@
 .l-headerMenu {
-	margin: var(--m-vertical) 0;
+	margin-top: calc(var(--m-vertical) * 0.625);
+	margin-bottom: var(--m-vertical);
+
 	display: grid;
 	gap: var(--m-vertical);
 	@media screen and (max-width: 767.8px) {
@@ -19,5 +21,12 @@
 		background-color: var(--c-primary);
 		text-decoration: none;
 		border-radius: 0.625rem 1rem 0.625rem 1rem;
+
+		@media (hover) {
+			&:hover {
+				background-color: var(--c-accent-blue);
+				text-decoration: none;
+			}
+		}
 	}
 }

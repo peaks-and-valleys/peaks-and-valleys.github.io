@@ -1,4 +1,5 @@
 .p-cover {
+    margin: var(--m-vertical) 0;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
