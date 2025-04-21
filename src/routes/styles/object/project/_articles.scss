@@ -2,14 +2,14 @@
 	&__heading {
 		color: var(--bg-primary);
 		background-color: var(--c-primary);
-		padding: 0.25rem 0.625rem;
+		padding: calc(var(--m-vertical) * 0.625) calc(var(--m-horizontal) * 0.625);
 		text-align: center;
 	}
 }
 
 .p-article {
 	margin: 0.8rem 0;
-	padding: 0 0.625rem;
+	padding: 0 calc(var(--m-horizontal) * 0.625);
 	text-align: left;
 	color: var(--c-primary);
 	border: 0.15rem solid var(--c-primary);
