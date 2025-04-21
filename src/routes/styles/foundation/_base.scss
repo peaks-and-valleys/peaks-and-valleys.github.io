@@ -1,45 +1,40 @@
 @font-face {
-	font-family: 'Switzer';
-	src: url(/fonts/Switzer-Variable.ttf);
+	font-family: 'Space Grotesk';
+	src: url(/fonts/SpaceGrotesk[wght].woff2);
 	font-style: normal;
-	font-weight: 100 900;
-	font-variation-settings: 'wght' 100 900;
+	font-weight: 300 700;
+	font-variation-settings: 'wght' 300 700;
 	font-display: swap;
-	size-adjust: 111%;
+	size-adjust: 102%;
 }
 
-@font-face {
-	font-family: 'Switzer';
-	src: url(/fonts/Switzer-VariableItalic.ttf);
-	font-style: italic;
-	font-weight: 100 900;
-	font-variation-settings: 'wght' 100 900;
-	font-display: swap;
-	size-adjust: 111%;
-}
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-jp-dynamic-subset.min.css");
 
 @media screen and (max-width: 767.8px) {
 	html {
-		font-size: 3.8vw;
+		font-size: 4vw;
+		margin: 0 2%;
 	}
 }
 
 @media screen and (min-width: 768px) and (max-width: 1279.8px) {
 	html {
 		font-size: 2vw;
+		margin: 0 5%;
 	}
 }
 
 @media screen and (min-width: 1280px) {
 	html {
 		font-size: 1vw;
+		margin: 0 10%;
 	}
 }
 
-body {
+html {
 	font-family:
-		'Switzer', 'Helvetica Neue', 'Arial', 'Hiragino Kaku Gothic ProN', 'Hiragino Sans',
-		'Noto Sans JP', 'BIZ UDPGothic', sans-serif;
+		'Space Grotesk', 'Pretendard JP Variable', 'Pretendard JP', 'Helvetica Neue', 'Arial',
+		'Hiragino Kaku Gothic ProN', 'Hiragino Sans', 'Noto Sans JP', 'BIZ UDPGothic', sans-serif;
 	font-feature-settings: 'palt';
 	overflow-wrap: anywhere;
 	word-break: normal;
@@ -48,15 +43,7 @@ body {
 	color: var(--c-primary);
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-	@media screen and (max-width: 767.8px) {
-		margin: 0 0.625rem;
-	}
-	@media screen and (min-width: 768px) and (max-width: 1279.8px) {
-		margin: 0 1.6rem;
-	}
-	@media screen and (min-width: 1280px) {
-		margin: 0 8rem;
-	}
+	scrollbar-gutter: stable;
 }
 
 h1 {
