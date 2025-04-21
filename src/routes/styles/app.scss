@@ -1,10 +1,6 @@
-@use './foundation/reset';
-@use './foundation/variables';
-@use './foundation/base';
+@use './foundation';
 
-@use './layout/header';
-@use './layout/footer';
+@use './layout';
 
-@use './object/project/articles';
-@use './object/project/index';
-@use './object/utility/border';
+@use './object/project';
+@use './object/utility';
