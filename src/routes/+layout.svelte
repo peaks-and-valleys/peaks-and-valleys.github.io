@@ -23,9 +23,9 @@
 </script>
 
 <header>
-	<nav>
-		<a href="/">index</a>
-		<a href="/blog">blog</a>
+	<nav class="l-headerMenu">
+		<a href="/" class="l-headerMenu__link">index</a>
+		<a href="/blog" class="l-headerMenu__link">blog</a>
 	</nav>
 </header>
 
