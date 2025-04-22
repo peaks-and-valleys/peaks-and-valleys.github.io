@@ -20,8 +20,8 @@
 	</video>
 	<img
 		class="p-cover__image"
-		src="images/index/peaksandvalleys.svg"
-		alt="Peaks and Valleys と手書き風文字で書かれたロゴです"
+		src="images/index/peaks-and-valleys.svg"
+		alt="Peaks and Valleys のロゴ。山と谷を象徴するシンプルなデザイン。"
 	/>
 </div>
 <article class="p-articles">
