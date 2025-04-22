@@ -12,7 +12,6 @@
 
 @media screen and (max-width: 767.8px) {
 	html {
-		font-size: 4vw;
 		margin-right: var(--m-horizontal);
 		margin-left: calc(var(--m-horizontal) + var(--scroll-bar-difference));
 	}
@@ -20,7 +19,6 @@
 
 @media screen and (min-width: 768px) and (max-width: 1279.8px) {
 	html {
-		font-size: 2vw;
 		margin-right: calc(var(--m-horizontal) * 2);
 		margin-left: calc(var(--m-horizontal) * 2 + var(--scroll-bar-difference));
 	}
@@ -28,17 +26,18 @@
 
 @media screen and (min-width: 1280px) {
 	html {
-		font-size: 1vw;
 		margin-right: calc(var(--m-horizontal) * 8);
 		margin-left: calc(var(--m-horizontal) * 8 + var(--scroll-bar-difference));
 	}
 }
 
 html {
+	font-size: clamp(16px, round(up, 2vw, 2px), 24px);
 	font-family:
 		'Space Grotesk', 'Pretendard JP Variable', 'Pretendard JP', 'Helvetica Neue', 'Arial',
 		'Hiragino Kaku Gothic ProN', 'Hiragino Sans', 'Noto Sans JP', 'BIZ UDPGothic', sans-serif;
 	font-feature-settings: 'palt';
+	letter-spacing: 0.02rem;
 	background-color: var(--bg-primary);
 	color: var(--c-primary);
 }
@@ -117,6 +116,7 @@ samp {
 	background-color: var(--bg-secondary);
 	padding: 0 0.25rem 0 0.25rem;
 	border-radius: 0.25rem;
+	white-space: pre-wrap;
 }
 
 blockquote {

@@ -3,7 +3,8 @@
 	margin-bottom: var(--m-vertical);
 
 	display: grid;
-	gap: var(--m-vertical);
+	column-gap: calc(var(--m-vertical) * 0.625);
+	row-gap: calc(var(--m-horizontal) * 0.625);
 	@media screen and (max-width: 767.8px) {
 		grid-template-columns: repeat(3, 1fr);
 	}
