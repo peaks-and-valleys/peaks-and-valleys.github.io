@@ -13,21 +13,21 @@
 @media screen and (max-width: 767.8px) {
 	html {
 		margin-right: var(--m-horizontal);
-		margin-left: calc(var(--m-horizontal) + var(--scroll-bar-difference));
+		margin-left: calc(var(--m-horizontal));
 	}
 }
 
 @media screen and (min-width: 768px) and (max-width: 1279.8px) {
 	html {
 		margin-right: calc(var(--m-horizontal) * 2);
-		margin-left: calc(var(--m-horizontal) * 2 + var(--scroll-bar-difference));
+		margin-left: calc(var(--m-horizontal) * 2);
 	}
 }
 
 @media screen and (min-width: 1280px) {
 	html {
 		margin-right: calc(var(--m-horizontal) * 8);
-		margin-left: calc(var(--m-horizontal) * 8 + var(--scroll-bar-difference));
+		margin-left: calc(var(--m-horizontal) * 8);
 	}
 }
 
