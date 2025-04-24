@@ -1,1 +1,0 @@
-export const prerender = true; // デプロイ時に fs で怒られるのを回避するために、全ページを事前にレンダリングする

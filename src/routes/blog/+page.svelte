@@ -15,12 +15,12 @@
 
 <article class="p-articles">
 	<h1 class="p-articles__heading u-rounded-border">blog</h1>
-	{#each data.items as item}
+	{#each data.posts as post}
 		<article>
-			<a href="blog/post/{item.slug}">
+			<a href="blog/post/{post.slug}">
 				<div class="p-article u-rounded-border">
-					<h2>{item.title}</h2>
-					<p><time>{item.date}</time> / {item.description}</p>
+					<h2>{post.title}</h2>
+					<p><time>{post.date}</time> / {post.description}</p>
 				</div>
 			</a>
 		</article>
