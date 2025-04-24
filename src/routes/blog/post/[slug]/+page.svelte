@@ -29,7 +29,7 @@
 	<hgroup>
 		<h1 class="p-articles__heading u-rounded-border">{meta.title}</h1>
 		<p style="text-align: center;">
-			<time datetime={meta.date}>{new Date(meta.date).toLocaleDateString('ja-JP')}</time> / {meta.description}
+			<time datetime={meta.date}>{new Date(meta.date).toLocaleDateString('ja-JP')}</time> - {meta.description}
 		</p>
 	</hgroup>
 	<article class="p-article u-rounded-border">

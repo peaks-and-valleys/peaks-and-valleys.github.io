@@ -20,7 +20,7 @@
 			<a href="blog/post/{post.slug}">
 				<div class="p-article u-rounded-border">
 					<h2>{post.title}</h2>
-					<p><time>{post.date}</time> / {post.description}</p>
+					<p><time>{new Date(post.date).toLocaleDateString('ja-JP')}</time> - {post.description}</p>
 				</div>
 			</a>
 		</article>
