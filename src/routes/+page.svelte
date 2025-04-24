@@ -1,5 +1,6 @@
 <script lang="ts">
 	import type { PageData } from '$types';
+	import StampOnClick from '$lib/components/stamp-on-click.svelte';
 
 	interface Props {
 		data: PageData;
@@ -12,6 +13,8 @@
 	<title>Peaks and Valleys</title>
 	<meta name="description" content="底が見えるほど深く、手が届くほど広い" />
 </svelte:head>
+
+<StampOnClick stampImage="/images/index/usachan.svg"></StampOnClick>
 
 <div class="p-cover">
 	<video class="p-cover__image u-rounded-border" loop autoplay muted playsinline>
@@ -29,7 +32,7 @@
 		<p style="text-align: center;">
 			<a href="https://www.behance.net/peaks-and-valleys" rel="me">Behance</a> /
 			<a href="https://scrapbox.io/peaks-and-valleys/" rel="me">Cosense</a> /
-			<a href="https://github.com/peaksvndvalleys" rel="me">GitHub</a>
+			<a href="https://github.com/peaks-and-valleys" rel="me">GitHub</a>
 		</p>
 	</article>
 </article>
