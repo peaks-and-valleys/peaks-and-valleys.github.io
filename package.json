@@ -22,6 +22,7 @@
 		"eslint-config-prettier": "^9.1.0",
 		"eslint-plugin-svelte": "^2.46.1",
 		"globals": "^15.15.0",
+		"mdsvex": "^0.12.3",
 		"prettier": "^3.5.3",
 		"prettier-plugin-svelte": "^3.3.3",
 		"sass": "^1.86.3",
@@ -35,8 +36,6 @@
 	"type": "module",
 	"dependencies": {
 		"@types/node": "^22.14.0",
-		"fs": "^0.0.2",
-		"gray-matter": "^4.0.3",
-		"marked": "^15.0.7"
+		"rehype-sanitize": "^6.0.0"
 	}
 }
