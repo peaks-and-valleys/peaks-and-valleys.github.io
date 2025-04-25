@@ -1,5 +1,6 @@
 <script lang="ts">
 	import type { PageData } from '../blog/$types';
+	import HeadProperties from '$lib/components/head-properties.svelte';
 
 	interface Props {
 		data: PageData;
@@ -8,13 +9,10 @@
 	let { data }: Props = $props();
 </script>
 
-<svelte:head>
-	<title>blog - Peaks and Valleys</title>
-	<meta name="description" content="ブログ記事一覧" />
-</svelte:head>
+<HeadProperties pageTitle="ブログ" description="ブログ記事一覧"></HeadProperties>
 
 <article class="p-articles">
-	<h1 class="p-articles__heading u-rounded-border">blog</h1>
+	<h1 class="p-articles__heading u-rounded-border">ブログ</h1>
 	{#each data.posts as post}
 		<article>
 			<a href="blog/post/{post.slug}">

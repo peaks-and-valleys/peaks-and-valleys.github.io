@@ -1,5 +1,6 @@
 <script lang="ts">
 	import type { PageData } from './$types';
+	import HeadProperties from '$lib/components/head-properties.svelte';
 
 	interface Props {
 		data: PageData;
@@ -8,10 +9,10 @@
 	let { data }: Props = $props();
 </script>
 
-<svelte:head>
-	<title>プライバシーとライセンス - Peaks and Valleys</title>
-	<meta name="description" content="プライバシーとライセンスについて" />
-</svelte:head>
+<HeadProperties
+	pageTitle="プライバシーとライセンス"
+	description="このサイトのプライバシーやコンテンツのライセンスについての説明"
+></HeadProperties>
 
 <article class="p-articles">
 	<h1 class="p-articles__heading u-rounded-border">プライバシーとライセンス</h1>

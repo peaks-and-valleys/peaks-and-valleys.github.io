@@ -1,6 +1,7 @@
 <script lang="ts">
 	import type { PageData } from '$types';
 	import StampOnClick from '$lib/components/stamp-on-click.svelte';
+	import HeadProperties from '$lib/components/head-properties.svelte';
 
 	interface Props {
 		data: PageData;
@@ -9,10 +10,7 @@
 	let { data }: Props = $props();
 </script>
 
-<svelte:head>
-	<title>Peaks and Valleys</title>
-	<meta name="description" content="底が見えるほど深く、手が届くほど広い" />
-</svelte:head>
+<HeadProperties></HeadProperties>
 
 <StampOnClick stampImage="/images/index/usachan.svg"></StampOnClick>
 

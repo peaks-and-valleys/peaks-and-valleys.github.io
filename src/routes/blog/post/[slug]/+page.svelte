@@ -2,6 +2,7 @@
 	import type { PageData } from './$types';
 	import type { Component } from 'svelte';
 	import { onMount } from 'svelte';
+	import HeadProperties from '$lib/components/head-properties.svelte';
 
 	interface Props {
 		data: PageData;
@@ -20,10 +21,8 @@
 	});
 </script>
 
-<svelte:head>
-	<title>{meta.title} - Peaks and Valleys</title>
-	<meta name="description" content={meta.description} />
-</svelte:head>
+<HeadProperties pageTitle={meta.title} description={meta.description} pageType="article"
+></HeadProperties>
 
 <article class="p-articles">
 	<hgroup>

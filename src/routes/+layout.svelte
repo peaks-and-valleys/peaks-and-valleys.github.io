@@ -24,7 +24,7 @@
 
 <header>
 	<nav class="l-headerMenu">
-		<a href="/" class="l-headerMenu__link">index</a>
+		<a href="/" class="l-headerMenu__link">home</a>
 		<a href="/blog" class="l-headerMenu__link">blog</a>
 	</nav>
 </header>
