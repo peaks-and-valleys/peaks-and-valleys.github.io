@@ -16,7 +16,7 @@
 
 <div class="p-cover">
 	<video class="p-cover__image u-rounded-border" loop autoplay muted playsinline>
-		<source src="images/index/background.mp4" type="video/mp4" />
+		<source src="images/index/background.webm" type="video/webm" />
 		<track kind="captions" />
 	</video>
 	<img
