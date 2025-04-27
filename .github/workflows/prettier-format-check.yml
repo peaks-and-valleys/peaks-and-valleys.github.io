@@ -1,0 +1,44 @@
+name: Prettier Format Check
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  prettier-check:
+    name: Prettier Format Validation
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      
+      - name: Setup Node.js environment
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+      
+      - name: Install dependencies
+        run: npm ci
+      
+      - name: Check Prettier formatting
+        id: prettier
+        run: |
+          echo "Running Prettier check on source files..."
+          npx prettier --cache --check "src/**/*.{js,ts,svelte,css,scss,json,html,md}"
+      
+      - name: Format check summary
+        if: always()
+        run: |
+          if [ ${{ steps.prettier.outcome }} == 'success' ]; then
+            echo "✅ All files are properly formatted according to Prettier rules."
+          else
+            echo "❌ Some files are not properly formatted."
+            exit 1
+          fi
