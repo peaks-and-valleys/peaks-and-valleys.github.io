@@ -2,20 +2,20 @@
 	import { page } from '$app/state';
 
 	const baseTitle: string = 'Peaks and Valleys';
-	export let pageTitle: string = "";
+	export let pageTitle: string = '';
 	let wholeTitle = baseTitle;
 
-	if (pageTitle != "") {
-		wholeTitle = pageTitle + " - " + baseTitle;
+	if (pageTitle != '') {
+		wholeTitle = pageTitle + ' - ' + baseTitle;
 	}
 
 	export let description: string = '底が見えるほど深く、手が届くほど広い';
 
-	const baseUrl: string = "https://peaks-and-valleys.net";
+	const baseUrl: string = 'https://peaks-and-valleys.net';
 	let wholeUrl: string = baseUrl + page.url.pathname;
 	// ToDo: remove grouping () path
 
-	export let pageType: string = "website";
+	export let pageType: string = 'website';
 </script>
 
 <svelte:head>

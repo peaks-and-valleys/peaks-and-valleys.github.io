@@ -12,7 +12,6 @@ export default defineConfig({
 	},
 	plugins: [sveltekit()],
 	build: {
-		rollupOptions: {
-		}
+		rollupOptions: {}
 	}
 });

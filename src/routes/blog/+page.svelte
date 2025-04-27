@@ -18,7 +18,9 @@
 			<a href="blog/post/{post.slug}">
 				<div class="p-article u-rounded-border">
 					<h2>{post.title}</h2>
-					<p><time datetime={post.date}>{new Date(post.date).toLocaleDateString('ja')}</time> - {post.description}</p>
+					<p>
+						<time datetime={post.date}>{new Date(post.date).toLocaleDateString('ja')}</time> - {post.description}
+					</p>
 				</div>
 			</a>
 		</article>
