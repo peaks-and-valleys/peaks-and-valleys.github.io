@@ -23,9 +23,9 @@
 </script>
 
 <header>
-	<nav class="l-headerMenu">
-		<a href="/" class="l-headerMenu__link">home</a>
-		<a href="/blog" class="l-headerMenu__link">blog</a>
+	<nav class="c-navGrid" aria-label="メインナビゲーション">
+		<a href="/" class="c-navGrid__link">home</a>
+		<a href="/blog" class="c-navGrid__link">blog</a>
 	</nav>
 </header>
 
