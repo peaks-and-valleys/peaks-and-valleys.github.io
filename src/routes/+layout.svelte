@@ -23,9 +23,11 @@
 </script>
 
 <header>
-	<nav class="c-navGrid" aria-label="メインナビゲーション">
-		<a href="/" class="c-navGrid__link">home</a>
-		<a href="/blog" class="c-navGrid__link">blog</a>
+	<nav aria-label="メインナビゲーション">
+		<ul class="c-navGrid">
+			<a href="/"><li class="c-navGrid__link">home</li></a>
+			<a href="/blog"><li class="c-navGrid__link">blog</li></a>
+		</ul>
 	</nav>
 </header>
 
