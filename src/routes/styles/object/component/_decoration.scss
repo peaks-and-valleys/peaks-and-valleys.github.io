@@ -1,0 +1,17 @@
+.c-faceAttached {
+	&::before,
+	&::after {
+		content: '';
+		display: inline-block;
+		height: 1.2em;
+		width: 1.2em;
+		margin: 0 calc(var(--m-horizontal) * 0.8);
+		vertical-align: text-top;
+
+		-webkit-mask-image: url(/images/index/pav-face.svg);
+		mask-image: url(/images/index/pav-face.svg);
+		-webkit-mask-size: cover;
+		mask-size: cover;
+		background-color: var(--bg-primary);
+	}
+}

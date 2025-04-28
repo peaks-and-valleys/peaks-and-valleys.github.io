@@ -26,8 +26,8 @@
 	/>
 </div>
 <article class="p-articleContainer">
-	<h1 class="p-articleContainer__heading u-rounded-border" lang="en-US">
-		ALL YOU WANT TO ACCESS ↓
+	<h1 class="p-articleContainer__heading c-faceAttached u-rounded-border" lang="en-US">
+		ALL YOU WANT TO ACCESS
 	</h1>
 	<nav class="c-navGrid" aria-label="外部リンクへのナビゲーション">
 		<a

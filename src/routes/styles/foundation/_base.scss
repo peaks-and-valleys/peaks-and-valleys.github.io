@@ -90,6 +90,7 @@ li {
 
 a {
 	color: var(--c-accent-blue);
+	text-underline-offset: calc((1lh - 1cap) / 2 / 3);
 
 	@media (hover) {
 		&:hover {
