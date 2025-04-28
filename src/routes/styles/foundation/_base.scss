@@ -88,7 +88,7 @@ li {
 	font-weight: var(--font-weight-normal);
 }
 
-a {
+:where(h1, h2, h3, h4, h5, h6, p, li) > a {
 	color: var(--c-accent-blue);
 	text-underline-offset: calc((1lh - 1cap) / 2 / 3);
 
