@@ -23,9 +23,9 @@
 </script>
 
 <header>
-	<nav class="l-headerMenu">
-		<a href="/" class="l-headerMenu__link">home</a>
-		<a href="/blog" class="l-headerMenu__link">blog</a>
+	<nav class="c-navGrid" aria-label="メインナビゲーション">
+		<a href="/" class="c-navGrid__link">home</a>
+		<a href="/blog" class="c-navGrid__link">blog</a>
 	</nav>
 </header>
 
@@ -35,7 +35,7 @@
 
 <footer class="u-rounded-border">
 	<p>
-		<a href="/privacy-and-license">プライバシーとライセンス</a>
+		<a href="/privacy-and-license" rel="privacy-policy">プライバシーとライセンス</a>
 	</p>
 	<address><p>Contact: peaksvndvalleys(at)protonmail(dot)com</p></address>
 </footer>

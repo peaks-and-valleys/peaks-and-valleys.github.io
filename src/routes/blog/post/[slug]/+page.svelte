@@ -24,9 +24,9 @@
 <HeadProperties pageTitle={meta.title} description={meta.description} pageType="article"
 ></HeadProperties>
 
-<article class="p-articles">
+<article class="p-articleContainer">
 	<hgroup>
-		<h1 class="p-articles__heading u-rounded-border">{meta.title}</h1>
+		<h1 class="p-articleContainer__heading u-rounded-border">{meta.title}</h1>
 		<p style="text-align: center;">
 			<time datetime={meta.date}>{new Date(meta.date).toLocaleDateString('ja')}</time> - {meta.description}
 		</p>

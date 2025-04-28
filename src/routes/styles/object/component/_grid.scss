@@ -1,0 +1,35 @@
+.c-navGrid {
+	margin-top: calc(var(--m-vertical) * 0.8);
+	margin-bottom: var(--m-vertical);
+
+	display: grid;
+	column-gap: calc(var(--m-vertical) * 0.625);
+	row-gap: calc(var(--m-horizontal) * 0.625);
+	@media screen and (max-width: 767.8px) {
+		grid-template-columns: repeat(3, 1fr);
+	}
+	@media screen and (min-width: 768px) {
+		grid-template-columns: repeat(4, 1fr);
+	}
+
+	&__link {
+		text-align: center;
+		padding: calc(var(--m-vertical) * 0.625) 0;
+		font-size: 1.25rem;
+		font-weight: var(--font-weight-normal);
+		font-variation-settings: 'wght' var(--font-weight-normal);
+		color: var(--bg-primary);
+		background-color: var(--c-primary);
+		text-decoration: none;
+		border-radius: 0.625rem 1rem 0.625rem 1rem;
+
+		@media (hover) {
+			&:hover {
+				background-color: var(--c-accent-blue);
+				text-decoration: none;
+				font-weight: var(--font-weight-semibold);
+				font-variation-settings: 'wght' var(--font-weight-semibold);
+			}
+		}
+	}
+}

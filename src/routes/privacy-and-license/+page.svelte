@@ -14,8 +14,8 @@
 	description="このサイトのプライバシーやコンテンツのライセンスについての説明"
 ></HeadProperties>
 
-<article class="p-articles">
-	<h1 class="p-articles__heading u-rounded-border">プライバシーとライセンス</h1>
+<article class="p-articleContainer">
+	<h1 class="p-articleContainer__heading u-rounded-border">プライバシーとライセンス</h1>
 	<article class="p-article u-rounded-border">
 		<h2>プライバシー</h2>
 
