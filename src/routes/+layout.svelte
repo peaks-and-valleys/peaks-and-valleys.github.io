@@ -35,7 +35,7 @@
 
 <footer class="u-rounded-border">
 	<p>
-		<a href="/privacy-and-license">プライバシーとライセンス</a>
+		<a href="/privacy-and-license" rel="privacy-policy">プライバシーとライセンス</a>
 	</p>
 	<address><p>Contact: peaksvndvalleys(at)protonmail(dot)com</p></address>
 </footer>
