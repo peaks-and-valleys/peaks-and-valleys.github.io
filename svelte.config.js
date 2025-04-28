@@ -1,12 +1,11 @@
 import { mdsvex } from 'mdsvex';
 import adapter from '@sveltejs/adapter-cloudflare';
 import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
-import rehypeSanitize from 'rehype-sanitize';
 
 /** @type {import('mdsvex').MdsvexOptions} */
 const mdsvexOptions = {
 	extensions: ['.svx'],
-	rehypePlugins: [rehypeSanitize]
+	rehypePlugins: []
 };
 
 /** @type {import('@sveltejs/kit').Config} */
