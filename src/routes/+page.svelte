@@ -25,17 +25,28 @@
 		alt="Peaks and Valleys のロゴ。山と谷を象徴するシンプルなデザイン。"
 	/>
 </div>
-
 <article class="p-articleContainer">
+	<h1 class="p-articleContainer__heading u-rounded-border" lang="en-US">
+		ALL YOU WANT TO ACCESS ↓
+	</h1>
 	<nav class="c-navGrid" aria-label="外部リンクへのナビゲーション">
-		<a href="https://www.behance.net/peaks-and-valleys" rel="external me" class="c-navGrid__link"
-			>Behance</a
+		<a
+			href="https://www.behance.net/peaks-and-valleys"
+			rel="external me"
+			class="c-navGrid__link"
+			translate="no">Behance</a
 		>
-		<a href="https://scrapbox.io/peaks-and-valleys/" rel="external me" class="c-navGrid__link"
-			>Cosense</a
+		<a
+			href="https://scrapbox.io/peaks-and-valleys/"
+			rel="external me"
+			class="c-navGrid__link"
+			translate="no">Cosense</a
 		>
-		<a href="https://github.com/peaks-and-valleys" rel="external me" class="c-navGrid__link"
-			>GitHub</a
+		<a
+			href="https://github.com/peaks-and-valleys"
+			rel="external me"
+			class="c-navGrid__link"
+			translate="no">GitHub</a
 		>
 	</nav>
 </article>

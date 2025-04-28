@@ -15,7 +15,7 @@
 	padding: 0 calc(var(--m-horizontal) * 0.8);
 	text-align: left;
 	color: var(--c-primary);
-	border: 0.15rem solid var(--c-primary);
+	border: round(down, 0.1rem, 1px) solid var(--c-primary);
 }
 
 a:has(> .p-article) {
@@ -23,7 +23,7 @@ a:has(> .p-article) {
 	@media (hover) {
 		.p-article:hover {
 			color: var(--c-accent-blue);
-			border: 0.15rem dotted var(--c-accent-blue);
+			border: round(down, 0.1rem, 1px) dotted var(--c-accent-blue);
 		}
 	}
 }
