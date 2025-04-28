@@ -37,7 +37,7 @@
 			<a href="https://scrapbox.io/peaks-and-valleys/" rel="external me"
 				><li class="c-navGrid__link" translate="no">Cosense</li></a
 			>
-			<a href="https://github.com/peaks-and-valleys" rel="external me" 
+			<a href="https://github.com/peaks-and-valleys" rel="external me"
 				><li class="c-navGrid__link" translate="no">GitHub</li></a
 			>
 		</ul>
