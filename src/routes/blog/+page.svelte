@@ -15,16 +15,16 @@
 	<h1>ブログ</h1>
 	<ul>
 		{#each data.posts as post}
-			<article class="p-articleList">
-				<li>
+			<li class="p-articleList">
+				<article>
 					<hgroup>
 						<h2><a href="blog/post/{post.slug}">{post.title}</a></h2>
 						<p>
 							<time datetime={post.date}>{new Date(post.date).toLocaleDateString('ja')}</time> - {post.description}
 						</p>
 					</hgroup>
-				</li>
-			</article>
+				</article>
+			</li>
 		{/each}
 	</ul>
 </div>

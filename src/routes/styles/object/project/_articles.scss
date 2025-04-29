@@ -32,8 +32,9 @@
 	text-align: left;
 	color: var(--c-primary);
 
-	li {
+	&:has(article) {
 		list-style: none;
 		margin-left: 0;
 	}
 }
+
