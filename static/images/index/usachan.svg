@@ -1,51 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg id="usachan" data-name="usachan-smooth" xmlns="http://www.w3.org/2000/svg" width="208.9455656" height="198.1972194" viewBox="0 0 208.9455656 198.1972194">
   <defs>
-    <filter id="displacement-01">
+    <filter id="displacement">
       <feTurbulence
         type="fractalNoise"
         baseFrequency="0.05"
         numOctaves="3"
         result="noise" 
-      />
+      >
+        <animate 
+          attributeName="baseFrequency"
+          values="0;0.1;0"
+          dur="300ms"
+          calcMode="discrete"
+          repeatCount="indefinite"
+        />
+      </feTurbulence>
       <feDisplacementMap
         in2="noise"
         in="SourceGraphic"
         scale="4"
-      />
-    </filter>
-        <filter id="displacement-02">
-      <feTurbulence
-        type="fractalNoise"
-        baseFrequency="0.08"
-        numOctaves="3"
-        result="noise" 
-      />
-      <feDisplacementMap
-        in2="noise"
-        in="SourceGraphic"
-        scale="6"
-      />
-    </filter>
+      >
+        <animate 
+          attributeName="scale"
+          values="0;10;0"
+          dur="500ms"
+          repeatCount="indefinite"
+        />
 
+      </feDisplacementMap>
+    </filter>
     <style>
       .usachan {
         fill: #bb0011;
         stroke-width: 0px;
-        will-change: filter;
         @media (prefers-reduced-motion: no-preference) {
-          animation: 
-            displacement 0.3s linear 0.2s infinite;
+          will-change: filter;
+          filter: url(#displacement);
         }
-      }
-      @keyframes displacement {
-        0% {
-          filter: url(#displacement-01);
-        }
-        100% {
-          filter: url(#displacement-02);
-        }
-
       }
     </style>
   </defs>
