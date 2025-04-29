@@ -11,7 +11,7 @@
 @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-jp-dynamic-subset.min.css');
 
 html {
-	font-size: clamp(14px, round(2vw, 1px), 20px);
+	font-size: clamp(16px, round(2vw, 1px), 24px);
 	font-family:
 		'Space Grotesk', 'Pretendard JP Variable', 'Pretendard JP', 'Helvetica Neue', 'Arial',
 		'Hiragino Kaku Gothic ProN', 'Hiragino Sans', 'Noto Sans JP', 'BIZ UDPGothic', sans-serif;
@@ -61,11 +61,10 @@ p {
 	font-weight: var(--font-weight-normal);
 }
 
-li {
-	font-size: 1rem;
-	margin: calc(var(--m-vertical) * 0.8) 0;
-	margin-left: calc(var(--m-horizontal) * 1.6);
-	font-weight: var(--font-weight-normal);
+ul li,
+ol li {
+	list-style: square outside;
+	margin-left: 1rem;
 }
 
 :where(h1, h2, h3, h4, h5, h6, p, li) > a {

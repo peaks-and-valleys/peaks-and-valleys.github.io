@@ -1,6 +1,5 @@
 .c-faceAttached {
-	&::before,
-	&::after {
+	&::before {
 		content: '';
 		display: inline-block;
 		height: 1.2em;
@@ -12,6 +11,6 @@
 		mask-image: url(/images/index/pav-face.svg);
 		-webkit-mask-size: cover;
 		mask-size: cover;
-		background-color: var(--bg-primary);
+		background-color: var(--c-primary);
 	}
 }

@@ -15,8 +15,8 @@
 ></HeadProperties>
 
 <article class="p-articleContainer">
-	<h1 class="p-articleContainer__heading u-rounded-border">プライバシーとライセンス</h1>
-	<article class="p-article u-rounded-border">
+	<h1>プライバシーとライセンス</h1>
+	<article >
 		<h2>プライバシー</h2>
 
 		<h3>Cookieの使用</h3>

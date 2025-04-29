@@ -24,7 +24,7 @@
 </script>
 
 <div class="l-globalWrapper">
-	<div class="l-mainContainer">
+	<div class="l-mainContentWrapper">
 		<header class="l-navList">
 			<nav aria-label="メインナビゲーション">
 				<ul>
@@ -54,7 +54,7 @@
 			{@render children?.()}
 		</main>
 
-		<footer class="l-navList l-navList--sub">
+		<footer class="l-navList l-navList--bottom">
 			<nav aria-label="サブナビゲーション">
 				<ul>
 					<li>
@@ -62,6 +62,13 @@
 					</li>
 					<li>
 						<a href="/blog" aria-current={page.url.pathname === '/blog'}>blog</a>
+					</li>
+					<li>
+						<a
+							href="/privacy-and-license"
+							rel="privacy-policy"
+							aria-current={page.url.pathname === '/privacy-and-license'}>privacy & license</a
+						>
 					</li>
 				</ul>
 			</nav>
