@@ -1,9 +1,5 @@
 .p-cover {
-	margin: var(--m-vertical);
-	display: grid;
-	grid-template-columns: 1fr;
-	grid-template-rows: 1fr;
-
+	margin: var(--m-vertical) 0;
 	&__image {
 		width: 100%
 	}

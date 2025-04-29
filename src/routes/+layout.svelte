@@ -23,13 +23,25 @@
 	let { children }: Props = $props();
 </script>
 
-<header>
+<header class="l-navList">
 	<nav aria-label="メインナビゲーション">
-		<ul class="c-navGrid">
-			<a href="/" aria-current={page.url.pathname === '/'}><li class="c-navGrid__link">home</li></a>
-			<a href="/blog" aria-current={page.url.pathname === '/blog'}
-				><li class="c-navGrid__link">blog</li></a
-			>
+		<ul class="">
+			<li class="">
+				<a href="/" aria-current={page.url.pathname === '/'}>home</a>
+			</li>
+			<li class="">
+				<a href="/blog" aria-current={page.url.pathname === '/blog'}>blog</a>
+			</li>
+		</ul>
+	</nav>
+	<nav class="u-rounded-border" aria-label="リンクナビゲーション">
+		<ul class="">
+			<li class="">
+				<a href="https://www.behance.net/peaks-and-valleys" rel="external me">Behance</a>
+			</li>
+			<li class="">
+				<a href="https://github.com/peaks-and-valleys" rel="external me">GitHub</a>
+			</li>
 		</ul>
 	</nav>
 </header>
@@ -38,16 +50,28 @@
 	{@render children?.()}
 </main>
 
-<footer class="u-rounded-border">
-	<p>
-		<a
-			href="/privacy-and-license"
-			rel="privacy-policy"
-			aria-current={page.url.pathname === '/privacy-and-license'}>プライバシーとライセンス</a
-		>
-	</p>
-	<address><p>Contact: peaksvndvalleys(at)protonmail(dot)com</p></address>
+<footer class="l-navList l-navList--sub">
+	<nav aria-label="メインナビゲーション">
+		<ul>
+			<li>
+				<a href="/" aria-current={page.url.pathname === '/'}>home</a>
+			</li>
+			<li >
+				<a href="/blog" aria-current={page.url.pathname === '/blog'}>blog</a>
+			</li>
+		</ul>
+	</nav>
+	<nav aria-label="リンクナビゲーション">
+		<ul>
+			<li>
+				<a href="https://www.behance.net/peaks-and-valleys" rel="external me">Behance</a>
+			</li>
+			<li>
+				<a href="https://github.com/peaks-and-valleys" rel="external me">GitHub</a>
+			</li>
+			<li>
+				<address>Contact: peaksvndvalleys(at)protonmail(dot)com</address>
+			</li>
+		</ul>
+	</nav>
 </footer>
-
-<style>
-</style>
