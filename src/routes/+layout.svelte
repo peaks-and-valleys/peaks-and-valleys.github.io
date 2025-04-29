@@ -1,6 +1,7 @@
 <script lang="ts">
 	import type { LayoutData } from './$types';
 	import Page from './+page.svelte';
+	import { page } from '$app/state';
 	import './styles/app.scss';
 	interface Props {
 		children?: import('svelte').Snippet;
@@ -25,8 +26,10 @@
 <header>
 	<nav aria-label="メインナビゲーション">
 		<ul class="c-navGrid">
-			<a href="/"><li class="c-navGrid__link">home</li></a>
-			<a href="/blog"><li class="c-navGrid__link">blog</li></a>
+			<a href="/" aria-current={page.url.pathname === '/'}><li class="c-navGrid__link">home</li></a>
+			<a href="/blog" aria-current={page.url.pathname === '/blog'}
+				><li class="c-navGrid__link">blog</li></a
+			>
 		</ul>
 	</nav>
 </header>
@@ -37,7 +40,11 @@
 
 <footer class="u-rounded-border">
 	<p>
-		<a href="/privacy-and-license" rel="privacy-policy">プライバシーとライセンス</a>
+		<a
+			href="/privacy-and-license"
+			rel="privacy-policy"
+			aria-current={page.url.pathname === '/privacy-and-license'}>プライバシーとライセンス</a
+		>
 	</p>
 	<address><p>Contact: peaksvndvalleys(at)protonmail(dot)com</p></address>
 </footer>
