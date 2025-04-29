@@ -23,55 +23,61 @@
 	let { children }: Props = $props();
 </script>
 
-<header class="l-navList">
-	<nav aria-label="メインナビゲーション">
-		<ul class="">
-			<li class="">
-				<a href="/" aria-current={page.url.pathname === '/'}>home</a>
-			</li>
-			<li class="">
-				<a href="/blog" aria-current={page.url.pathname === '/blog'}>blog</a>
-			</li>
-		</ul>
-	</nav>
-	<nav class="u-rounded-border" aria-label="リンクナビゲーション">
-		<ul class="">
-			<li class="">
-				<a href="https://www.behance.net/peaks-and-valleys" rel="external me">Behance</a>
-			</li>
-			<li class="">
-				<a href="https://github.com/peaks-and-valleys" rel="external me">GitHub</a>
-			</li>
-		</ul>
-	</nav>
-</header>
+<div class="l-globalWrapper">
+	<div class="l-mainContainer">
+		<header class="l-navList">
+			<nav aria-label="メインナビゲーション">
+				<ul>
+					<li>
+						<a href="/" aria-current={page.url.pathname === '/'}>home</a>
+					</li>
+					<li>
+						<a href="/blog" aria-current={page.url.pathname === '/blog'}>blog</a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="u-rounded-border" aria-label="リンクナビゲーション">
+				<address>
+					<ul>
+						<li>
+							<a href="https://www.behance.net/peaks-and-valleys" rel="external me">Behance</a>
+						</li>
+						<li>
+							<a href="https://github.com/peaks-and-valleys" rel="external me">GitHub</a>
+						</li>
+					</ul>
+				</address>
+			</nav>
+		</header>
 
-<main>
-	{@render children?.()}
-</main>
+		<main>
+			{@render children?.()}
+		</main>
 
-<footer class="l-navList l-navList--sub">
-	<nav aria-label="メインナビゲーション">
-		<ul>
-			<li>
-				<a href="/" aria-current={page.url.pathname === '/'}>home</a>
-			</li>
-			<li >
-				<a href="/blog" aria-current={page.url.pathname === '/blog'}>blog</a>
-			</li>
-		</ul>
-	</nav>
-	<nav aria-label="リンクナビゲーション">
-		<ul>
-			<li>
-				<a href="https://www.behance.net/peaks-and-valleys" rel="external me">Behance</a>
-			</li>
-			<li>
-				<a href="https://github.com/peaks-and-valleys" rel="external me">GitHub</a>
-			</li>
-			<li>
-				<address>Contact: peaksvndvalleys(at)protonmail(dot)com</address>
-			</li>
-		</ul>
-	</nav>
-</footer>
+		<footer class="l-navList l-navList--sub">
+			<nav aria-label="サブナビゲーション">
+				<ul>
+					<li>
+						<a href="/" aria-current={page.url.pathname === '/'}>home</a>
+					</li>
+					<li>
+						<a href="/blog" aria-current={page.url.pathname === '/blog'}>blog</a>
+					</li>
+				</ul>
+			</nav>
+			<nav aria-label="リンクナビゲーション">
+				<address>
+					<ul>
+						<li>
+							<a href="https://www.behance.net/peaks-and-valleys" rel="external me">Behance</a>
+						</li>
+						<li>
+							<a href="https://github.com/peaks-and-valleys" rel="external me">GitHub</a>
+						</li>
+						<li>peaksvndvalleys(at)protonmail(dot)com</li>
+					</ul>
+				</address>
+			</nav>
+		</footer>
+	</div>
+</div>

@@ -1,20 +1,21 @@
 .l-navList {
+	width: 100%;
 	display: flex;
 	flex-direction: column;
-	margin: var(--m-vertical) 0;
 	color: var(--bg-primary);
 	nav {
 		* {
-			font-size: 1.125rem;
+			font-size: 1.25rem;
 		}
 		ul {
-			display: flex;
-			flex-wrap: wrap;
 			list-style: none;
+			display: flex;
+			justify-content: flex-start;
+			flex-wrap: wrap;
+			column-gap: calc(var(--m-horizontal) * 0.4);
 			li {
 				background-color: var(--c-primary);
 				margin: calc(var(--m-vertical) * 0.25) 0;
-				margin-right: calc(var(--m-horizontal) * 0.25);
 				padding: calc(var(--m-vertical) * 0.4) calc(var(--m-horizontal) * 0.4);
 			}
 		}
@@ -24,13 +25,16 @@
 	}
 
 	&--sub {
+		position: sticky;
+		top: calc(100vh - var(--m-vertical));
 		nav {
 			* {
+                text-align: right;
 				font-size: 1rem;
 			}
 
 			ul {
-				justify-content: end;
+				justify-content: flex-end;
 			}
 		}
 	}

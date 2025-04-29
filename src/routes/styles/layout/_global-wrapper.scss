@@ -1,0 +1,10 @@
+.l-globalWrapper {
+    display: flex;
+    justify-content: center;
+}
+.l-mainContainer {
+    min-height: 100vh;
+    background-color: var(--bg-primary);
+    width: 100%;
+    max-width: 1280px;
+}
