@@ -10,7 +10,7 @@
       >
         <animate 
           attributeName="baseFrequency"
-          values="0;0.1;0"
+          values="0.02;0.1;0.02"
           dur="300ms"
           calcMode="discrete"
           repeatCount="indefinite"
@@ -23,8 +23,8 @@
       >
         <animate 
           attributeName="scale"
-          values="0;10;0"
-          dur="500ms"
+          values="0;12;0"
+          dur="400ms"
           repeatCount="indefinite"
         />
 
