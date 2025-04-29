@@ -40,6 +40,7 @@ html {
 	letter-spacing: 0.02rem;
 	background-color: var(--bg-primary);
 	color: var(--c-primary);
+	text-underline-offset: calc((1lh - 1cap) / 2 / 3);
 }
 
 h1 {
@@ -90,7 +91,6 @@ li {
 
 :where(h1, h2, h3, h4, h5, h6, p, li) > a {
 	color: var(--c-accent-blue);
-	text-underline-offset: calc((1lh - 1cap) / 2 / 3);
 
 	@media (hover) {
 		&:hover {
@@ -134,6 +134,10 @@ hr {
 
 address {
 	font-style: normal;
+}
+
+[aria-current='true'] {
+	text-decoration: underline dotted;
 }
 
 @media (prefers-reduced-motion) {
