@@ -16,7 +16,7 @@
 
 <article class="p-articleContainer">
 	<h1>プライバシーとライセンス</h1>
-	<article >
+	<article>
 		<h2>プライバシー</h2>
 
 		<h3>Cookieの使用</h3>
