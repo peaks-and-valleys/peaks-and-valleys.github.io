@@ -1,29 +1,8 @@
 .p-cover {
-	margin: var(--m-vertical) 0;
-	display: grid;
-	grid-template-columns: 1fr;
-	grid-template-rows: 1fr;
 	width: 100%;
-
+	margin-top: calc(var(--m-vertical) * 2);
+	margin-bottom: calc(var(--m-vertical) * 2.4);
 	&__image {
-		grid-column: 1;
-		grid-row: 1;
-		display: flex;
-		justify-content: center;
 		width: 100%;
-		flex-wrap: wrap;
-
-		&:nth-child(1) {
-			z-index: 1;
-			width: 100%;
-		}
-
-		&:nth-child(2) {
-			z-index: 2;
-			mix-blend-mode: color-dodge;
-			opacity: 85%;
-			width: 80%;
-			margin: auto;
-		}
 	}
 }

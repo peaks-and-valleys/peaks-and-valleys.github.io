@@ -24,18 +24,18 @@
 <HeadProperties pageTitle={meta.title} description={meta.description} pageType="article"
 ></HeadProperties>
 
-<article class="p-articleContainer">
-	<hgroup>
-		<h1 class="p-articleContainer__heading u-rounded-border">{meta.title}</h1>
-		<p style="text-align: center;">
-			<time datetime={meta.date}>{new Date(meta.date).toLocaleDateString('ja')}</time> - {meta.description}
-		</p>
-	</hgroup>
-	<article class="p-article u-rounded-border">
+<div class="p-articleContainer">
+	<article>
+		<hgroup>
+			<h1 class="">{meta.title}</h1>
+			<p>
+				<time datetime={meta.date}>{new Date(meta.date).toLocaleDateString('ja')}</time> - {meta.description}
+			</p>
+		</hgroup>
 		{#if contentLoaded}
 			<Content />
 		{:else}
 			<p>記事を読み込み中...</p>
 		{/if}
 	</article>
-</article>
+</div>

@@ -10,29 +10,8 @@
 
 @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-jp-dynamic-subset.min.css');
 
-@media screen and (max-width: 767.8px) {
-	html {
-		margin-right: var(--m-horizontal);
-		margin-left: calc(var(--m-horizontal));
-	}
-}
-
-@media screen and (min-width: 768px) and (max-width: 1279.8px) {
-	html {
-		margin-right: calc(var(--m-horizontal) * 2);
-		margin-left: calc(var(--m-horizontal) * 2);
-	}
-}
-
-@media screen and (min-width: 1280px) {
-	html {
-		margin-right: calc(var(--m-horizontal) * 10);
-		margin-left: calc(var(--m-horizontal) * 10);
-	}
-}
-
 html {
-	font-size: clamp(16px, round(up, 2vw, 2px), 24px);
+	font-size: clamp(16px, round(2vw, 1px), 24px);
 	font-family:
 		'Space Grotesk', 'Pretendard JP Variable', 'Pretendard JP', 'Helvetica Neue', 'Arial',
 		'Hiragino Kaku Gothic ProN', 'Hiragino Sans', 'Noto Sans JP', 'BIZ UDPGothic', sans-serif;
@@ -82,11 +61,10 @@ p {
 	font-weight: var(--font-weight-normal);
 }
 
-li {
-	font-size: 1rem;
-	margin: calc(var(--m-vertical) * 0.8) 0;
-	margin-left: calc(var(--m-horizontal) * 1.6);
-	font-weight: var(--font-weight-normal);
+ul li,
+ol li {
+	list-style: square outside;
+	margin-left: 1rem;
 }
 
 :where(h1, h2, h3, h4, h5, h6, p, li) > a {

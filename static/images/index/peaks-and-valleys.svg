@@ -1,61 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg id="uuid-52abb6f7-c17a-470b-969d-ede2e11ae9a1" data-name="レイヤー 1" xmlns="http://www.w3.org/2000/svg" width="339.3870488" height="184.9422577" viewBox="0 0 339.3870488 184.9422577">
   <defs>
-    <filter id="displacement-01">
-      <feTurbulence
-        type="fractalNoise"
-        baseFrequency="0.05"
-        numOctaves="3"
-        result="noise" 
-      />
-      <feDisplacementMap
-        in2="noise"
-        in="SourceGraphic"
-        scale="2"
-      />
-    </filter>
-        <filter id="displacement-02">
-      <feTurbulence
-        type="fractalNoise"
-        baseFrequency="0.08"
-        numOctaves="3"
-        result="noise" 
-      />
-      <feDisplacementMap
-        in2="noise"
-        in="SourceGraphic"
-        scale="5"
-      />
-    </filter>
     <style>
       .uuid-7cbbb1c2-2bc4-4667-9945-9eab3d6a79e4 {
-        fill: #dddddd;
+        fill: #222222;
         stroke-width: 0px;
-        will-change: filter;
-        @media (prefers-reduced-motion: no-preference) {
-          animation: 
-            displacement 0.3s linear 0.2s both infinite;
-        }
       }
 
       .uuid-d120ab1a-add1-4bc7-9344-d2ebf9e6a4f9 {
         fill: none;
-        stroke: #dddddd;
+        stroke: #222222;
         stroke-miterlimit: 10;
         stroke-width: 2px;
-        will-change: filter;
-        @media (prefers-reduced-motion: no-preference) {
-          animation: 
-            displacement 0.3s linear 0.2s both infinite;
-        }
-      }
-      @keyframes displacement {
-        0% {
-          filter: url(#displacement-01);
-        }
-        100% {
-          filter: url(#displacement-02);
-        }
       }
     </style>
   </defs>

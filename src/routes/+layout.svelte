@@ -23,31 +23,86 @@
 	let { children }: Props = $props();
 </script>
 
-<header>
-	<nav aria-label="メインナビゲーション">
-		<ul class="c-navGrid">
-			<a href="/" aria-current={page.url.pathname === '/'}><li class="c-navGrid__link">home</li></a>
-			<a href="/blog" aria-current={page.url.pathname === '/blog'}
-				><li class="c-navGrid__link">blog</li></a
-			>
-		</ul>
-	</nav>
-</header>
+<div class="l-globalWrapper">
+	<div class="l-mainContentWrapper">
+		<header class="l-navList">
+			<nav aria-label="メインナビゲーション">
+				<ul>
+					<li>
+						<a href="/" aria-current={page.url.pathname === '/'}>home</a>
+					</li>
+					<li>
+						<a href="/blog" aria-current={page.url.pathname === '/blog'}>blog</a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="u-rounded-border" aria-label="リンクナビゲーション">
+				<address>
+					<ul>
+						<li>
+							<a href="https://www.behance.net/peaks-and-valleys" rel="external me">Behance</a>
+						</li>
+						<li>
+							<a href="https://github.com/peaks-and-valleys" rel="external me">GitHub</a>
+						</li>
+						<li>
+							<a href="https://codepen.io/peaks-and-valleys" rel="external me">CodePen</a>
+						</li>
+						<li>
+							<a href="https://scrapbox.io/peaks-and-valleys/" rel="external me">Cosense</a>
+						</li>
+						<li>
+							<a href="https://x.com/peaksvndvalleys" rel="external me">X</a>
+						</li>
+					</ul>
+				</address>
+			</nav>
+		</header>
 
-<main>
-	{@render children?.()}
-</main>
+		<main>
+			{@render children?.()}
+		</main>
 
-<footer class="u-rounded-border">
-	<p>
-		<a
-			href="/privacy-and-license"
-			rel="privacy-policy"
-			aria-current={page.url.pathname === '/privacy-and-license'}>プライバシーとライセンス</a
-		>
-	</p>
-	<address><p>Contact: peaksvndvalleys(at)protonmail(dot)com</p></address>
-</footer>
-
-<style>
-</style>
+		<footer class="l-navList l-navList--bottom">
+			<nav aria-label="サブナビゲーション">
+				<ul>
+					<li>
+						<a href="/" aria-current={page.url.pathname === '/'}>home</a>
+					</li>
+					<li>
+						<a href="/blog" aria-current={page.url.pathname === '/blog'}>blog</a>
+					</li>
+					<li>
+						<a
+							href="/privacy-and-license"
+							rel="privacy-policy"
+							aria-current={page.url.pathname === '/privacy-and-license'}>privacy & license</a
+						>
+					</li>
+				</ul>
+			</nav>
+			<nav aria-label="フッター用リンクナビゲーション">
+				<address>
+					<ul>
+						<li>
+							<a href="https://www.behance.net/peaks-and-valleys" rel="external me">Behance</a>
+						</li>
+						<li>
+							<a href="https://github.com/peaks-and-valleys" rel="external me">GitHub</a>
+						</li>
+						<li>
+							<a href="https://codepen.io/peaks-and-valleys" rel="external me">CodePen</a>
+						</li>
+						<li>
+							<a href="https://scrapbox.io/peaks-and-valleys/" rel="external me">Cosense</a>
+						</li>
+						<li>
+							<a href="https://x.com/peaksvndvalleys" rel="external me">X</a>
+						</li>
+						<li>peaksvndvalleys(at)protonmail(dot)com</li>
+					</ul>
+				</address>
+			</nav>
+		</footer>
+	</div>
+</div>

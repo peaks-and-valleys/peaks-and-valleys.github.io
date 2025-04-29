@@ -1,29 +1,39 @@
 .p-articleContainer {
-	&__heading {
-		color: var(--bg-primary);
-		background-color: var(--c-primary);
-		padding: calc(var(--m-vertical) * 0.625) calc(var(--m-horizontal) * 0.625);
-		text-align: center;
-	}
+	margin: 0 calc(var(--m-horizontal) * 1.125);
+	padding: var(--m-vertical) 0;
+
 	hgroup * {
-		margin: calc(var(--m-vertical) * 0.8) 0;
+		color: var(--c-primary);
+		margin-bottom: calc(var(--m-vertical) * 0.25) 0;
+	}
+
+	hgroup p {
+		margin: calc(var(--m-vertical) * 0.25) 0;
+		font-size: 0.8rem;
+		color: var(--c-secondary);
+	}
+
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		border-left: calc(var(--m-horizontal) * 0.8) solid var(--c-secondary);
+		margin-left: calc((-1) * var(--m-horizontal) * 1.125);
+		padding-left: calc(var(--m-horizontal) * (1.125 - 0.8 - 0.1)); /* ちょっとだけ頭を出す */
 	}
 }
 
-.p-article {
-	margin: calc(var(--m-vertical) * 0.8) 0;
-	padding: 0 calc(var(--m-horizontal) * 0.8);
+.p-articleList {
+	display: flex;
+	flex-direction: column;
+	row-gap: var(--m-vertical);
 	text-align: left;
 	color: var(--c-primary);
-	border: round(down, 0.1rem, 1px) solid var(--c-primary);
-}
 
-a:has(> .p-article) {
-	text-decoration: none;
-	@media (hover) {
-		.p-article:hover {
-			color: var(--c-accent-blue);
-			border: round(down, 0.1rem, 1px) dotted var(--c-accent-blue);
-		}
+	&:has(article) {
+		list-style: none;
+		margin-left: 0;
 	}
 }
