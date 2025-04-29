@@ -45,6 +45,15 @@
 						<li>
 							<a href="https://github.com/peaks-and-valleys" rel="external me">GitHub</a>
 						</li>
+						<li>
+							<a href="https://codepen.io/peaks-and-valleys" rel="external me">CodePen</a>
+						</li>
+						<li>
+							<a href="https://scrapbox.io/peaks-and-valleys/" rel="external me">Cosense</a>
+						</li>
+						<li>
+							<a href="https://x.com/peaksvndvalleys" rel="external me">X</a>
+						</li>
 					</ul>
 				</address>
 			</nav>
@@ -72,7 +81,7 @@
 					</li>
 				</ul>
 			</nav>
-			<nav aria-label="リンクナビゲーション">
+			<nav aria-label="フッター用リンクナビゲーション">
 				<address>
 					<ul>
 						<li>
@@ -80,6 +89,15 @@
 						</li>
 						<li>
 							<a href="https://github.com/peaks-and-valleys" rel="external me">GitHub</a>
+						</li>
+						<li>
+							<a href="https://codepen.io/peaks-and-valleys" rel="external me">CodePen</a>
+						</li>
+						<li>
+							<a href="https://scrapbox.io/peaks-and-valleys/" rel="external me">Cosense</a>
+						</li>
+						<li>
+							<a href="https://x.com/peaksvndvalleys" rel="external me">X</a>
 						</li>
 						<li>peaksvndvalleys(at)protonmail(dot)com</li>
 					</ul>
