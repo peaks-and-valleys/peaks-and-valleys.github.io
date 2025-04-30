@@ -1,0 +1,73 @@
+---
+title: 'svg filter だけでテクスチャアニメーションを作ってみた'
+description: 'たのしいけど注意事項あり'
+date: '2025-04-30'
+draft: 'false'
+---
+
+
+こんなん↓
+
+<svg width="300" height="300" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <filter id="noiseFilter">
+        <feTurbulence type="fractalNoise" baseFrequency="0.2" numOctaves="2" />
+        <feColorMatrix type="hueRotate" values="0">
+          <animate attributeName="values" from="0" to="360" dur="400ms" repeatCount="indefinite" />
+        </feColorMatrix>
+        <feColorMatrix type="matrix" values="0 0 0 0 0
+                0 0 0 0 0
+                0 0 0 0 0
+                1 0 0 0 0" />
+        <feMorphology operator="erode" radius="2" />
+      </filter>
+    </defs>
+  <rect width="300" height="300" style="filter: url(#noiseFilter)" />
+</svg>
+
+[CodePen](https://codepen.io/peaks-and-valleys/pen/ByyRjrR)
+
+<svg width="300" height="300" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+    <filter id="fluidFilter">
+      <feTurbulence type="fractalNoise" baseFrequency="0.04" numOctaves="2" result="noise" />
+      <feDisplacementMap in2="noise" scale="0">
+        <animate attributeName="scale" values="30;60;30" dur="800ms" repeatCount="indefinite" />
+      </feDisplacementMap>
+      <feColorMatrix type="matrix" values="0 0 0 0 0
+                0 0 0 0 0
+                0 0 0 0 0
+                1 0 0 0 0" />
+    </filter>
+  <rect width="300" height="300" style="filter: url(#fluidFilter)" />
+</svg>
+
+[CodePen](https://codepen.io/peaks-and-valleys/pen/EaavvGp)
+
+コードをチマチマ書くだけで意外といい感じになって、楽しかった。
+
+## Q. なぜこんなことを？
+
+svg filter を使うとけっこうアグレッシブな表現ができることを、なんかの拍子で知って試したくなったから。
+
+## コードの解説
+
+どちらも流れはだいたい同じで、
+
+- [`<feTurbulence>`](https://developer.mozilla.org/en-US/docs/Web/SVG/Reference/Element/feTurbulence) でテクスチャのベースを作る
+- いずれかのパラメータに `<animate>` を適用
+- [`<feColorMatrix>`](https://developer.mozilla.org/en-US/docs/Web/SVG/Reference/Element/feColorMatrix) で単色化
+- 以上で定義したフィルターを正方形に適用
+
+いくつか実装例を見てみたりはしたが、けっきょくのところ MDN のサンプルコードが一番参考になった。
+と言いつつ、この記事シリーズからもわりとアイデアをパクった: [SVG noise filter — Part I. Introduction | by codebro.io | Medium](https://medium.com/@codebro/svg-noise-filter-45b5edbbc28d)
+
+## 実用上の注意点
+
+**アニメーションはけっこう負荷が重い。**
+少なくとも CSS だけで作ったアニメーションよりは明らかに重い。
+
+[Can I use ではひととおりのモダンブラウザが対応していることになっている](https://caniuse.com/svg-filters) が、実際のところブラウザによって表示がうまくいかないこともあるらしい。
+上記とは別の実装をしていたときではあるが、iOS Safari でだけ表示が崩れる場合もあることを手元では確認できた。
+
+上記のような事情もあり、これらはおそらくスポットで使うべきもので、たとえば全ページ共通の背景とかには使わないほうが良さそう。
+もともとそう使おうとしていたんだけど。
