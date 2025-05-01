@@ -37,25 +37,23 @@
 				</ul>
 			</nav>
 			<nav class="u-rounded-border" aria-label="リンクナビゲーション">
-				<address>
-					<ul>
-						<li>
-							<a href="https://www.behance.net/peaks-and-valleys" rel="external me">Behance</a>
-						</li>
-						<li>
-							<a href="https://github.com/peaks-and-valleys" rel="external me">GitHub</a>
-						</li>
-						<li>
-							<a href="https://codepen.io/peaks-and-valleys" rel="external me">CodePen</a>
-						</li>
-						<li>
-							<a href="https://scrapbox.io/peaks-and-valleys/" rel="external me">Cosense</a>
-						</li>
-						<li>
-							<a href="https://x.com/peaksvndvalleys" rel="external me">X</a>
-						</li>
-					</ul>
-				</address>
+				<ul>
+					<li>
+						<a href="https://www.behance.net/peaks-and-valleys" rel="external me">Behance</a>
+					</li>
+					<li>
+						<a href="https://github.com/peaks-and-valleys" rel="external me">GitHub</a>
+					</li>
+					<li>
+						<a href="https://codepen.io/peaks-and-valleys" rel="external me">CodePen</a>
+					</li>
+					<li>
+						<a href="https://scrapbox.io/peaks-and-valleys/" rel="external me">Cosense</a>
+					</li>
+					<li>
+						<a href="https://x.com/peaksvndvalleys" rel="external me">X</a>
+					</li>
+				</ul>
 			</nav>
 		</header>
 
@@ -82,26 +80,24 @@
 				</ul>
 			</nav>
 			<nav aria-label="フッター用リンクナビゲーション">
-				<address>
-					<ul>
-						<li>
-							<a href="https://www.behance.net/peaks-and-valleys" rel="external me">Behance</a>
-						</li>
-						<li>
-							<a href="https://github.com/peaks-and-valleys" rel="external me">GitHub</a>
-						</li>
-						<li>
-							<a href="https://codepen.io/peaks-and-valleys" rel="external me">CodePen</a>
-						</li>
-						<li>
-							<a href="https://scrapbox.io/peaks-and-valleys/" rel="external me">Cosense</a>
-						</li>
-						<li>
-							<a href="https://x.com/peaksvndvalleys" rel="external me">X</a>
-						</li>
-						<li>peaksvndvalleys(at)protonmail(dot)com</li>
-					</ul>
-				</address>
+				<ul>
+					<li>
+						<a href="https://www.behance.net/peaks-and-valleys" rel="external me">Behance</a>
+					</li>
+					<li>
+						<a href="https://github.com/peaks-and-valleys" rel="external me">GitHub</a>
+					</li>
+					<li>
+						<a href="https://codepen.io/peaks-and-valleys" rel="external me">CodePen</a>
+					</li>
+					<li>
+						<a href="https://scrapbox.io/peaks-and-valleys/" rel="external me">Cosense</a>
+					</li>
+					<li>
+						<a href="https://x.com/peaksvndvalleys" rel="external me">X</a>
+					</li>
+					<li><address>peaksvndvalleys(at)protonmail(dot)com</address></li>
+				</ul>
 			</nav>
 		</footer>
 	</div>
