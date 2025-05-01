@@ -1,11 +1,12 @@
 import { mdsvex } from 'mdsvex';
 import adapter from '@sveltejs/adapter-cloudflare';
 import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
+import rehypeExternalLinks from 'rehype-external-links';
 
 /** @type {import('mdsvex').MdsvexOptions} */
 const mdsvexOptions = {
 	extensions: ['.svx'],
-	rehypePlugins: []
+	rehypePlugins: [[rehypeExternalLinks, { rel: 'external noopener noreferrer' }]]
 };
 
 /** @type {import('@sveltejs/kit').Config} */
