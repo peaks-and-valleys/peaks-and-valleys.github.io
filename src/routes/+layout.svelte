@@ -36,7 +36,7 @@
 					</li>
 				</ul>
 			</nav>
-			<nav class="u-rounded-border" aria-label="リンクナビゲーション">
+			<nav aria-label="リンクナビゲーション">
 				<ul>
 					<li>
 						<a href="https://www.behance.net/peaks-and-valleys" rel="external me">Behance</a>

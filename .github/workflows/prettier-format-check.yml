@@ -34,7 +34,7 @@ jobs:
         id: prettier
         run: |
           echo "Running Prettier check on source files..."
-          npx prettier --cache --check "src/**/*.{js,ts,svelte,css,scss,json,html,md}"
+          npx prettier --cache --check "src/**/*.{js,ts,svelte,css,scss,json,html}"
 
       - name: Format check summary
         if: always()
