@@ -34,10 +34,6 @@
       .usachan {
         fill: #bb0011;
         stroke-width: 0px;
-        @media (prefers-reduced-motion: no-preference) {
-          will-change: filter;
-          filter: url(#displacement);
-        }
       }
     </style>
   </defs>

@@ -39,19 +39,32 @@
 			<nav aria-label="リンクナビゲーション">
 				<ul>
 					<li>
-						<a href="https://www.behance.net/peaks-and-valleys" rel="external me">Behance</a>
+						<a
+							href="https://www.behance.net/peaks-and-valleys"
+							rel="external me noopener noreferrer"
+							translate="no">Behance</a
+						>
 					</li>
 					<li>
-						<a href="https://github.com/peaks-and-valleys" rel="external me">GitHub</a>
+						<a
+							href="https://github.com/peaks-and-valleys"
+							rel="external me noopener noreferrer"
+							translate="no">GitHub</a
+						>
 					</li>
 					<li>
-						<a href="https://codepen.io/peaks-and-valleys" rel="external me">CodePen</a>
+						<a
+							href="https://codepen.io/peaks-and-valleys"
+							rel="external me noopener noreferrer"
+							translate="no">CodePen</a
+						>
 					</li>
 					<li>
-						<a href="https://scrapbox.io/peaks-and-valleys/" rel="external me">Cosense</a>
-					</li>
-					<li>
-						<a href="https://x.com/peaksvndvalleys" rel="external me">X</a>
+						<a
+							href="https://scrapbox.io/peaks-and-valleys/"
+							rel="external me noopener noreferrer"
+							translate="no">Cosense</a
+						>
 					</li>
 				</ul>
 			</nav>
@@ -82,19 +95,32 @@
 			<nav aria-label="フッター用リンクナビゲーション">
 				<ul>
 					<li>
-						<a href="https://www.behance.net/peaks-and-valleys" rel="external me">Behance</a>
+						<a
+							href="https://www.behance.net/peaks-and-valleys"
+							rel="external me noopener noreferrer"
+							translate="no">Behance</a
+						>
 					</li>
 					<li>
-						<a href="https://github.com/peaks-and-valleys" rel="external me">GitHub</a>
+						<a
+							href="https://github.com/peaks-and-valleys"
+							rel="external me noopener noreferrer"
+							translate="no">GitHub</a
+						>
 					</li>
 					<li>
-						<a href="https://codepen.io/peaks-and-valleys" rel="external me">CodePen</a>
+						<a
+							href="https://codepen.io/peaks-and-valleys"
+							rel="external me noopener noreferrer"
+							translate="no">CodePen</a
+						>
 					</li>
 					<li>
-						<a href="https://scrapbox.io/peaks-and-valleys/" rel="external me">Cosense</a>
-					</li>
-					<li>
-						<a href="https://x.com/peaksvndvalleys" rel="external me">X</a>
+						<a
+							href="https://scrapbox.io/peaks-and-valleys/"
+							rel="external me noopener noreferrer"
+							translate="no">Cosense</a
+						>
 					</li>
 					<li><address>peaksvndvalleys(at)protonmail(dot)com</address></li>
 				</ul>

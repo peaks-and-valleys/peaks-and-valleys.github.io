@@ -84,8 +84,7 @@ ol li {
 		}
 	}
 
-	&[href*="://"]:not([href^="https://peaks-and-valleys.net"])::after
-	{
+	&[rel~='external']::after {
 		content: '↗';
 		display: inline-block;
 		vertical-align: super;
