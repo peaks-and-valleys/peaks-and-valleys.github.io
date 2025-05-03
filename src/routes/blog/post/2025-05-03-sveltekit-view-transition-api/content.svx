@@ -1,0 +1,54 @@
+---
+title: "SvelteKit でお手軽に View Transition API を導入する"
+description: "ほんとうに導入だけ"
+date: "2025-05-03"
+draft: "false"
+---
+
+## ほんとうに導入だけ
+
+[ビュー遷移 API - Web API | MDN](https://developer.mozilla.org/ja/docs/Web/API/View_Transition_API)
+
+ページ遷移をふわっとさせてくれるすごい API を使ってみたかった。これはその導入時の作業記録。
+
+## 大まかな流れ
+
+やり方は Svelte のブログ記事がすべて教えてくれている: [Unlocking view transitions in SvelteKit 1.24](https://svelte.dev/blog/view-transitions)
+
+1.5年前くらいの記事ではあるが、特に何かを変更する必要はなさそうだった。
+
+### 簡略化した手順
+
+#### `+layout.svelte` に以下のコードを追加
+
+```
+import { onNavigate } from '$app/navigation';
+
+onNavigate((navigation) => {
+	if (!document.startViewTransition) return;
+
+	return new Promise((resolve) => {
+		document.startViewTransition(async () => {
+			resolve();
+			await navigation.complete;
+		});
+	});
+});
+```
+
+`document.startViewTransition` がビュー遷移を実行してくれるメソッドで、それをページ遷移時に実行してほしいから `onNavigate` の中に書いている、ということだと思う。たぶん。
+
+#### CSS のいい感じの箇所に以下のコードを追加する
+
+```
+@media (prefers-reduced-motion) {
+	::view-transition-group(*),
+	::view-transition-old(*),
+	::view-transition-new(*) {
+		animation: none !important;
+	}
+}
+```
+
+[`prefers-reduced-motion`](https://developer.mozilla.org/ja/docs/Web/CSS/@media/prefers-reduced-motion#no-preference) は端末のアニメーションを減らす設定がされているかを判断するメディア特性。
+有効化されている場合は遷移アニメーションもなしにしましょう、ということ。
