@@ -2,15 +2,19 @@
 	margin: 0 calc(var(--m-horizontal) * 1.125);
 	padding: var(--m-vertical) 0;
 
-	hgroup * {
-		color: var(--c-primary);
-		margin-bottom: calc(var(--m-vertical) * 0.25) 0;
-	}
+	hgroup {
+		margin-block: calc(var(--m-vertical) - var(--half-leading));
 
-	hgroup p {
-		margin: calc(var(--m-vertical) * 0.25) 0;
-		font-size: 0.8rem;
-		color: var(--c-secondary);
+		* {
+			color: var(--c-primary);
+			margin-bottom: calc(var(--m-vertical) * 0.25) 0;
+		}
+
+		p {
+			margin: calc(var(--m-vertical) * 0.25) 0;
+			font-size: 0.8rem;
+			color: var(--c-secondary);
+		}
 	}
 
 	h1,

@@ -12,4 +12,6 @@
 	/* m: margin */
 	--m-vertical: 1rem;
 	--m-horizontal: 0.8rem;
+
+	--half-leading: calc((1lh - 1em) / 2);
 }

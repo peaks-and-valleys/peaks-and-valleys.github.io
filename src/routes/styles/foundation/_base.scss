@@ -19,7 +19,7 @@ html {
 	letter-spacing: 0.02rem;
 	background-color: var(--bg-primary);
 	color: var(--c-primary);
-	text-underline-offset: calc((1lh - 1cap) / 2 / 3);
+	text-underline-offset: calc(var(--half-leading) / 2);
 }
 
 h1,
@@ -32,18 +32,18 @@ h4 {
 
 h1 {
 	font-size: 2rem;
-	margin: var(--m-vertical) 0;
 	font-weight: var(--font-weight-bold);
 	font-variation-settings: 'wght' var(--font-weight-bold);
+	margin-block: calc(var(--m-vertical) - var(--half-leading));
 }
 
 h2,
 h3,
 h4 {
-	margin: var(--m-vertical) 0;
 	font-weight: var(--font-weight-semibold);
 	font-variation-settings: 'wght' var(--font-weight-semibold);
 	text-align: left;
+	margin-block: calc(var(--m-vertical) - var(--half-leading));
 }
 
 h2 {
@@ -65,8 +65,9 @@ strong {
 
 p {
 	font-size: 1rem;
-	margin: var(--m-vertical) 0;
 	font-weight: var(--font-weight-normal);
+	font-variation-settings: 'wght' 400;
+	margin-block: calc(var(--m-vertical) * 0.8 - var(--half-leading));
 }
 
 ul li,
