@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" id="uuid-644bff19-e9ff-4984-b4e2-075f07e74d22" width="491.7783" height="223.9216" data-name="pav-type" viewBox="0 0 368.8338 167.9412">
   <defs>
     <style>
-      .uuid-d240de93-f333-4ee9-ab16-c1048367e5fc{fill:#212121;stroke-width:0}.uuid-6ebf4ad7-5ecd-47cb-9c43-cecb34613553{fill:none;stroke:#212121;stroke-miterlimit:10;stroke-width:2px}
+      .uuid-d240de93-f333-4ee9-ab16-c1048367e5fc{fill:oklch(0.25 0.005 264);stroke-width:0}.uuid-6ebf4ad7-5ecd-47cb-9c43-cecb34613553{fill:none;stroke:oklch(0.25 0.005 264);stroke-miterlimit:10;stroke-width:2px}
     </style>
   </defs>
   <g id="uuid-fe72831d-3c0b-44a4-9e2d-30dd340d184f" data-name="pav-type">
