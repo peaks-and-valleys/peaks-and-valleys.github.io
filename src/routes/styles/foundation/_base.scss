@@ -8,13 +8,11 @@
 	size-adjust: 102%;
 }
 
-@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-jp-dynamic-subset.min.css');
-
 html {
 	font-size: clamp(15px, round(2vw, 1px), 22px);
 	font-family:
-		'Space Grotesk', 'Pretendard JP Variable', 'Pretendard JP', 'Helvetica Neue', 'Arial',
-		'Hiragino Kaku Gothic ProN', 'Hiragino Sans', 'Noto Sans JP', 'BIZ UDPGothic', sans-serif;
+		'Space Grotesk', 'Helvetica Neue', 'Arial', 'Hiragino Kaku Gothic ProN', 'Hiragino Sans',
+		'Noto Sans JP', 'BIZ UDPGothic', sans-serif;
 	font-feature-settings: 'palt';
 	letter-spacing: 0.02rem;
 	background-color: var(--bg-primary);

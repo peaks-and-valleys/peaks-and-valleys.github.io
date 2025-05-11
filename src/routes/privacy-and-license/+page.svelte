@@ -19,7 +19,7 @@
 	<article>
 		<h2 id="プライバシーポリシー">プライバシーポリシー</h2>
 		<p>
-			告知義務はない（はず）ですが、簡潔に記します。 ちゃんとしたものは、必要になったら用意します。
+			告知義務はない（はず）ですが、簡潔に記します。 
 		</p>
 		<ul>
 			<li>
@@ -34,11 +34,6 @@
 					<li>
 						<a href="https://www.cloudflare.com/ja-jp/privacypolicy/" rel="external"
 							>Cloudflare のプライバシーポリシー</a
-						>
-					</li>
-					<li>
-						<a href="https://www.jsdelivr.com/terms/privacy-policy" rel="external"
-							>jsDelivr のプライバシーポリシー</a
 						>
 					</li>
 				</ul>
