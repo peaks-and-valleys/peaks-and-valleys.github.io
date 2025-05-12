@@ -34,6 +34,9 @@
 					<li>
 						<a href="/blog" aria-current={page.url.pathname === '/blog'}>blog</a>
 					</li>
+					<li>
+						<a href="/about" aria-current={page.url.pathname === '/about'}>about</a>
+					</li>
 				</ul>
 			</nav>
 			<nav aria-label="リンクナビゲーション">
@@ -82,6 +85,9 @@
 					</li>
 					<li>
 						<a href="/blog" aria-current={page.url.pathname === '/blog'}>blog</a>
+					</li>
+					<li>
+						<a href="/about" aria-current={page.url.pathname === '/about'}>about</a>
 					</li>
 					<li>
 						<a
