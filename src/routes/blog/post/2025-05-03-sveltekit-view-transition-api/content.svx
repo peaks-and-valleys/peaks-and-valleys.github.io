@@ -21,7 +21,7 @@ draft: "false"
 
 #### `+layout.svelte` に以下のコードを追加
 
-```
+```javascript
 import { onNavigate } from '$app/navigation';
 
 onNavigate((navigation) => {
@@ -40,7 +40,7 @@ onNavigate((navigation) => {
 
 #### CSS のいい感じの箇所に以下のコードを追加する
 
-```
+```css
 @media (prefers-reduced-motion) {
 	::view-transition-group(*),
 	::view-transition-old(*),

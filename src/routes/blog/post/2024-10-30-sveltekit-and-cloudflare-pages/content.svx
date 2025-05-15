@@ -41,7 +41,7 @@ GitHub リポジトリにコードをプッシュしたら、勝手に処理が�
 
 このブログは特定ディレクトリに放り込んだ Markdown ファイルを読み込んでレンダリングすることで生成しており、各ファイルには以下のような YAML ヘッダを付けている：
 
-```
+```yaml
 title: "example"
 description: "this is an example of a YAML blog header."
 date: "2000-01-01"
