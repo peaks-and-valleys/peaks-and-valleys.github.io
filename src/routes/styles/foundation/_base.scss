@@ -13,7 +13,7 @@ html {
 	font-family:
 		'Space Grotesk', 'Helvetica Neue', 'Arial', 'Hiragino Kaku Gothic ProN', 'Hiragino Sans',
 		'Noto Sans JP', 'BIZ UDPGothic', sans-serif;
-	font-feature-settings: 'palt';
+	font-feature-settings: 'palt', 'ss02', 'ss03', 'ss04', 'tnum';
 	letter-spacing: 0.02rem;
 	background-color: var(--bg-primary);
 	color: var(--c-primary);
@@ -24,7 +24,7 @@ h1,
 h2,
 h3,
 h4 {
-	line-height: 1.4;
+	line-height: 1.25;
 	letter-spacing: 0;
 }
 

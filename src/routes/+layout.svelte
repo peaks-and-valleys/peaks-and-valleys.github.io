@@ -32,10 +32,10 @@
 						<a href="/" aria-current={page.url.pathname === '/'}>home</a>
 					</li>
 					<li>
-						<a href="/blog" aria-current={page.url.pathname === '/blog'}>blog</a>
+						<a href="/about" aria-current={page.url.pathname === '/about'}>about</a>
 					</li>
 					<li>
-						<a href="/about" aria-current={page.url.pathname === '/about'}>about</a>
+						<a href="/blog" aria-current={page.url.pathname === '/blog'}>blog</a>
 					</li>
 				</ul>
 			</nav>
@@ -84,10 +84,10 @@
 						<a href="/" aria-current={page.url.pathname === '/'}>home</a>
 					</li>
 					<li>
-						<a href="/blog" aria-current={page.url.pathname === '/blog'}>blog</a>
+						<a href="/about" aria-current={page.url.pathname === '/about'}>about</a>
 					</li>
 					<li>
-						<a href="/about" aria-current={page.url.pathname === '/about'}>about</a>
+						<a href="/blog" aria-current={page.url.pathname === '/blog'}>blog</a>
 					</li>
 					<li>
 						<a
