@@ -1,6 +1,6 @@
 # [Peaks and Valleys](https://peaks-and-valleys.net)
 
-A portfolio site.
+A personal blog site.
 
 ## How to deploy
 
@@ -15,8 +15,7 @@ If this problem happens, set the environment varialbe `NODE_VERSION` on Cloudfla
 ## Blog function
 
 This site has a simple blog function.
-Articles are written in Markdown and placed in `content/blog`.
-Each article has a YAML header:
+Each article has a YAML frontmatter:
 
 ```
 ---
