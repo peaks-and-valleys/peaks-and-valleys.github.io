@@ -9,11 +9,11 @@
 }
 
 html {
-	font-size: clamp(15px, round(2vw, 1px), 22px);
+	font-size: clamp(15px, round(2vw, 1px), 20px);
 	font-family:
 		'Space Grotesk', 'Helvetica Neue', 'Arial', 'Hiragino Kaku Gothic ProN', 'Hiragino Sans',
 		'Noto Sans JP', 'BIZ UDPGothic', sans-serif;
-	font-feature-settings: 'palt', 'ss02', 'ss03', 'ss04', 'tnum';
+	font-feature-settings: 'palt', 'ss04', 'case', 'tnum';
 	letter-spacing: 0.02rem;
 	background-color: var(--bg-primary);
 	color: var(--c-primary);
@@ -71,7 +71,7 @@ p {
 ul li,
 ol li {
 	list-style: square outside;
-	margin-left: 1rem;
+	margin-inline-start: 1.25rem;
 }
 
 :where(h1, h2, h3, h4, h5, h6, p, li) > a {
