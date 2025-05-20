@@ -13,8 +13,7 @@ html {
 	font-family:
 		'Space Grotesk', 'Helvetica Neue', 'Arial', 'Hiragino Kaku Gothic ProN', 'Hiragino Sans',
 		'Noto Sans JP', 'BIZ UDPGothic', sans-serif;
-	font-feature-settings: 'palt', 'ss04', 'case', 'tnum';
-	letter-spacing: 0.02rem;
+	font-feature-settings: 'ss04', 'case', 'tnum';
 	background-color: var(--bg-primary);
 	color: var(--c-primary);
 	text-underline-offset: calc(var(--half-leading) / 2);
@@ -25,7 +24,7 @@ h2,
 h3,
 h4 {
 	line-height: 1.25;
-	letter-spacing: 0;
+	font-feature-settings: 'palt';
 }
 
 h1 {

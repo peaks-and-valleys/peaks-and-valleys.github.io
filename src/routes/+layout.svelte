@@ -57,13 +57,6 @@
 					</li>
 					<li>
 						<a
-							href="https://codepen.io/peaks-and-valleys"
-							rel="external me noopener noreferrer"
-							translate="no">CodePen</a
-						>
-					</li>
-					<li>
-						<a
 							href="https://scrapbox.io/peaks-and-valleys/"
 							rel="external me noopener noreferrer"
 							translate="no">Cosense</a
@@ -112,13 +105,6 @@
 							href="https://github.com/peaks-and-valleys"
 							rel="external me noopener noreferrer"
 							translate="no">GitHub</a
-						>
-					</li>
-					<li>
-						<a
-							href="https://codepen.io/peaks-and-valleys"
-							rel="external me noopener noreferrer"
-							translate="no">CodePen</a
 						>
 					</li>
 					<li>
