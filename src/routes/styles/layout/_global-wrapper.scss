@@ -1,12 +1,12 @@
 .l-globalWrapper {
 	background-color: var(--c-accent-blue);
 	display: flex;
-	justify-content: left;
-	padding-left: 0.625rem;
+	justify-content: center;
+	padding-inline: 0.4rem;
 }
 .l-mainContentWrapper {
 	min-height: 100vh;
 	background-color: var(--bg-primary);
 	width: 100%;
-	max-width: calc(1280px - 0.625rem);
+	max-width: 1280px;
 }
