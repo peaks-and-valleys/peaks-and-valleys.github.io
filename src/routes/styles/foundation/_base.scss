@@ -12,7 +12,7 @@ html {
 	font-size: clamp(15px, round(2vw, 1px), 20px);
 	font-family:
 		'Space Grotesk', 'Helvetica Neue', 'Arial', 'Hiragino Kaku Gothic ProN', 'Hiragino Sans',
-		'Noto Sans JP', 'BIZ UDPGothic', sans-serif;
+		'Noto Sans JP', 'BIZ UDPGothic', 'BIZ UDGothic',sans-serif;
 	font-feature-settings: 'ss04', 'case', 'tnum';
 	background-color: var(--bg-primary);
 	color: var(--c-primary);
@@ -31,7 +31,7 @@ h1 {
 	font-size: 2rem;
 	font-weight: var(--font-weight-bold);
 	font-variation-settings: 'wght' var(--font-weight-bold);
-	margin-block: calc(var(--m-vertical) - var(--half-leading));
+	margin-block-start: calc(var(--m-vertical) * 1.125 - var(--half-leading));
 }
 
 h2,
@@ -40,7 +40,7 @@ h4 {
 	font-weight: var(--font-weight-semibold);
 	font-variation-settings: 'wght' var(--font-weight-semibold);
 	text-align: left;
-	margin-block: calc(var(--m-vertical) - var(--half-leading));
+	margin-block-start: calc(var(--m-vertical) * 1.125 - var(--half-leading));
 }
 
 h2 {
@@ -64,7 +64,7 @@ p {
 	font-size: 1rem;
 	font-weight: var(--font-weight-normal);
 	font-variation-settings: 'wght' 400;
-	margin-block: calc(var(--m-vertical) * 0.8 - var(--half-leading));
+	margin-block-start: calc(var(--m-vertical) - var(--half-leading));
 }
 
 ul li,
