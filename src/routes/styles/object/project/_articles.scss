@@ -1,6 +1,5 @@
 .p-articleContainer {
-	margin: 0 calc(var(--m-horizontal) * 1.125);
-	padding: var(--m-vertical) 0;
+	margin-inline: calc(var(--m-horizontal) * 1.125);
 
 	hgroup {
 		margin-block: calc(var(--m-vertical) - var(--half-leading));
