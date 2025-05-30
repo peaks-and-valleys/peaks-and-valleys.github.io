@@ -2,7 +2,9 @@
 	background-color: var(--c-accent-blue);
 	display: flex;
 	justify-content: center;
-	padding-inline: 0.4rem;
+	@media screen and (max-width: 1279.8px) {
+		padding-inline-start: 0.625rem;
+	}
 }
 .l-mainContentWrapper {
 	min-height: 100vh;
