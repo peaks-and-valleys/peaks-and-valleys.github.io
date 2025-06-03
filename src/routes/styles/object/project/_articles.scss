@@ -22,9 +22,9 @@
 	h4,
 	h5,
 	h6 {
-		border-left: calc(var(--m-horizontal) * 0.8) solid var(--c-secondary);
-		margin-left: calc((-1) * var(--m-horizontal) * 1.125);
-		padding-left: calc(var(--m-horizontal) * (1.125 - 0.8 - 0.1)); /* ちょっとだけ頭を出す */
+		border-inline-start: calc(var(--m-horizontal) * 0.8) solid var(--c-secondary);
+		margin-inline-start: calc((-1) * var(--m-horizontal) * 1.125);
+		padding-inline-start: calc(var(--m-horizontal) * (1.125 - 0.8 - 0.1)); /* すこし頭を出す */
 	}
 }
 
