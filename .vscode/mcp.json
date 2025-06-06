@@ -1,0 +1,16 @@
+{
+	"servers": {
+		"svelte Docs": {
+			"type": "sse",
+			"url": "https://gitmcp.io/sveltejs/svelte"
+		},
+		"kit Docs": {
+			"type": "sse",
+			"url": "https://gitmcp.io/sveltejs/kit"
+		},
+		"MDsveX Docs": {
+			"type": "sse",
+			"url": "https://gitmcp.io/pngwn/MDsveX"
+		}
+	}
+}
