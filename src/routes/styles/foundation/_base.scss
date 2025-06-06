@@ -14,10 +14,12 @@ html {
 		'Space Grotesk', 'Helvetica Neue', 'Arial', 'Hiragino Kaku Gothic ProN', 'Hiragino Sans',
 		'Noto Sans JP', 'BIZ UDPGothic', 'BIZ UDGothic', sans-serif;
 	font-feature-settings: 'ss04', 'case', 'tnum';
-	background-color: var(--c-accent-blue);
+	background-color: var(--blue-primary);
 	color: var(--c-primary);
 	text-underline-offset: calc(var(--half-leading) / 2);
-	margin-inline-start: var(--scrollbar-gutter);
+	@media screen and (min-width: 1280px) {
+		padding-inline-start: var(--scrollbar-gutter);
+	}
 }
 
 h1,
