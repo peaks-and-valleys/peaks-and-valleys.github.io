@@ -1,7 +1,6 @@
 <script lang="ts">
 	import type { PageData } from './$types';
 	import type { Component } from 'svelte';
-	import { onMount } from 'svelte';
 	import HeadProperties from '$lib/components/head-properties.svelte';
 
 	interface Props {
@@ -12,13 +11,7 @@
 
 	const { meta, isDraft } = data;
 
-	let Content: Component;
-	let contentLoaded = $state(false);
-
-	onMount(() => {
-		Content = data.content;
-		contentLoaded = true;
-	});
+	let Content: Component = data.content;
 </script>
 
 <HeadProperties pageTitle={meta.title} description={meta.description} pageType="article"
@@ -32,10 +25,6 @@
 				<time datetime={meta.date}>{new Date(meta.date).toLocaleDateString('ja')}</time> - {meta.description}
 			</p>
 		</hgroup>
-		{#if contentLoaded}
-			<Content />
-		{:else}
-			<p>記事を読み込み中...</p>
-		{/if}
+		<Content />
 	</article>
 </div>
