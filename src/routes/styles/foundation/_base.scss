@@ -27,7 +27,8 @@ h2,
 h3,
 h4 {
 	line-height: 1.25;
-	font-feature-settings: 'palt';
+	font-feature-settings: "palt", "kern";
+	letter-spacing: -0.002em;
 }
 
 h1 {
@@ -70,10 +71,13 @@ p {
 	margin-block-start: calc(var(--m-vertical) - var(--half-leading));
 }
 
-ul li,
-ol li {
+ul,
+ol {
 	list-style: square outside;
-	margin-inline-start: 1.25rem;
+	li {
+		margin-block-start: calc(var(--m-vertical) * 0.8 - var(--half-leading));
+		margin-inline-start: 1.25rem;
+	}
 }
 
 :where(h1, h2, h3, h4, h5, h6, p, li) > a {
@@ -99,13 +103,14 @@ code,
 kbd,
 pre,
 samp {
-	font-family: 'Source Code Pro', 'Menlo', 'Consolas', 'Roboto Mono', monospace;
+	font-family: 'BIZ UDGothic', 'Menlo', 'Consolas', 'Roboto Mono',  monospace;
 }
 
 pre {
 	white-space: pre;
 	overflow-x: auto;
 	padding-inline: 0.25rem;
+	margin-block-start: var(--m-vertical);
 }
 
 blockquote {
@@ -115,7 +120,7 @@ blockquote {
 
 hr {
 	color: var(--c-primary);
-	margin: var(--m-vertical) 0;
+	margin-block-start: var(--m-vertical);
 }
 
 address {
