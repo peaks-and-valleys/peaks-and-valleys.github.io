@@ -27,7 +27,7 @@ h2,
 h3,
 h4 {
 	line-height: 1.25;
-	font-feature-settings: "palt", "kern";
+	font-feature-settings: 'palt', 'kern';
 	letter-spacing: -0.002em;
 }
 
@@ -103,7 +103,7 @@ code,
 kbd,
 pre,
 samp {
-	font-family: 'BIZ UDGothic', 'Menlo', 'Consolas', 'Roboto Mono',  monospace;
+	font-family: 'BIZ UDGothic', 'Menlo', 'Consolas', 'Roboto Mono', monospace;
 }
 
 pre {
