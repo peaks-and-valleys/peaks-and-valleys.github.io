@@ -10,9 +10,7 @@
 
 html {
 	font-size: clamp(15px, round(2vw, 1px), 20px);
-	font-family:
-		'Space Grotesk', 'Helvetica Neue', 'Arial', 'Hiragino Kaku Gothic ProN', 'Hiragino Sans',
-		'Noto Sans JP', 'BIZ UDPGothic', 'BIZ UDGothic', sans-serif;
+	font-family: var(--ff-sans);
 	font-feature-settings: 'ss04', 'case', 'tnum';
 	background-color: var(--blue-primary);
 	color: var(--c-primary);
@@ -101,16 +99,22 @@ ol {
 
 code,
 kbd,
-pre,
 samp {
-	font-family: 'BIZ UDGothic', 'Menlo', 'Consolas', 'Roboto Mono', monospace;
+	font-family: var(--ff-mono);
+	background-color: var(--bg-secondary);
+	padding-inline: 0.25rem;
 }
 
 pre {
+	font-family: var(--ff-mono);
 	white-space: pre;
 	overflow-x: auto;
 	padding-inline: 0.25rem;
 	margin-block-start: var(--m-vertical);
+	code {
+		background-color: transparent;
+		padding-inline: 0;
+	}
 }
 
 blockquote {
