@@ -1,6 +1,6 @@
 <script lang="ts">
 	import type { PageData } from '../blog/$types';
-	import HeadProperties from '$lib/components/head-properties.svelte';
+	import HeadProperties from '$lib/components/HeadProperties.svelte';
 
 	interface Props {
 		data: PageData;

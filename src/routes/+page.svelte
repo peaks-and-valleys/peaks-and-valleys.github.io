@@ -1,7 +1,7 @@
 <script lang="ts">
 	import type { PageData } from '$types';
-	import StampOnClick from '$lib/components/stamp-on-click.svelte';
-	import HeadProperties from '$lib/components/head-properties.svelte';
+	import StampOnClick from '$lib/components/StampOnClick.svelte';
+	import HeadProperties from '$lib/components/HeadProperties.svelte';
 
 	interface Props {
 		data: PageData;
