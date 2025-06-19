@@ -9,7 +9,7 @@
 }
 
 html {
-	font-size: clamp(15px, round(2vw, 1px), 20px);
+	font-size: clamp(16px, round(2vw, 1px), 20px);
 	font-family: var(--ff-sans);
 	font-feature-settings: 'ss04', 'case', 'tnum';
 	background-color: var(--blue-primary);
@@ -24,9 +24,9 @@ h1,
 h2,
 h3,
 h4 {
-	line-height: 1.25;
-	font-feature-settings: 'palt', 'kern';
-	letter-spacing: -0.002em;
+	line-height: 1.4;
+	letter-spacing: -0.004em;
+	text-wrap: balance;
 }
 
 h1 {
@@ -39,8 +39,8 @@ h1 {
 h2,
 h3,
 h4 {
-	font-weight: var(--font-weight-semibold);
-	font-variation-settings: 'wght' var(--font-weight-semibold);
+	font-weight: var(--font-weight-bold);
+	font-variation-settings: 'wght' var(--font-weight-bold);
 	text-align: left;
 	margin-block-start: calc(var(--m-vertical) * 1.125 - var(--half-leading));
 }
@@ -58,8 +58,8 @@ h4 {
 }
 
 strong {
-	font-weight: var(--font-weight-semibold);
-	font-variation-settings: 'wght' var(--font-weight-semibold);
+	font-weight: var(--font-weight-bold);
+	font-variation-settings: 'wght' var(--font-weight-bold);
 }
 
 p {
