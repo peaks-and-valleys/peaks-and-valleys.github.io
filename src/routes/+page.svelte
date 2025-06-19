@@ -15,9 +15,5 @@
 <StampOnClick stampImage="/images/index/usachan.svg"></StampOnClick>
 
 <div class="p-cover">
-	<img
-		class="p-cover__image"
-		src="images/index/peaks-and-valleys.svg"
-		alt="Peaks and Valleys のロゴ。山と谷を象徴するシンプルなデザイン。"
-	/>
+	<img class="p-cover__image" src="images/index/peaks-and-valleys.svg" alt="Peaks and Valleys" />
 </div>

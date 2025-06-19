@@ -71,52 +71,48 @@
 		</main>
 
 		<footer class="l-navList l-navList--bottom">
-			<nav aria-label="サブナビゲーション">
-				<ul>
-					<li>
-						<a href="/" aria-current={page.url.pathname === '/'}>home</a>
-					</li>
-					<li>
-						<a href="/about" aria-current={page.url.pathname === '/about'}>about</a>
-					</li>
-					<li>
-						<a href="/blog" aria-current={page.url.pathname === '/blog'}>blog</a>
-					</li>
-					<li>
-						<a
-							href="/privacy-and-license"
-							rel="privacy-policy"
-							aria-current={page.url.pathname === '/privacy-and-license'}>privacy & license</a
-						>
-					</li>
-				</ul>
-			</nav>
-			<nav aria-label="フッター用リンクナビゲーション">
-				<ul>
-					<li>
-						<a
-							href="https://www.behance.net/peaks-and-valleys"
-							rel="external me noopener noreferrer"
-							translate="no">Behance</a
-						>
-					</li>
-					<li>
-						<a
-							href="https://github.com/peaks-and-valleys"
-							rel="external me noopener noreferrer"
-							translate="no">GitHub</a
-						>
-					</li>
-					<li>
-						<a
-							href="https://scrapbox.io/peaks-and-valleys/"
-							rel="external me noopener noreferrer"
-							translate="no">Cosense</a
-						>
-					</li>
-					<li><address>peaksvndvalleys(at)protonmail(dot)com</address></li>
-				</ul>
-			</nav>
+			<ul>
+				<li>
+					<a href="/" aria-current={page.url.pathname === '/'}>home</a>
+				</li>
+				<li>
+					<a href="/about" aria-current={page.url.pathname === '/about'}>about</a>
+				</li>
+				<li>
+					<a href="/blog" aria-current={page.url.pathname === '/blog'}>blog</a>
+				</li>
+				<li>
+					<a
+						href="/privacy-and-license"
+						rel="privacy-policy"
+						aria-current={page.url.pathname === '/privacy-and-license'}>privacy & license</a
+					>
+				</li>
+			</ul>
+			<ul>
+				<li>
+					<a
+						href="https://www.behance.net/peaks-and-valleys"
+						rel="external me noopener noreferrer"
+						translate="no">Behance</a
+					>
+				</li>
+				<li>
+					<a
+						href="https://github.com/peaks-and-valleys"
+						rel="external me noopener noreferrer"
+						translate="no">GitHub</a
+					>
+				</li>
+				<li>
+					<a
+						href="https://scrapbox.io/peaks-and-valleys/"
+						rel="external me noopener noreferrer"
+						translate="no">Cosense</a
+					>
+				</li>
+				<li><address>peaksvndvalleys(at)protonmail(dot)com</address></li>
+			</ul>
 		</footer>
 	</div>
 </div>
