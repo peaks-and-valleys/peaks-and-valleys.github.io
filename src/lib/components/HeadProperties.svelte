@@ -11,7 +11,7 @@
 
 	export let description: string = '底が見えるほど深く、手が届くほど広い';
 
-	const baseUrl: string = 'https://peaks-and-valleys.net';
+	const baseUrl: string = 'https://peaks-and-valleys.github.io';
 	let pagePath = page.url.pathname;
 
 	// Remove grouping "/()" path
