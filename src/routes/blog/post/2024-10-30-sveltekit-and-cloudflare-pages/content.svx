@@ -2,7 +2,7 @@
 title: 'SvelteKit + Cloudflare Pages でポートフォリオサイトの構築した際の備忘録'
 description: 'first commit'
 date: '2024-10-30'
-draft: 'false'
+draft: 'true'
 ---
 
 _以下の情報は<time datetime='2024-10'>2024年10月</time>現在のものです_

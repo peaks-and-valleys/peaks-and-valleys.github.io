@@ -1,10 +1,10 @@
 :root {
 	/* color palette (oklch) */
 	--dark-primary: oklch(0.25 0.005 264);
-	--dark-secondary: oklch(0.35 0.005 264);
-	--light-primary: oklch(0.95 0.005 264);
-	--light-secondary: oklch(0.9 0.005 264);
-	--blue-primary: oklch(0.45 0.2 264);
+	--dark-secondary: oklch(0.3 0.005 264);
+	--light-primary: oklch(0.92 0.005 264);
+	--light-secondary: oklch(0.87 0.005 264);
+	--blue-primary: oklch(0.42 0.2 264);
 
 	/* c: color, bg:background color */
 	--c-primary: var(--dark-primary);
@@ -19,15 +19,15 @@
 
 	/* ff: font family */
 	--ff-sans:
-		'Space Grotesk', 'BIZ UDGothic', 'Helvetica Neue', 'Arial', 'Hiragino Kaku Gothic ProN',
+		'Space Grotesk', 'Helvetica Neue', 'Arial', 'BIZ UDGothic', 'Hiragino Kaku Gothic ProN',
 		'Hiragino Sans', 'Noto Sans JP', 'BIZ UDPGothic', sans-serif;
 	--ff-mono:
 		'Menlo', 'Consolas', 'Roboto Mono', 'Ubuntu Monospace', 'Noto Mono', 'Oxygen Mono',
 		'Liberation Mono', 'BIZ UDGothic', monospace;
 
 	/* m: margin */
-	--m-vertical: 1rem;
-	--m-horizontal: 1rem;
+	--m-vertical: 16px;
+	--m-horizontal: 16px;
 
 	/* utilities */
 	--half-leading: calc((1lh - 1em) / 2);

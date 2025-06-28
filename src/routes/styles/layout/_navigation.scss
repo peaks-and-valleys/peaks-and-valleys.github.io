@@ -30,6 +30,7 @@
 	}
 
 	&--bottom {
+		margin-block-start: var(--m-vertical);
 		position: sticky;
 		top: calc(100vh - var(--m-vertical));
 		nav {

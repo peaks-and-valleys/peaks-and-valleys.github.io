@@ -9,7 +9,7 @@
 }
 
 html {
-	font-size: clamp(16px, round(2vw, 1px), 20px);
+	font-size: 18px;
 	font-family: var(--ff-sans);
 	font-feature-settings: 'ss04', 'case', 'tnum';
 	background-color: var(--blue-primary);
