@@ -1,6 +1,4 @@
 <script lang="ts">
-	import type { LayoutData } from './$types';
-	import Page from './+page.svelte';
 	import { page } from '$app/state';
 	import './styles/app.scss';
 	interface Props {
@@ -81,13 +79,6 @@
 					</li>
 					<li>
 						<a href="/blog" aria-current={page.url.pathname === '/blog'}>blog</a>
-					</li>
-					<li>
-						<a
-							href="/privacy-and-license"
-							rel="privacy-policy"
-							aria-current={page.url.pathname === '/privacy-and-license'}>privacy & license</a
-						>
 					</li>
 				</ul>
 			</nav>

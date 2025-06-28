@@ -1,12 +1,6 @@
 <script lang="ts">
 	import type { PageData } from './$types';
 	import HeadProperties from '$lib/components/HeadProperties.svelte';
-
-	interface Props {
-		data: PageData;
-	}
-
-	let { data }: Props = $props();
 </script>
 
 <HeadProperties pageTitle="このサイトについて" description="このサイトについての説明"
@@ -64,4 +58,37 @@
 			<li>メールアドレス: peaksvndvalleys(at)protonmail(dot)com</li>
 		</ul>
 	</address>
+	<h2>その他告知事項</h2>
+	<h3>プライバシー</h3>
+	<ul>
+		<li>
+			当サイトでは、サードパーティ Cookie
+			やフィンガープリントなど、個人を特定し得る手法を使ったアクセス解析は実施していません。
+		</li>
+		<li>広告やアフィリエイトリンクなどもありません。</li>
+	</ul>
+
+	<h3>ライセンス</h3>
+	<ul>
+		<li>
+			文章、画像などのコンテンツは、特に明記がない限り、 <a
+				href="https://creativecommons.org/licenses/by-sa/4.0/deed.ja"
+				hreflang="ja"
+				rel="external"
+			>
+				クリエイティブ・コモンズ 表示-継承 4.0 国際 ライセンス</a
+			>の下で提供されています。
+		</li>
+		<li>
+			ソースコードは、特に明記がない限り <a
+				href="https://opensource.org/license/mit"
+				rel="external"
+			>
+				MIT ライセンス</a
+			>の下で提供されています。
+		</li>
+	</ul>
+	<p>
+		いずれの場合も、出典を <a href="/">https://peaks-and-valleys.github.io/</a> としてもらえれば問題ありません。
+	</p>
 </article>
