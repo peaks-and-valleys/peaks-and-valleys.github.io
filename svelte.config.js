@@ -1,5 +1,5 @@
 import { mdsvex, escapeSvelte } from 'mdsvex';
-import adapter from '@sveltejs/adapter-cloudflare';
+import adapter from '@sveltejs/adapter-static';
 import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
 import rehypeExternalLinks from 'rehype-external-links';
 import { createHighlighter } from 'shiki';
@@ -28,7 +28,10 @@ const config = {
 	preprocess: [vitePreprocess(), mdsvex(mdsvexOptions)],
 	kit: {
 		adapter: adapter({
-			routes: { include: ['/*'], exclude: ['<all>'] }
+			pages: 'build',
+			assets: 'build',
+			precompress: false,
+			strict: true
 		})
 	},
 	extensions: ['.svelte', '.svx']
