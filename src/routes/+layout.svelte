@@ -21,8 +21,8 @@
 	let { children }: Props = $props();
 </script>
 
-<div class="l-globalWrapper">
-	<div class="l-mainContentWrapper">
+<div class="wrapper">
+	<div class="container">
 		<header class="l-navList">
 			<nav aria-label="メインナビゲーション">
 				<ul>
@@ -111,3 +111,20 @@
 		</footer>
 	</div>
 </div>
+
+<style lang="scss">
+	.wrapper {
+		background-color: var(--c-accent-blue);
+		display: flex;
+		justify-content: center;
+		@media screen and (max-width: 1279.8px) {
+			padding-inline-start: 0.625rem;
+		}
+	}
+	.container {
+		min-height: 100vh;
+		background-color: var(--bg-primary);
+		width: 100%;
+		max-width: 1280px;
+	}
+</style>
