@@ -109,10 +109,10 @@
 <style>
 	.stamp-overlay {
 		position: fixed;
-		top: 0;
-		left: 0;
-		width: 100%;
-		height: 100%;
+		inset-block-start: 0;
+		inset-inline-start: 0;
+		inline-size: 100%;
+		block-size: 100%;
 		pointer-events: none; /* クリックを通過させる */
 		z-index: 1000;
 	}
@@ -125,8 +125,8 @@
 	}
 
 	.stamp img {
-		width: 100%;
-		height: 100%;
+		inline-size: 100%;
+		block-size: 100%;
 		object-fit: contain;
 	}
 
