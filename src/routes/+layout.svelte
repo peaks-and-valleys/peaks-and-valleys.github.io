@@ -122,10 +122,10 @@
 		}
 	}
 	.container {
-		min-height: 100vh;
+		min-block-size: 100vh;
 		background-color: var(--bg-primary);
-		width: 100%;
-		max-width: calc(1280px - var(--m-vertical) * 0.5);
+		inline-size: 100%;
+		max-inline-size: calc(1280px - var(--m-vertical) * 0.5);
 		display: flex;
 		flex-direction: column;
 		gap: calc(var(--m-vertical) * 0.5);

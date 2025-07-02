@@ -14,10 +14,10 @@
 <style lang="scss">
 	.cover {
 		display: flex;
-		min-height: 100%;
+		min-block-size: 100%;
 		align-items: center;
 		img {
-			width: 100%;
+			inline-size: 100%;
 			margin-block-end: calc(var(--m-vertical) * 0.5);
 		}
 	}
