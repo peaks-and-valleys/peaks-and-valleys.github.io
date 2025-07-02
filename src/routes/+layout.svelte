@@ -118,13 +118,19 @@
 		display: flex;
 		justify-content: center;
 		@media screen and (max-width: 1279.8px) {
-			padding-inline-start: 0.625rem;
+			padding-inline-start: calc(var(--m-vertical) * 0.5);
 		}
 	}
 	.container {
 		min-height: 100vh;
 		background-color: var(--bg-primary);
 		width: 100%;
-		max-width: 1280px;
+		max-width: calc(1280px - var(--m-vertical) * 0.5);
+		display: flex;
+		flex-direction: column;
+		gap: calc(var(--m-vertical) * 0.5);
+	}
+	main {
+		flex: 1;
 	}
 </style>
