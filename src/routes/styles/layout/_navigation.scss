@@ -1,18 +1,16 @@
 .l-navList {
-	line-height: 1.25;
-	inline-size: 100%;
+	line-height: 1.2;
 	display: flex;
 	flex-direction: column;
+	gap: calc(var(--m-vertical) * 0.25);
 	color: var(--bg-primary);
-	nav {
-		margin-block: calc(var(--m-vertical) * 0.25);
-
+	nav,
+	section {
 		ul {
 			display: flex;
 			justify-content: flex-start;
 			flex-wrap: wrap;
-			column-gap: calc(var(--m-horizontal) * 0.4);
-			row-gap: calc(var(--m-vertical) * 0.15);
+			gap: calc(var(--m-horizontal) * 0.25);
 			li {
 				list-style: none;
 				background-color: var(--c-primary);
@@ -25,9 +23,8 @@
 			color: var(--bg-primary);
 		}
 	}
-
 	&--bottom {
-		nav {
+		section {
 			ul {
 				justify-content: flex-end;
 			}

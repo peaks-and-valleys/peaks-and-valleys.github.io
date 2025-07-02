@@ -69,7 +69,7 @@
 		</main>
 
 		<footer class="l-navList l-navList--bottom">
-			<nav aria-label="サブナビゲーション">
+			<section aria-label="サブナビゲーション">
 				<ul>
 					<li>
 						<a href="/" aria-current={page.url.pathname === '/'}>home</a>
@@ -81,8 +81,8 @@
 						<a href="/blog" aria-current={page.url.pathname === '/blog'}>blog</a>
 					</li>
 				</ul>
-			</nav>
-			<nav aria-label="フッター用リンクナビゲーション">
+			</section>
+			<section aria-label="フッター用リンクナビゲーション">
 				<ul>
 					<li>
 						<a
@@ -107,7 +107,7 @@
 					</li>
 					<li><address>peaksvndvalleys(at)protonmail(dot)com</address></li>
 				</ul>
-			</nav>
+			</section>
 		</footer>
 	</div>
 </div>
