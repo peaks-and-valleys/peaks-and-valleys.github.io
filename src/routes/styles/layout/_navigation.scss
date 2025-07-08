@@ -2,7 +2,7 @@
 	line-height: 1.2;
 	display: flex;
 	flex-direction: column;
-	gap: calc(var(--m-vertical) * 0.25);
+	gap: var(--spacing-xxs);
 	color: var(--bg-primary);
 	nav,
 	section {
@@ -10,12 +10,12 @@
 			display: flex;
 			justify-content: flex-start;
 			flex-wrap: wrap;
-			gap: calc(var(--m-horizontal) * 0.25);
+			gap: var(--spacing-xxs);
 			li {
 				list-style: none;
 				background-color: var(--c-primary);
-				padding-inline: calc(var(--m-horizontal) * 0.5);
-				padding-block: calc(var(--m-vertical) * 0.25);
+				padding-inline: var(--spacing-xs);
+				padding-block: var(--spacing-xxs);
 				margin-inline-start: 0;
 				margin-block-start: 0;
 			}

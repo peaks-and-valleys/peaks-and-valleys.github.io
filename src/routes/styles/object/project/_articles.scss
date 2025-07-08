@@ -1,16 +1,15 @@
 .p-articleContainer {
-	margin-inline: calc(var(--m-horizontal) * 1.125);
+	margin-inline: var(--spacing-m);
 
 	hgroup {
-		margin-block: calc(var(--m-vertical) - var(--half-leading));
+		margin-block: calc(var(--spacing-m) - var(--half-leading));
 
 		* {
 			color: var(--c-primary);
-			margin-bottom: calc(var(--m-vertical) * 0.25) 0;
+			margin-block-start: var(--spacing-xs);
 		}
 
 		p {
-			margin: calc(var(--m-vertical) * 0.25) 0;
 			font-size: 0.8rem;
 			color: var(--c-secondary);
 		}
@@ -22,16 +21,16 @@
 	h4,
 	h5,
 	h6 {
-		border-inline-start: calc(var(--m-horizontal) * 0.8) solid var(--c-secondary);
-		margin-inline-start: calc((-1) * var(--m-horizontal) * 1.125);
-		padding-inline-start: calc(var(--m-horizontal) * (1.125 - 0.8 - 0.1)); /* すこし頭を出す */
+		border-inline-start: calc(var(--spacing-m) * 0.8) solid var(--c-secondary);
+		margin-inline-start: calc((-1) * var(--spacing-m));
+		padding-inline-start: calc(var(--spacing-m) * (1 - 0.8 - 0.1)); /* すこし頭を出す */
 	}
 }
 
 .p-articleList {
 	display: flex;
 	flex-direction: column;
-	row-gap: var(--m-vertical);
+	row-gap: var(--spacing-m);
 	text-align: left;
 	color: var(--c-primary);
 
