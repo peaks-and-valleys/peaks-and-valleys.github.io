@@ -1,16 +1,15 @@
 .p-articleContainer {
-	margin-inline: calc(var(--spacing-m));
+	margin-inline: var(--spacing-m);
 
 	hgroup {
 		margin-block: calc(var(--spacing-m) - var(--half-leading));
 
 		* {
 			color: var(--c-primary);
-			margin-bottom: calc(var(--spacing-s)) 0;
+			margin-block-start: var(--spacing-xs);
 		}
 
 		p {
-			margin: calc(var(--spacing-s)) 0;
 			font-size: 0.8rem;
 			color: var(--c-secondary);
 		}
