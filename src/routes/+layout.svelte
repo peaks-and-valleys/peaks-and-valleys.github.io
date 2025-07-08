@@ -118,17 +118,17 @@
 		display: flex;
 		justify-content: center;
 		@media screen and (max-width: 1279.8px) {
-			padding-inline-start: calc(var(--m-vertical) * 0.5);
+			padding-inline-start: var(--spacing-s);
 		}
 	}
 	.container {
 		min-block-size: 100vh;
 		background-color: var(--bg-primary);
 		inline-size: 100%;
-		max-inline-size: calc(1280px - var(--m-vertical) * 0.5);
+		max-inline-size: calc(1280px - var(--spacing-s));
 		display: flex;
 		flex-direction: column;
-		gap: calc(var(--m-vertical) * 0.5);
+		gap: var(--spacing-s);
 	}
 	main {
 		flex: 1;

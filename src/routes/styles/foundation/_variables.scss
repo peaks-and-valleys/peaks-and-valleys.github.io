@@ -25,9 +25,14 @@
 		'Menlo', 'Consolas', 'Roboto Mono', 'Ubuntu Monospace', 'Noto Mono', 'Oxygen Mono',
 		'Liberation Mono', 'BIZ UDGothic', monospace;
 
-	/* m: margin */
-	--m-vertical: 16px;
-	--m-horizontal: 16px;
+	/* spacing */
+	--spacing-xxs: 4px;
+	--spacing-xs: 8px;
+	--spacing-s: 12px;
+	--spacing-m: 16px;
+	--spacing-l: 24px;
+	--spacing-xl: 32px;
+	--spacing-xxl: 48px;
 
 	/* utilities */
 	--half-leading: calc((1lh - 1em) / 2);

@@ -18,7 +18,7 @@
 		align-items: center;
 		img {
 			inline-size: 100%;
-			margin-block-end: calc(var(--m-vertical) * 0.5);
+			margin-block-end: var(--spacing-xs);
 		}
 	}
 </style>
