@@ -36,9 +36,7 @@ onNavigate((navigation) => {
 });
 ```
 
-`document.startViewTransition` がビュー遷移を実行してくれるメソッドで、それをページ遷移時に実行してほしいから `onNavigate` の中に書いている、ということだと思う。たぶん。
-
-#### CSS のいい感じの箇所に以下のコードを追加する
+#### グローバルに適用される CSS に以下のコードを追加する
 
 ```css
 @media (prefers-reduced-motion) {
