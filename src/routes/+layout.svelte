@@ -121,6 +121,7 @@
 			padding-inline-start: var(--spacing-s);
 		}
 	}
+
 	.container {
 		min-block-size: 100vh;
 		background-color: var(--bg-primary);
@@ -130,7 +131,16 @@
 		flex-direction: column;
 		gap: var(--spacing-s);
 	}
+
 	main {
 		flex: 1;
+	}
+
+	header {
+		view-transition-name: header;
+	}
+
+	footer {
+		view-transition-name: footer;
 	}
 </style>
