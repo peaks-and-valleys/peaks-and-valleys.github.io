@@ -12,10 +12,13 @@ html {
 	font-size: clamp(16px, round(2.5vw, 1px), 18px);
 	font-family: var(--ff-sans);
 	font-feature-settings: 'ss04', 'case', 'tnum';
-	background-color: var(--bg-primary);
 	color: var(--c-primary);
 	text-underline-offset: calc(var(--half-leading) / 2);
-	@media screen and (min-width: 1280px) {
+}
+
+body {
+	background-color: var(--bg-secondary);
+	@media screen and (min-width: 1024px) {
 		padding-inline-start: var(--scrollbar-gutter);
 	}
 }
