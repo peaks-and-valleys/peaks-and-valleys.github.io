@@ -1,3 +1,5 @@
+import type { Component } from 'svelte';
+
 export interface PostMetadata {
 	title: string;
 	description: string;
@@ -14,6 +16,6 @@ export interface Post {
 }
 
 export interface PostModule {
-	default: any; // Svelteコンポーネント
+	default: Component;
 	metadata: PostMetadata;
 }
