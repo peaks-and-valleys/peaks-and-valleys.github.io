@@ -18,7 +18,7 @@ export async function getAllPosts(): Promise<Post[]> {
 	}
 
 	// 記事データを読み込む
-	const postFiles = import.meta.glob<PostModule>('../../routes/blog/post/*/content.svx', {
+	const postFiles = import.meta.glob<PostModule>('../../routes/blog/\\(post\\)/*/content.svx', {
 		eager: true
 	});
 	const posts: Post[] = [];

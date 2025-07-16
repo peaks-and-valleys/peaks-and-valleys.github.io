@@ -18,7 +18,7 @@
 			<li class="p-articleList">
 				<article>
 					<hgroup>
-						<h2><a href="blog/post/{post.slug}">{post.title}</a></h2>
+						<h2><a href="blog/{post.slug}">{post.title}</a></h2>
 						<p>
 							<time datetime={post.date}>{new Date(post.date).toLocaleDateString('ja')}</time> - {post.description}
 						</p>
