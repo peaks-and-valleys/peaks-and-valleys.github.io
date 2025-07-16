@@ -9,7 +9,7 @@
 }
 
 html {
-	font-size: clamp(16px, round(2vw, 1px), 18px);
+	font-size: clamp(16px, round(2.5vw, 1px), 18px);
 	font-family: var(--ff-sans);
 	font-feature-settings: 'ss04', 'case', 'tnum';
 	background-color: var(--blue-primary);
@@ -81,10 +81,17 @@ ol {
 :where(h1, h2, h3, h4, h5, h6, p, li) > a {
 	color: var(--c-accent-blue);
 
-	@media (hover) {
+	@media (any-hover) {
 		&:hover {
-			text-decoration: none;
+			text-decoration-color: transparent;
+			@media (prefers-reduced-motion: no-preference) {
+				transition: text-decoration-color 200ms;
+			}
 		}
+	}
+
+	&[aria-current='true'] {
+		text-decoration-color: transparent;
 	}
 
 	&[rel~='external']::after {
@@ -129,10 +136,6 @@ hr {
 
 address {
 	font-style: normal;
-}
-
-[aria-current='true'] {
-	text-decoration: underline dotted;
 }
 
 @media (prefers-reduced-motion) {
