@@ -114,19 +114,16 @@
 
 <style lang="scss">
 	.wrapper {
-		background-color: var(--c-accent-blue);
+		background-color: var(--bg-secondary);
 		display: flex;
 		justify-content: center;
-		@media screen and (max-width: 1279.8px) {
-			padding-inline-start: var(--spacing-s);
-		}
 	}
 
 	.container {
 		min-block-size: 100vh;
 		background-color: var(--bg-primary);
 		inline-size: 100%;
-		max-inline-size: calc(1280px - var(--spacing-s));
+		max-inline-size: 1024px;
 		display: flex;
 		flex-direction: column;
 		gap: var(--spacing-s);
