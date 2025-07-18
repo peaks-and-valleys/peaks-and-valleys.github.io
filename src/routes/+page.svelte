@@ -8,7 +8,7 @@
 <StampOnClick stampImage="/images/index/usachan.svg"></StampOnClick>
 
 <div class="cover">
-	<img src="images/index/peaks-and-valleys.svg" alt="Peaks and Valleys" />
+	<img src="images/index/usachan.svg" alt="うさちゃん" />
 </div>
 
 <style lang="scss">
@@ -16,9 +16,10 @@
 		display: flex;
 		min-block-size: 100%;
 		align-items: center;
+		justify-content: center;
 		img {
-			inline-size: 100%;
-			padding-inline: var(--spacing-xxs);
+			inline-size: max(240px, 40%);
+			padding-inline: var(--spacing-xs);
 		}
 	}
 </style>
