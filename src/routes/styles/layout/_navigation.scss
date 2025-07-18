@@ -22,6 +22,18 @@
 		}
 		a {
 			color: var(--bg-primary);
+			text-decoration: line-through transparent 4px;
+
+			@media (any-hover) {
+				&:hover {
+					text-decoration-color: currentColor;
+				}
+			}
+
+			&[aria-current='page'],
+			&[aria-current='true'] {
+				text-decoration-color: currentColor;
+			}
 		}
 	}
 	&--bottom {

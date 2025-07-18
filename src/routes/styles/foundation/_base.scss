@@ -93,10 +93,6 @@ ol {
 		}
 	}
 
-	&[aria-current='true'] {
-		text-decoration-color: transparent;
-	}
-
 	&[rel~='external']::after {
 		content: '↗';
 		display: inline-block;
