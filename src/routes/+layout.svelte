@@ -126,14 +126,12 @@
 
 <style lang="scss">
 	.wrapper {
-		background-color: var(--bg-primary);
 		display: flex;
 		justify-content: center;
 	}
 
 	.container {
 		min-block-size: 100vh;
-		background-color: var(--bg-primary);
 		inline-size: 100%;
 		max-inline-size: 1024px;
 		display: flex;
