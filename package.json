@@ -13,6 +13,7 @@
 		"fix": "npm run format && npm run lint"
 	},
 	"devDependencies": {
+		"@csstools/postcss-oklab-function": "^4.0.10",
 		"@sveltejs/adapter-auto": "^6.0.1",
 		"@sveltejs/adapter-static": "^3.0.8",
 		"@sveltejs/kit": "^2.24.0",
