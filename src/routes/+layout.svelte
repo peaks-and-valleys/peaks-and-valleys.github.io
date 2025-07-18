@@ -27,13 +27,19 @@
 			<nav aria-label="メインナビゲーション">
 				<ul>
 					<li>
-						<a href="/" aria-current={page.url.pathname === '/'}>home</a>
+						<a href="/" aria-current={page.url.pathname === '/' ? 'page' : undefined}>home</a>
 					</li>
 					<li>
-						<a href="/about" aria-current={page.url.pathname === '/about'}>about</a>
+						<a
+							href="/about"
+							aria-current={page.url.pathname.startsWith('/about') ? 'true' : undefined}>about</a
+						>
 					</li>
 					<li>
-						<a href="/blog" aria-current={page.url.pathname === '/blog'}>blog</a>
+						<a
+							href="/blog"
+							aria-current={page.url.pathname.startsWith('/blog') ? 'true' : undefined}>blog</a
+						>
 					</li>
 				</ul>
 			</nav>
@@ -72,13 +78,19 @@
 			<section aria-label="サブナビゲーション">
 				<ul>
 					<li>
-						<a href="/" aria-current={page.url.pathname === '/'}>home</a>
+						<a href="/" aria-current={page.url.pathname === '/' ? 'page' : undefined}>home</a>
 					</li>
 					<li>
-						<a href="/about" aria-current={page.url.pathname === '/about'}>about</a>
+						<a
+							href="/about"
+							aria-current={page.url.pathname.startsWith('/about') ? 'true' : undefined}>about</a
+						>
 					</li>
 					<li>
-						<a href="/blog" aria-current={page.url.pathname === '/blog'}>blog</a>
+						<a
+							href="/blog"
+							aria-current={page.url.pathname.startsWith('/blog') ? 'true' : undefined}>blog</a
+						>
 					</li>
 				</ul>
 			</section>
@@ -114,7 +126,7 @@
 
 <style lang="scss">
 	.wrapper {
-		background-color: var(--bg-secondary);
+		background-color: var(--bg-primary);
 		display: flex;
 		justify-content: center;
 	}

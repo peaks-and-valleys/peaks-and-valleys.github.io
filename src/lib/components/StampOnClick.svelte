@@ -16,7 +16,7 @@
 	export let fadeOutDuration: number = 1000; // フェードアウト時間（ミリ秒）
 
 	// サイズを文字列として受け取る
-	export let effectiveSize: string = '8rem';
+	export let effectiveSize: string = '96px';
 
 	export let enabled: boolean = true; // スタンプ機能の有効/無効
 	export let maxStamps: number = 20; // 最大表示数

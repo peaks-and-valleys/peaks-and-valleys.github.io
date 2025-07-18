@@ -21,9 +21,9 @@
 	h4,
 	h5,
 	h6 {
-		border-inline-start: calc(var(--spacing-m) * 0.8) solid var(--c-secondary);
+		border-inline-start: calc(var(--spacing-m) * 0.625) solid var(--c-secondary);
 		margin-inline-start: calc((-1) * var(--spacing-m));
-		padding-inline-start: calc(var(--spacing-m) * (1 - 0.8 - 0.1)); /* すこし頭を出す */
+		padding-inline-start: calc(var(--spacing-m) * (1 - 0.625));
 	}
 }
 
