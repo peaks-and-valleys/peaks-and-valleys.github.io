@@ -114,7 +114,7 @@
 
 <style lang="scss">
 	.wrapper {
-		background-color: var(--bg-secondary);
+		background-color: var(--bg-primary);
 		display: flex;
 		justify-content: center;
 	}
