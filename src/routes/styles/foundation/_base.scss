@@ -5,11 +5,11 @@
 	font-weight: 300 700;
 	font-variation-settings: 'wght' 300 700;
 	font-display: swap;
-	size-adjust: 102%;
+	size-adjust: 104%;
 }
 
 html {
-	font-size: clamp(16px, round(2.5vw, 1px), 18px);
+	font-size: clamp(16px, round(down, calc(16px + 0.25vw), 1px), 20px);
 	font-family: var(--ff-sans);
 	font-feature-settings: 'ss04', 'case', 'tnum';
 	color: var(--c-primary);
@@ -29,7 +29,7 @@ h3,
 h4 {
 	line-height: 1.4;
 	letter-spacing: -0.004em;
-	text-wrap: balance;
+	text-wrap: pretty;
 }
 
 h1 {

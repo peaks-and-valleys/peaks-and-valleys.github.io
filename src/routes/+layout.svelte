@@ -133,7 +133,7 @@
 	.container {
 		min-block-size: 100vh;
 		inline-size: 100%;
-		max-inline-size: 1024px;
+		max-inline-size: 1280px;
 		display: flex;
 		flex-direction: column;
 		gap: var(--spacing-s);
