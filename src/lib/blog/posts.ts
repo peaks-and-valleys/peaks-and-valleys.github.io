@@ -1,5 +1,5 @@
 import { dev } from '$app/environment';
-import type { Post, PostMetadata, PostModule } from './types';
+import type { Post, PostModule } from './types';
 
 // キャッシュ
 let postsCache: Post[] | null = null;
