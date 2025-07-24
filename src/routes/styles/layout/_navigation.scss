@@ -22,7 +22,7 @@
 		}
 		a {
 			color: var(--bg-primary);
-			text-decoration: line-through transparent 4px;
+			text-decoration: underline transparent 2px;
 
 			@media (any-hover) {
 				&:hover {
