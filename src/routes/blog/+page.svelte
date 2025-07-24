@@ -14,7 +14,7 @@
 <div class="p-articleContainer">
 	<h1>ブログ</h1>
 	<ul>
-		{#each data.posts as post}
+		{#each data.posts as post (post.slug)}
 			<li class="p-articleList">
 				<article>
 					<hgroup>
