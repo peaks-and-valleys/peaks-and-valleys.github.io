@@ -141,6 +141,9 @@
 
 	main {
 		flex: 1;
+		border: solid 6px var(--c-secondary);
+		margin-inline: var(--spacing-xs);
+		padding-block-end: calc(var(--spacing-m) - var(--half-leading));
 	}
 
 	header {
