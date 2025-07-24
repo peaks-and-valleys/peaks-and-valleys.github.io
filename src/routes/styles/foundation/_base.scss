@@ -33,7 +33,7 @@ h4 {
 }
 
 h1 {
-	font-size: 2rem;
+	font-size: 1.8rem; // ≒(9/8)^5
 	font-weight: var(--font-weight-bold);
 	font-variation-settings: 'wght' var(--font-weight-bold);
 	margin-block-start: calc(var(--spacing-l) - var(--half-leading));
@@ -49,15 +49,15 @@ h4 {
 }
 
 h2 {
-	font-size: 1.6rem;
+	font-size: 1.42rem; // ≒(9/8)^3
 }
 
 h3 {
-	font-size: 1.25rem;
+	font-size: 1.25rem; // ≒(9/8)^2
 }
 
 h4 {
-	font-size: 1.125rem;
+	font-size: 1.125rem; // ≒(9/8)^1
 }
 
 strong {
@@ -86,10 +86,7 @@ ol {
 
 	@media (any-hover) {
 		&:hover {
-			text-decoration-color: transparent;
-			@media (prefers-reduced-motion: no-preference) {
-				transition: text-decoration-color 200ms;
-			}
+			text-decoration: none;
 		}
 	}
 

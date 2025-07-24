@@ -22,17 +22,17 @@
 		}
 		a {
 			color: var(--bg-primary);
-			text-decoration: underline transparent 2px;
+			text-decoration: none;
 
 			@media (any-hover) {
 				&:hover {
-					text-decoration-color: currentColor;
+					text-decoration: underline 2px;
 				}
 			}
 
 			&[aria-current='page'],
 			&[aria-current='true'] {
-				text-decoration-color: currentColor;
+				text-decoration: underline 2px;
 			}
 		}
 	}
