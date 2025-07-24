@@ -94,29 +94,8 @@
 					</li>
 				</ul>
 			</section>
-			<section aria-label="フッター用リンクナビゲーション">
+			<section aria-label="連絡先ナビゲーション">
 				<ul>
-					<li>
-						<a
-							href="https://www.behance.net/peaks-and-valleys"
-							rel="external me noopener noreferrer"
-							translate="no">Behance</a
-						>
-					</li>
-					<li>
-						<a
-							href="https://github.com/peaks-and-valleys"
-							rel="external me noopener noreferrer"
-							translate="no">GitHub</a
-						>
-					</li>
-					<li>
-						<a
-							href="https://scrapbox.io/peaks-and-valleys/"
-							rel="external me noopener noreferrer"
-							translate="no">Cosense</a
-						>
-					</li>
 					<li><address>peaksvndvalleys(at)protonmail(dot)com</address></li>
 				</ul>
 			</section>
