@@ -11,11 +11,11 @@
 
 <HeadProperties pageTitle="ブログ" description="ブログ記事一覧"></HeadProperties>
 
-<div class="p-articleContainer">
+<div class="l-articleContainer">
 	<h1>ブログ</h1>
 	<ul>
 		{#each data.posts as post (post.slug)}
-			<li class="p-articleList">
+			<li class="l-articleList">
 				<article>
 					<hgroup>
 						<h2><a href="blog/{post.slug}">{post.title}</a></h2>

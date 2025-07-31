@@ -5,7 +5,7 @@
 
 <HeadProperties pageTitle={String(page.status)} />
 
-<article class="p-articleContainer" role="status">
+<article class="l-articleContainer" role="status">
 	<h1>{page.status}</h1>
 	<p>{page.error?.message}</p>
 	<button on:click={() => history.back()}>前のページに戻る</button>

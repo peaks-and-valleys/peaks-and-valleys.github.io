@@ -17,7 +17,7 @@
 <HeadProperties pageTitle={meta.title} description={meta.description} pageType="article"
 ></HeadProperties>
 
-<div class="p-articleContainer">
+<div class="l-articleContainer">
 	<article>
 		<hgroup>
 			<h1 class="">{meta.title}</h1>
