@@ -94,7 +94,7 @@
 					</li>
 				</ul>
 			</section>
-			<section aria-label="連絡先ナビゲーション">
+			<section aria-label="連絡先">
 				<ul>
 					<li><address>peaksvndvalleys(at)protonmail(dot)com</address></li>
 				</ul>
@@ -115,14 +115,13 @@
 		max-inline-size: 1280px;
 		display: flex;
 		flex-direction: column;
-		gap: var(--spacing-s);
+		gap: var(--spacing-m);
 	}
 
 	main {
 		flex: 1;
 		border: solid 6px var(--c-secondary);
-		margin-inline: var(--spacing-xs);
-		padding-block-end: calc(var(--spacing-m) - var(--half-leading));
+		margin-inline: var(--spacing-m);
 	}
 
 	header {

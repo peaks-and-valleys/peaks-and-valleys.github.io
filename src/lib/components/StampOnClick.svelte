@@ -16,7 +16,10 @@
 	export let fadeOutDuration: number = 1000; // フェードアウト時間（ミリ秒）
 
 	// サイズを文字列として受け取る
-	export let effectiveSize: string = '96px';
+	export let effectiveSize: string = '108px';
+
+	// コンポーネントのルート要素への参照
+	let containerRef: HTMLDivElement;
 
 	export let enabled: boolean = true; // スタンプ機能の有効/無効
 	export let maxStamps: number = 20; // 最大表示数
@@ -28,8 +31,10 @@
 	function handleClick(event: MouseEvent): void {
 		if (!enabled) return;
 
-		const x = event.clientX;
-		const y = event.clientY;
+		// クリック位置を親要素からの相対位置で計算
+		const rect = containerRef.getBoundingClientRect();
+		const x = event.clientX - rect.left;
+		const y = event.clientY - rect.top;
 
 		const newStamp: StampItem = {
 			id: nextId,
@@ -63,57 +68,66 @@
 	// イベントリスナーの登録・解除
 	onMount(() => {
 		if (enabled) {
-			document.addEventListener('click', handleClick);
+			containerRef.addEventListener('click', handleClick);
 		}
 	});
 
 	// enabled プロパティが変更されたとき
 	$: {
-		if (typeof document !== 'undefined') {
+		if (containerRef) {
 			if (enabled) {
-				document.addEventListener('click', handleClick);
+				containerRef.addEventListener('click', handleClick);
 			} else {
-				document.removeEventListener('click', handleClick);
+				containerRef.removeEventListener('click', handleClick);
 			}
 		}
 	}
 
 	onDestroy(() => {
-		// コンポーネントのクリーンアップ時にイベントリスナーを削除
-		if (typeof document !== 'undefined') {
-			document.removeEventListener('click', handleClick);
+		if (containerRef) {
+			containerRef.removeEventListener('click', handleClick);
 		}
 		stamps = [];
 	});
 </script>
 
-<!-- 固定位置の透明なオーバーレイ -->
-<div class="stamp-overlay" aria-hidden="true">
-	{#each stamps as stamp (stamp.id)}
-		<div
-			class="stamp"
-			class:invisible={!stamp.visible}
-			style="left: {stamp.x}px; top: {stamp.y}px;  width: {effectiveSize}; height: {effectiveSize};z-index: {1000 +
-				stamp.id}; transition: opacity {fadeOutDuration}ms ease-out;"
-		>
-			<img src={stampImage} alt="" />
-		</div>
-	{/each}
-</div>
+<!-- コンポーネントのルート要素 -->
+<div class="stamp-container" bind:this={containerRef}>
+	<!-- スタンプ表示用のオーバーレイ -->
+	<div class="stamp-overlay" aria-hidden="true">
+		{#each stamps as stamp (stamp.id)}
+			<div
+				class="stamp"
+				class:invisible={!stamp.visible}
+				style="left: {stamp.x}px; top: {stamp.y}px; width: {effectiveSize}; height: {effectiveSize}; z-index: {1000 +
+					stamp.id}; transition: opacity {fadeOutDuration}ms ease-out;"
+			>
+				<img src={stampImage} alt="" />
+			</div>
+		{/each}
+	</div>
 
-<!-- 非表示でも slot はレンダリング -->
-<div style="display: contents;">
-	<slot></slot>
+	<!-- コンテンツスロット -->
+	<div style="display: contents;">
+		<slot></slot>
+	</div>
 </div>
 
 <style>
+	.stamp-container {
+		position: relative;
+		block-size: 100%;
+		inline-size: 100%;
+		overflow: hidden;
+	}
+
 	.stamp-overlay {
-		position: fixed;
+		position: absolute;
 		inset-block-start: 0;
 		inset-inline-start: 0;
 		inline-size: 100%;
 		block-size: 100%;
-		pointer-events: none; /* クリックを通過させる */
+		pointer-events: none;
 		z-index: 1000;
 	}
 
