@@ -1,4 +1,4 @@
-name: Prettier and ESLint Validation
+name: ESLint Validation
 
 on:
   pull_request:
@@ -10,8 +10,8 @@ permissions:
   contents: read
 
 jobs:
-  prettier-eslint-validation:
-    name: Prettier and ESLint Validation
+  eslint-validation:
+    name: ESLint Validation
     runs-on: ubuntu-latest
 
     steps:
@@ -36,9 +36,9 @@ jobs:
         if: always()
         run: |
           if [ "${{ steps.validation.outcome }}" = "success" ]; then
-            echo "✅ Prettier and ESLint validation passed."
+            echo "✅ ESLint validation passed."
           else
-            echo "❌ Prettier and ESLint validation failed."
+            echo "❌ ESLint validation failed."
             echo "---- Output ----"
             cat output.log
             exit 1
