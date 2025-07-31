@@ -6,7 +6,7 @@
 <HeadProperties pageTitle="このサイトについて" description="このサイトについての説明"
 ></HeadProperties>
 
-<article class="p-articleContainer">
+<article class="l-articleContainer">
 	<h1>このサイトについて</h1>
 	<p>いわゆる個人サイトです。</p>
 	<h2>やっていること</h2>
