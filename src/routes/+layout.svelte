@@ -1,6 +1,9 @@
 <script lang="ts">
+	import Header from '$lib/components/Header.svelte';
+	import Footer from '$lib/components/Footer.svelte';
 	import { page } from '$app/state';
 	import './styles/app.scss';
+
 	interface Props {
 		children?: import('svelte').Snippet;
 	}
@@ -23,96 +26,26 @@
 
 <div class="wrapper">
 	<div class="container">
-		<header class="l-navList">
-			<nav aria-label="メインナビゲーション">
-				<ul>
-					<li>
-						<a href="/" aria-current={page.url.pathname === '/' ? 'page' : undefined}>home</a>
-					</li>
-					<li>
-						<a
-							href="/about"
-							aria-current={page.url.pathname.startsWith('/about') ? 'true' : undefined}>about</a
-						>
-					</li>
-					<li>
-						<a
-							href="/blog"
-							aria-current={page.url.pathname.startsWith('/blog') ? 'true' : undefined}>blog</a
-						>
-					</li>
-				</ul>
-			</nav>
-			<nav aria-label="リンクナビゲーション">
-				<ul>
-					<li>
-						<a
-							href="https://www.behance.net/peaks-and-valleys"
-							rel="external me noopener noreferrer"
-							translate="no">Behance</a
-						>
-					</li>
-					<li>
-						<a
-							href="https://github.com/peaks-and-valleys"
-							rel="external me noopener noreferrer"
-							translate="no">GitHub</a
-						>
-					</li>
-					<li>
-						<a
-							href="https://scrapbox.io/peaks-and-valleys/"
-							rel="external me noopener noreferrer"
-							translate="no">Cosense</a
-						>
-					</li>
-				</ul>
-			</nav>
-		</header>
-
+		<Header></Header>
 		<main>
 			{@render children?.()}
 		</main>
-
-		<footer class="l-navList l-navList--bottom">
-			<section aria-label="サブナビゲーション">
-				<ul>
-					<li>
-						<a href="/" aria-current={page.url.pathname === '/' ? 'page' : undefined}>home</a>
-					</li>
-					<li>
-						<a
-							href="/about"
-							aria-current={page.url.pathname.startsWith('/about') ? 'true' : undefined}>about</a
-						>
-					</li>
-					<li>
-						<a
-							href="/blog"
-							aria-current={page.url.pathname.startsWith('/blog') ? 'true' : undefined}>blog</a
-						>
-					</li>
-				</ul>
-			</section>
-			<section aria-label="連絡先">
-				<ul>
-					<li><address>peaksvndvalleys(at)protonmail(dot)com</address></li>
-				</ul>
-			</section>
-		</footer>
+		<Footer></Footer>
 	</div>
 </div>
 
 <style lang="scss">
 	.wrapper {
+		padding-inline: var(--spacing-m);
+		padding-block-start: var(--spacing-xs);
+		padding-block-end: var(--spacing-s);
 		display: flex;
 		justify-content: center;
+		min-block-size: 100vh;
 	}
 
 	.container {
-		min-block-size: 100vh;
-		inline-size: 100%;
-		max-inline-size: 1280px;
+		inline-size: min(100%, 960px);
 		display: flex;
 		flex-direction: column;
 		gap: var(--spacing-m);
@@ -121,14 +54,5 @@
 	main {
 		flex: 1;
 		border: solid 6px var(--c-secondary);
-		margin-inline: var(--spacing-m);
-	}
-
-	header {
-		view-transition-name: header;
-	}
-
-	footer {
-		view-transition-name: footer;
 	}
 </style>

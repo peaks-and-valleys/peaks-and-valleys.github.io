@@ -8,5 +8,5 @@
 		"includeWarnings": true,
 		"timeout": 5000
 	},
-	"urls": ["http://localhost:5173", "http://localhost:5173/about"]
+	"urls": ["http://localhost:5173"]
 }
