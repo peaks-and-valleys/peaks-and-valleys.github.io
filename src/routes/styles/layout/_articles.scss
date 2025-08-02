@@ -1,5 +1,5 @@
 .l-articleContainer {
-	margin-inline: var(--spacing-m);
+	margin: var(--spacing-l);
 
 	hgroup {
 		* {
@@ -16,9 +16,9 @@
 	h2,
 	h3,
 	h4 {
-		border-inline-start: calc(var(--spacing-m) * 0.625) solid var(--c-secondary);
-		margin-inline-start: calc((-1) * var(--spacing-m));
-		padding-inline-start: calc(var(--spacing-m) * (1 - 0.625));
+		border-inline-start: calc(var(--spacing-l) * 0.625) solid var(--c-secondary);
+		margin-inline-start: calc((-1) * var(--spacing-l));
+		padding-inline-start: calc(var(--spacing-l) * (1 - 0.625));
 	}
 }
 
