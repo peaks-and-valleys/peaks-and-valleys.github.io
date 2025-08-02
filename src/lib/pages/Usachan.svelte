@@ -14,6 +14,7 @@
 		min-block-size: 100%;
 		align-items: center;
 		justify-content: center;
+		padding: var(--spacing-l);
 		img {
 			inline-size: max(240px, 40%);
 		}
