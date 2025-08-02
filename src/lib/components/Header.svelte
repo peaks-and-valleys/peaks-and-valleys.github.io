@@ -22,7 +22,7 @@
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		gap: var(--spacing-xxs);
+		row-gap: calc(var(--spacing-xs) - var(--half-leading));
 		view-transition-name: header;
 
 		h1 {

@@ -33,7 +33,7 @@
 	footer {
 		display: flex;
 		flex-direction: column;
-		gap: var(--spacing-xxs);
+		row-gap: calc(var(--spacing-xs) - var(--half-leading));
 		color: var(--c-secondary);
 		align-items: center;
 		view-transition-name: footer;
@@ -43,7 +43,7 @@
 				display: flex;
 				justify-content: center;
 				flex-wrap: wrap;
-				gap: var(--spacing-m);
+				column-gap: var(--spacing-m);
 
 				li {
 					list-style: none;
