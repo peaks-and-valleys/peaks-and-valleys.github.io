@@ -41,7 +41,7 @@
 		padding-block-end: var(--spacing-s);
 		display: flex;
 		justify-content: center;
-		min-block-size: 100vh;
+		min-block-size: 100dvh;
 	}
 
 	.container {
