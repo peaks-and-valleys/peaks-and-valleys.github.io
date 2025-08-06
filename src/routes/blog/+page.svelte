@@ -20,7 +20,7 @@
 					<hgroup>
 						<h2><a href="blog/{post.slug}">{post.title}</a></h2>
 						<p>
-							<time datetime={post.date}>{new Date(post.date).toLocaleDateString('ja')}</time> - {post.description}
+							<time datetime={post.date}>{new Date(post.date).toLocaleDateString('ja')}</time>
 						</p>
 					</hgroup>
 				</article>
