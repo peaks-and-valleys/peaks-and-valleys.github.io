@@ -10,6 +10,15 @@
 			</li>
 			<li>
 				<a
+					href="https://zenn.dev/peaksandvalleys"
+					rel="external me noopener noreferrer"
+					translate="no"
+				>
+					Zenn
+				</a>
+			</li>
+			<li>
+				<a
 					href="https://www.behance.net/peaks-and-valleys"
 					rel="external me noopener noreferrer"
 					translate="no">Behance</a
