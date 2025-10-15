@@ -17,7 +17,7 @@
 		font-size: 1rem;
 		color: var(--bg-primary);
 		background-color: var(--c-secondary);
-		padding: var(--spacing-xxs);
+		padding: var(--spacing-xs);
 		border: none;
 
 		@media (any-hover) {
