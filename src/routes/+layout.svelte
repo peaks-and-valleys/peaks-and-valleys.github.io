@@ -37,10 +37,10 @@
 <style lang="scss">
 	.wrapper {
 		padding-inline: var(--spacing-m);
-		padding-block-start: var(--spacing-xs);
-		padding-block-end: var(--spacing-s);
+		padding-block: var(--spacing-s);
 		display: flex;
 		justify-content: center;
+		min-block-size: 100vh;
 		min-block-size: 100dvh;
 	}
 

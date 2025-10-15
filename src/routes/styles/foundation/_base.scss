@@ -14,6 +14,7 @@ html {
 	font-feature-settings: 'ss04', 'case', 'tnum';
 	color: var(--c-primary);
 	text-underline-offset: calc(var(--half-leading) / 2);
+	letter-spacing: 0.005em;
 }
 
 body {
@@ -27,8 +28,7 @@ h1,
 h2,
 h3,
 h4 {
-	line-height: 1.4;
-	letter-spacing: -0.004em;
+	line-height: 1.33;
 	text-wrap: pretty;
 }
 
