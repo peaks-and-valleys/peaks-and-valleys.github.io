@@ -22,7 +22,7 @@
 		<hgroup>
 			<h1 class="">{meta.title}</h1>
 			<p>
-				<time datetime={meta.date}>{new Date(meta.date).toLocaleDateString('ja')}</time> - {meta.description}
+				<time datetime={meta.date}>{new Date(meta.date).toLocaleDateString('ja')}</time>
 			</p>
 		</hgroup>
 		<Content />

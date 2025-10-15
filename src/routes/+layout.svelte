@@ -42,7 +42,7 @@
 		justify-content: center;
 		min-block-size: 100vh;
 		min-block-size: 100dvh;
-		@media screen and (min-width: 1024px){
+		@media screen and (min-width: 1024px) {
 			padding-inline: 64px;
 			justify-content: flex-start;
 		}
