@@ -53,6 +53,5 @@
 
 	main {
 		flex: 1;
-		border: solid 6px var(--c-secondary);
 	}
 </style>
