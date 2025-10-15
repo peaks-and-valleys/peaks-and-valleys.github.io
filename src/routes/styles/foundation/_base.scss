@@ -80,11 +80,12 @@ ol {
 }
 
 :where(h1, h2, h3, h4, h5, h6, p, li) > a {
-	color: var(--c-accent-blue);
+	color: var(--c-secondary);
 	text-decoration: underline 2px currentColor;
 
 	@media (any-hover) {
 		&:hover {
+			color: var(--c-accent-blue);
 			text-decoration: none;
 		}
 	}
