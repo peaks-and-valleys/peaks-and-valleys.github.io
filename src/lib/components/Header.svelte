@@ -21,7 +21,6 @@
 	header {
 		display: flex;
 		flex-direction: column;
-		align-items: center;
 		row-gap: calc(var(--spacing-xs) - var(--half-leading));
 		view-transition-name: header;
 

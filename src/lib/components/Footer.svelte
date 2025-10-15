@@ -44,13 +44,12 @@
 		flex-direction: column;
 		row-gap: calc(var(--spacing-xs) - var(--half-leading));
 		color: var(--c-secondary);
-		align-items: center;
 		view-transition-name: footer;
 
 		nav {
 			ul {
 				display: flex;
-				justify-content: center;
+				justify-content: flex-start;
 				flex-wrap: wrap;
 				column-gap: var(--spacing-m);
 
