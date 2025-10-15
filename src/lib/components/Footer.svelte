@@ -40,6 +40,8 @@
 
 <style lang="scss">
 	footer {
+		padding-block-start: var(--spacing-s);
+		border-block-start: 1px dotted var(--c-secondary);
 		display: flex;
 		flex-direction: column;
 		row-gap: calc(var(--spacing-xs) - var(--half-leading));
