@@ -36,16 +36,20 @@
 
 <style lang="scss">
 	.wrapper {
-		padding-inline: var(--spacing-m);
-		padding-block-start: var(--spacing-xs);
-		padding-block-end: var(--spacing-s);
+		padding-inline: 16px;
+		padding-block: 16px;
 		display: flex;
 		justify-content: center;
+		min-block-size: 100vh;
 		min-block-size: 100dvh;
+		@media screen and (min-width: 1024px) {
+			padding-inline: 64px;
+			justify-content: flex-start;
+		}
 	}
 
 	.container {
-		inline-size: min(100%, 960px);
+		inline-size: min(100%, 896px); // 1024 - 64 * 2
 		display: flex;
 		flex-direction: column;
 		gap: var(--spacing-m);
@@ -53,6 +57,5 @@
 
 	main {
 		flex: 1;
-		border: solid 6px var(--c-secondary);
 	}
 </style>

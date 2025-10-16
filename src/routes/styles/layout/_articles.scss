@@ -1,24 +1,24 @@
 .l-articleContainer {
-	margin: var(--spacing-l);
-
 	hgroup {
+		display: flex;
+		flex-direction: column;
+		gap: var(--spacing-s);
 		* {
 			color: var(--c-primary);
 		}
 
 		p {
+			margin: 0;
 			font-size: 0.875rem;
 			color: var(--c-secondary);
 		}
 	}
 
-	h1,
 	h2,
 	h3,
 	h4 {
-		border-inline-start: calc(var(--spacing-l) * 0.625) solid var(--c-secondary);
-		margin-inline-start: calc((-1) * var(--spacing-l));
-		padding-inline-start: calc(var(--spacing-l) * (1 - 0.625));
+		border-inline-start: calc(var(--spacing-s) * 0.625) solid var(--c-secondary);
+		padding-inline-start: calc(var(--spacing-s) * (1 - 0.625));
 	}
 }
 

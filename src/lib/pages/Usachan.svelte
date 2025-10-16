@@ -15,6 +15,7 @@
 		align-items: center;
 		justify-content: center;
 		padding: var(--spacing-l);
+		border: 4px solid var(--c-secondary);
 		img {
 			inline-size: max(240px, 40%);
 		}

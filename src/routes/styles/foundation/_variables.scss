@@ -1,7 +1,7 @@
 :root {
 	/* color palette (oklch) */
 	--dark-primary: oklch(0.25 0.005 264);
-	--dark-secondary: oklch(0.3 0.005 264);
+	--dark-secondary: oklch(0.35 0.005 264);
 	--light-primary: oklch(0.94 0.005 264);
 	--light-secondary: oklch(0.9 0.005 264);
 	--blue-primary: oklch(0.38 0.2 264);
@@ -26,15 +26,22 @@
 		'Liberation Mono', 'BIZ UDGothic', monospace;
 
 	/* spacing */
-	--spacing-xxs: 4px;
-	--spacing-xs: 8px;
-	--spacing-s: 12px;
-	--spacing-m: 16px;
-	--spacing-l: 24px;
-	--spacing-xl: 32px;
-	--spacing-xxl: 48px;
+	--spacing-unit: 8px;
+	--spacing-xxs: calc(var(--spacing-unit) / 2);
+	--spacing-xs: var(--spacing-unit);
+	--spacing-s: calc(var(--spacing-unit) * 2);
+	--spacing-m: calc(var(--spacing-unit) * 3);
+	--spacing-l: calc(var(--spacing-unit) * 5);
+	--spacing-xl: calc(var(--spacing-unit) * 8);
 
 	/* utilities */
 	--half-leading: calc((1lh - 1em) / 2);
+
+	// Source: https://www.tak-dcxi.com/article/use-line-height-trim-as-css-variable/
+	@supports not (top: 1lh) {
+		:root {
+			--half-leading: 0px;
+		}
+	}
 	--scrollbar-gutter: calc(100vw - 100%);
 }

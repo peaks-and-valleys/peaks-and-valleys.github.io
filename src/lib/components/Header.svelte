@@ -19,9 +19,10 @@
 
 <style lang="scss">
 	header {
+		padding-block-end: calc(var(--spacing-m) - var(--half-leading));
+		border-block-end: 1px dotted var(--c-secondary);
 		display: flex;
 		flex-direction: column;
-		align-items: center;
 		row-gap: calc(var(--spacing-xs) - var(--half-leading));
 		view-transition-name: header;
 
