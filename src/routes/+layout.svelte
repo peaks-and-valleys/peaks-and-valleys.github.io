@@ -36,7 +36,7 @@
 
 <style lang="scss">
 	.wrapper {
-		padding-inline: 24px;
+		padding-inline: 16px;
 		padding-block: 16px;
 		display: flex;
 		justify-content: center;
