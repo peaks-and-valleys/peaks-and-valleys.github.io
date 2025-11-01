@@ -40,6 +40,7 @@
 
 <style lang="scss">
 	footer {
+		margin-block-start: var(--spacing-l);
 		padding-block-start: calc(var(--spacing-m) - var(--half-leading));
 		border-block-start: 1px dotted var(--c-secondary);
 		display: flex;
@@ -63,6 +64,11 @@
 			}
 			a {
 				text-decoration: none;
+				@media (any-hover) {
+					&:hover {
+					text-decoration: underline 2px currentColor;
+					}
+				}
 			}
 		}
 
