@@ -3,12 +3,18 @@
 </script>
 
 <StampOnClick stampImage="/images/index/usachan.svg">
-	<div class="usachan">
-		<img src="images/index/usachan.svg" alt="うさちゃん" />
+	<div class="wrapper">
+		<div class="usachan">
+			<img src="images/index/usachan.svg" alt="うさちゃん" />
+		</div>
 	</div>
 </StampOnClick>
 
 <style lang="scss">
+	.wrapper {
+		padding-block-start: var(--spacing-l);
+		block-size: 100%;
+	}
 	.usachan {
 		display: flex;
 		min-block-size: 100%;

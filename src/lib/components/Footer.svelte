@@ -66,7 +66,7 @@
 				text-decoration: none;
 				@media (any-hover) {
 					&:hover {
-					text-decoration: underline 2px currentColor;
+						text-decoration: underline 2px currentColor;
 					}
 				}
 			}
