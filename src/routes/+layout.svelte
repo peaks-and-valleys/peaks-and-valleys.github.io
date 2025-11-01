@@ -43,16 +43,15 @@
 		min-block-size: 100vh;
 		min-block-size: 100dvh;
 		@media screen and (min-width: 1024px) {
-			padding-inline: 64px;
+			padding-inline: 96px;
 			justify-content: flex-start;
 		}
 	}
 
 	.container {
-		inline-size: min(100%, 896px); // 1024 - 64 * 2
+		inline-size: min(100%, 832px); // 1024 - 96 * 2
 		display: flex;
 		flex-direction: column;
-		gap: var(--spacing-m);
 	}
 
 	main {
